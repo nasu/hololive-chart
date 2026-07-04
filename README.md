@@ -64,6 +64,8 @@ python3 -m http.server 8000
 |---|---|
 | `color` | 推し色（カード装飾に使用） |
 | `emoji` | アバター絵文字 |
+| `description` | 特徴・紹介文（結果カードとメンバー詳細モーダルに表示） |
+| `twitter` | X(Twitter) ハンドル（公式タレントページから取得） |
 | `youtube.channelId` | YouTube チャンネルID（公式タレントページから取得した実ID） |
 
 `youtube.channelId` があるメンバーは、結果画面で公式 YouTube 埋め込み

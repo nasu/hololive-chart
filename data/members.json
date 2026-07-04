@@ -41,7 +41,9 @@
       "emoji": "🎙️",
       "youtube": {
         "channelId": "UCp6993wxpyDPHUpavwDFqgg"
-      }
+      },
+      "description": "ホロライブ0期生にして原点。清楚な王道アイドルで、歌への真摯な姿勢とたまに見せる天然な一面のギャップも魅力。",
+      "twitter": "tokino_sora"
     },
     {
       "id": "robocosan",
@@ -71,7 +73,9 @@
       "emoji": "🤖",
       "youtube": {
         "channelId": "UCDqI2jOz0weumE8s7paEk6g"
-      }
+      },
+      "description": "0期生のハイスペック(自称)ポンコツロボ。FPSからまったり雑談まで幅広く、面倒見の良さでコラボでも愛される。",
+      "twitter": "robocosan"
     },
     {
       "id": "aki-rosenthal",
@@ -101,7 +105,9 @@
       "emoji": "🍎",
       "youtube": {
         "channelId": "UCFTLzh12_nrtzqBPsTCqenA"
-      }
+      },
+      "description": "ベリーダンスが得意な癒し系お姉さん。ワインを愛し、視聴者を包み込む包容力が持ち味。",
+      "twitter": "akirosenthal"
     },
     {
       "id": "azki",
@@ -130,7 +136,9 @@
       "emoji": "⚙️",
       "youtube": {
         "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw"
-      }
+      },
+      "description": "「歌でみんなと開拓する」音楽特化のアーティスト。多数のオリジナル曲とソロライブ実績を持つ実力派。",
+      "twitter": "AZKi_VDiVA"
     },
     {
       "id": "akai-haato",
@@ -159,7 +167,9 @@
       "emoji": "❤️",
       "youtube": {
         "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg"
-      }
+      },
+      "description": "自称清楚なお嬢様、その実カオスの塊「はあちゃま」。予測不能な創作料理と独創的な企画が名物。",
+      "twitter": "akaihaato"
     },
     {
       "id": "shirakami-fubuki",
@@ -189,7 +199,9 @@
       "emoji": "🌽",
       "youtube": {
         "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg"
-      }
+      },
+      "description": "「アイドルではなく友達」を掲げる白い狐。ゲーム・歌・コラボ何でもこなす万能さと親しみやすさで箱の顔。",
+      "twitter": "shirakamifubuki"
     },
     {
       "id": "natsuiro-matsuri",
@@ -218,7 +230,9 @@
       "emoji": "🏮",
       "youtube": {
         "channelId": "UCJFZiqLMntJufDCHc6bQixg"
-      }
+      },
+      "description": "元気爆発のお祭り娘。体を張った企画と誰とでも仲良くなれるコミュ力が武器。",
+      "twitter": "natsuiromatsuri"
     },
     {
       "id": "nakiri-ayame",
@@ -247,7 +261,9 @@
       "emoji": "😈",
       "youtube": {
         "channelId": "UC7fk0CB07ly8oSl0aqKkqFg"
-      }
+      },
+      "description": "鬼のお姫様。配信はレア気味だが、特徴的な笑い声と天然な言動で長く愛される。",
+      "twitter": "nakiriayame"
     },
     {
       "id": "yuzuki-choco",
@@ -277,7 +293,9 @@
       "emoji": "🍫",
       "youtube": {
         "channelId": "UC1suqwovbL1kzsoaZgFZLKg"
-      }
+      },
+      "description": "保健室の先生系お姉さん。囁きASMRと大人の色気、実はゲームを黙々とやり込むガチ勢の一面も。",
+      "twitter": "yuzukichococh"
     },
     {
       "id": "oozora-subaru",
@@ -306,7 +324,9 @@
       "emoji": "🚑",
       "youtube": {
         "channelId": "UCvzGlP9oQwU--Y0r9id_jnA"
-      }
+      },
+      "description": "部活系元気っ子。大声ツッコミと抱腹絶倒のエピソードトークは箱随一。",
+      "twitter": "oozorasubaru"
     },
     {
       "id": "ookami-mio",
@@ -336,7 +356,9 @@
       "emoji": "🌲",
       "youtube": {
         "channelId": "UCp-5t9SrOQwXMU7iIjQfARg"
-      }
+      },
+      "description": "ホロライブのお母さん的存在。タロット占いと落ち着いた雑談で癒しをくれる狼。",
+      "twitter": "ookamimio"
     },
     {
       "id": "sakura-miko",
@@ -366,7 +388,9 @@
       "emoji": "🌸",
       "youtube": {
         "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA"
-      }
+      },
+      "description": "エリート巫女を名乗るポンコツかわいい「みこち」。GTA配信と大型企画の仕掛け人で、カオスな面白さは唯一無二。",
+      "twitter": "sakuramiko35"
     },
     {
       "id": "nekomata-okayu",
@@ -396,7 +420,9 @@
       "emoji": "🍙",
       "youtube": {
         "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw"
-      }
+      },
+      "description": "低音ボイスの猫。まったりした喋りとRPGのじっくりプレイ、歌の上手さで安心感を与える。",
+      "twitter": "nekomataokayu"
     },
     {
       "id": "inugami-korone",
@@ -425,7 +451,9 @@
       "emoji": "🥐",
       "youtube": {
         "channelId": "UChAnqc_AY5_I3Px5dig3X1Q"
-      }
+      },
+      "description": "レトロゲームを愛する犬。長時間耐久と底抜けの明るさで海外ファンも多い。",
+      "twitter": "inugamikorone"
     },
     {
       "id": "hoshimachi-suisei",
@@ -455,7 +483,9 @@
       "emoji": "☄️",
       "youtube": {
         "channelId": "UC5CwaMl1eIgY8h02uZw7u8A"
-      }
+      },
+      "description": "アイドルVTuberを体現する歌姫。圧倒的歌唱力とストイックな姿勢、テトリスの腕前も一級品。",
+      "twitter": "suisei_hosimati"
     },
     {
       "id": "usada-pekora",
@@ -485,7 +515,9 @@
       "emoji": "🥕",
       "youtube": {
         "channelId": "UC1DCedRgGHBdm81E1llLhOQ"
-      }
+      },
+      "description": "「ぺこ」口調と特徴的な笑い声の兎。練り込まれた企画・建築・検証配信でホロライブ屈指の実況者。",
+      "twitter": "usadapekora"
     },
     {
       "id": "shiranui-flare",
@@ -514,7 +546,9 @@
       "emoji": "🔥",
       "youtube": {
         "channelId": "UCvInZx9h3jC2JzsIzoOebWg"
-      }
+      },
+      "description": "マイクラ建築の匠なハーフエルフ。姉御肌の優しさと安定感ある歌声が魅力。",
+      "twitter": "shiranuiflare"
     },
     {
       "id": "shirogane-noel",
@@ -543,7 +577,9 @@
       "emoji": "⚔️",
       "youtube": {
         "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ"
-      }
+      },
+      "description": "白銀の騎士団長。人気のASMRと、筋トレ・怪力キャラのギャップ。",
+      "twitter": "shiroganenoel"
     },
     {
       "id": "houshou-marine",
@@ -574,7 +610,9 @@
       "emoji": "🏴‍☠️",
       "youtube": {
         "channelId": "UCCzUftO8KOVkV4wQG1vkUvg"
-      }
+      },
+      "description": "オタク文化を語らせたら止まらない海賊船長。トーク・歌・企画すべて高水準のエンターテイナー。",
+      "twitter": "houshoumarine"
     },
     {
       "id": "tsunomaki-watame",
@@ -604,7 +642,9 @@
       "emoji": "🐏",
       "youtube": {
         "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA"
-      }
+      },
+      "description": "歌と耐久配信の羊。ポエムと「わためは悪くないよぉ」が名物、朝まで続く雑談も。",
+      "twitter": "tsunomakiwatame"
     },
     {
       "id": "tokoyami-towa",
@@ -634,7 +674,9 @@
       "emoji": "👾",
       "youtube": {
         "channelId": "UC1uv2Oq6kNxgATlCiez59hw"
-      }
+      },
+      "description": "悪魔なのに天使な「トワ様」。FPSの腕前と歌のかっこよさ、素の可愛さのギャップ。",
+      "twitter": "tokoyamitowa"
     },
     {
       "id": "himemori-luna",
@@ -663,7 +705,9 @@
       "emoji": "🍬",
       "youtube": {
         "channelId": "UCa9Y57gfeY0Zro_noHRVrnw"
-      }
+      },
+      "description": "「なのら」口調の赤ちゃん姫。実はピアノの腕前がプロ級という最大のギャップ。",
+      "twitter": "himemoriluna"
     },
     {
       "id": "yukihana-lamy",
@@ -693,7 +737,9 @@
       "emoji": "⛄",
       "youtube": {
         "channelId": "UCFKOVgVbGmX65RxO3EtH3iw"
-      }
+      },
+      "description": "雪の精霊の清楚なお嬢様。日本酒を愛し、ASMRと優しい声で癒しを届ける。",
+      "twitter": "yukihanalamy"
     },
     {
       "id": "momosuzu-nene",
@@ -722,7 +768,9 @@
       "emoji": "🍑",
       "youtube": {
         "channelId": "UCAWSyEs_Io8MtpY3m-zqILA"
-      }
+      },
+      "description": "天然すぎる自称スーパーアイドル「ねねち」。独特の絵心と全力の歌、予測不能な発言が愛される。",
+      "twitter": "momosuzunene"
     },
     {
       "id": "shishiro-botan",
@@ -752,7 +800,9 @@
       "emoji": "🦁",
       "youtube": {
         "channelId": "UCUKD-uaobj9jiqB-VXt71mA"
-      }
+      },
+      "description": "白いライオンの姉御。FPSの実力は折り紙付き、独特の笑い声と大人の余裕。",
+      "twitter": "shishirobotan"
     },
     {
       "id": "omaru-polka",
@@ -781,7 +831,9 @@
       "emoji": "🎪",
       "youtube": {
         "channelId": "UCK9V2B22uJYu3N7eR_BT9QA"
-      }
+      },
+      "description": "元サーカス団長のエンターテイナー。ハイテンション芸と確かな歌唱力、たまに見せる繊細さ。",
+      "twitter": "omarupolka"
     },
     {
       "id": "laplus-darknesss",
@@ -810,7 +862,9 @@
       "emoji": "🛸",
       "youtube": {
         "channelId": "UCENwRMx5Yh42zWpzURebzTw"
-      }
+      },
+      "description": "holoX総帥を名乗る小さな悪魔。ゲーム好きでコラボも多いが、ポンコツで愛されるタイプ。",
+      "twitter": "LaplusDarknesss"
     },
     {
       "id": "takane-lui",
@@ -839,7 +893,9 @@
       "emoji": "🥀",
       "youtube": {
         "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g"
-      }
+      },
+      "description": "大人の余裕がある鷹のお姉さん。ゲームと雑談の安定感、後輩の面倒見の良さ。",
+      "twitter": "takanelui"
     },
     {
       "id": "hakui-koyori",
@@ -869,7 +925,9 @@
       "emoji": "🧪",
       "youtube": {
         "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw"
-      }
+      },
+      "description": "実験大好きピンクのコヨーテ。マシンガン早口トークとほぼ毎日配信の体力おばけ。",
+      "twitter": "hakuikoyori"
     },
     {
       "id": "sakamata-chloe",
@@ -898,7 +956,9 @@
       "emoji": "🎣",
       "youtube": {
         "channelId": "UCIBY1ollUsauvVi4hW4cumw"
-      }
+      },
+      "description": "野性味あふれるシャチギャル。飾らない言動と意外な歌唱力で人気を博した。",
+      "twitter": "sakamatachloe"
     },
     {
       "id": "kazama-iroha",
@@ -927,7 +987,9 @@
       "emoji": "🍃",
       "youtube": {
         "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ"
-      }
+      },
+      "description": "「ござる」口調の侍。礼儀正しさと癒しの声、ゲームでは意外な強さを見せる。",
+      "twitter": "kazamairohach"
     },
     {
       "id": "otonose-kanade",
@@ -956,7 +1018,9 @@
       "emoji": "🎹",
       "youtube": {
         "channelId": "UCJFZiqLMntJufDCHc6bQixg"
-      }
+      },
+      "description": "ReGLOSSの歌うまムードメーカー。耐久配信と底抜けの明るさ、料理下手も愛嬌。",
+      "twitter": "otonosekanade"
     },
     {
       "id": "ichijou-ririka",
@@ -985,7 +1049,9 @@
       "emoji": "🌃",
       "youtube": {
         "channelId": "UCJFZiqLMntJufDCHc6bQixg"
-      }
+      },
+      "description": "社長を名乗るトークの達人。都会派の見た目に反してポンコツで、雑談配信が人気。",
+      "twitter": "ichijouririka"
     },
     {
       "id": "juufuutei-raden",
@@ -1015,7 +1081,9 @@
       "emoji": "🐚",
       "youtube": {
         "channelId": "UCJFZiqLMntJufDCHc6bQixg"
-      }
+      },
+      "description": "落語と日本文化を愛する異色の存在。博識トークとお酒、唯一無二の低音ボイス。",
+      "twitter": "juufuuteiraden"
     },
     {
       "id": "todoroki-hajime",
@@ -1044,7 +1112,9 @@
       "emoji": "🛼",
       "youtube": {
         "channelId": "UCJFZiqLMntJufDCHc6bQixg"
-      }
+      },
+      "description": "番長を名乗る元気娘。ゲームも歌も全力で、体当たりの企画も多い。",
+      "twitter": "todoroki_hajime"
     },
     {
       "id": "hiodoshi-ao",
@@ -1073,7 +1143,9 @@
       "emoji": "🖋️",
       "youtube": {
         "channelId": "UCMGfV7TVTmHhEErVJg1oHBQ"
-      }
+      },
+      "description": "イケメン枠の「青くん」。麻雀と読書を愛し、低音ボイスで女性ファン多数。",
+      "twitter": "hiodoshiao"
     },
     {
       "id": "isaki-riona",
@@ -1101,7 +1173,9 @@
       "emoji": "📣",
       "youtube": {
         "channelId": "UC9LSiN9hXI55svYEBrrK-tw"
-      }
+      },
+      "description": "FLOW GLOWの歌姫枠。アイドル志向で明るく、歌枠の頻度も高い。",
+      "twitter": "isakiriona"
     },
     {
       "id": "koganei-niko",
@@ -1130,7 +1204,9 @@
       "emoji": "🐯",
       "youtube": {
         "channelId": "UCuI_opAVX6qbxZY-a-AxFuQ"
-      }
+      },
+      "description": "小さい体で元気いっぱいの虎。ハイテンション配信とかわいい見た目のギャップ。",
+      "twitter": "koganeiniko"
     },
     {
       "id": "mizumiya-su",
@@ -1158,7 +1234,9 @@
       "emoji": "💧",
       "youtube": {
         "channelId": "UCjk2nKmHzgH5Xy-C5qYRd5A"
-      }
+      },
+      "description": "水の巫女。ミステリアスな雰囲気と透明感のある歌声。",
+      "twitter": "mizumiya_su"
     },
     {
       "id": "rindo-chihaya",
@@ -1187,7 +1265,9 @@
       "emoji": "🐕",
       "youtube": {
         "channelId": "UCKMWFR6lAstLa7Vbf5dH7ig"
-      }
+      },
+      "description": "犬系元気っ子。ゲーム実況の熱量とハキハキした心地よいトーク。",
+      "twitter": "rindochihaya"
     },
     {
       "id": "kikirara-vivi",
@@ -1215,7 +1295,9 @@
       "emoji": "🎀",
       "youtube": {
         "channelId": "UCGzTVXqMQHa4AgJVJIVvtDQ"
-      }
+      },
+      "description": "キラキラ全開のアイドル志望。かわいさ特化の見た目と歌・ダンスへの情熱。",
+      "twitter": "kikiraravivi"
     },
     {
       "id": "ayunda-risu",
@@ -1244,7 +1326,9 @@
       "emoji": "🐿️",
       "youtube": {
         "channelId": "UCOyYb1c43VlX9rc_lT6NKQw"
-      }
+      },
+      "description": "歌唱力おばけのリス。普段のゆるさと歌モードのギャップが有名。",
+      "twitter": "ayunda_risu"
     },
     {
       "id": "moona-hoshinova",
@@ -1273,7 +1357,9 @@
       "emoji": "🌙",
       "youtube": {
         "channelId": "UCP0BspO_AMEe3aQqqpo89Dg"
-      }
+      },
+      "description": "クールな見た目で実はお茶目な月の女神。歌唱力とマイクラ建築で知られる。",
+      "twitter": "moonahoshinova"
     },
     {
       "id": "airani-iofifteen",
@@ -1302,7 +1388,9 @@
       "emoji": "🖌️",
       "youtube": {
         "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg"
-      }
+      },
+      "description": "ID1期の絵師。多言語話者で日本語も堪能、まったり配信が心地よい。",
+      "twitter": "airaniiofifteen"
     },
     {
       "id": "kureiji-ollie",
@@ -1332,7 +1420,9 @@
       "emoji": "🧟",
       "youtube": {
         "channelId": "UCYz_5n-uDuChHtLo7My1HnQ"
-      }
+      },
+      "description": "テンション無限のゾンビ。叫びと勢いのカオス配信、コラボの盛り上げ役。",
+      "twitter": "kureijiollie"
     },
     {
       "id": "anya-melfissa",
@@ -1361,7 +1451,9 @@
       "emoji": "🗡️",
       "youtube": {
         "channelId": "UC727SQYUvx5pDDGQpTICNWg"
-      }
+      },
+      "description": "まったり系の武器の精霊。日本語堪能で落ち着いた雑談が魅力。",
+      "twitter": "anyamelfissa"
     },
     {
       "id": "pavolia-reine",
@@ -1390,7 +1482,9 @@
       "emoji": "🦚",
       "youtube": {
         "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q"
-      }
+      },
+      "description": "孔雀のお嬢様。上品な佇まいと絵心、意外とノリの良い一面も。",
+      "twitter": "pavoliareine"
     },
     {
       "id": "vestia-zeta",
@@ -1419,7 +1513,9 @@
       "emoji": "🕶️",
       "youtube": {
         "channelId": "UCTvHWSfBZgtxE4sILOaurIQ"
-      }
+      },
+      "description": "クールな諜報員…のはずがオタク気質。FPS好きで日本語も勉強熱心。",
+      "twitter": "vestiazeta"
     },
     {
       "id": "kaela-kovalskia",
@@ -1449,7 +1545,9 @@
       "emoji": "🔨",
       "youtube": {
         "channelId": "UCZLZ8Jjx_RN2CXloOmgTHVg"
-      }
+      },
+      "description": "鍛冶屋の耐久おばけ。とんでもない配信時間とクラフトゲームのやり込みで有名。",
+      "twitter": "kaelakovalskia"
     },
     {
       "id": "kobo-kanaeru",
@@ -1478,7 +1576,9 @@
       "emoji": "☔",
       "youtube": {
         "channelId": "UCjLEmnpCNeisMxy134KPwWw"
-      }
+      },
+      "description": "雨を操る生意気かわいい末っ子。実は歌唱力抜群で、いじられキャラとして愛される。",
+      "twitter": "kobokanaeru"
     },
     {
       "id": "mori-calliope",
@@ -1508,7 +1608,9 @@
       "emoji": "💀",
       "youtube": {
         "channelId": "UCL_qhgtOy0dy1Agp8vkySQg"
-      }
+      },
+      "description": "死神見習いのラッパー。多数のオリジナル曲を持ち、硬派に見えて抜けた一面も。",
+      "twitter": "moricalliope"
     },
     {
       "id": "takanashi-kiara",
@@ -1538,7 +1640,9 @@
       "emoji": "🐔",
       "youtube": {
         "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww"
-      }
+      },
+      "description": "不死鳥のアイドル。多言語を操る熱血トークと歌、行動力の塊。",
+      "twitter": "takanashikiara"
     },
     {
       "id": "ninomae-inanis",
@@ -1568,7 +1672,9 @@
       "emoji": "🐙",
       "youtube": {
         "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg"
-      }
+      },
+      "description": "触手を操る絵師。ダジャレと落ち着いた作業配信の心地よさが魅力。",
+      "twitter": "ninomaeinanis"
     },
     {
       "id": "watson-amelia",
@@ -1597,7 +1703,9 @@
       "emoji": "🔎",
       "youtube": {
         "channelId": "UCyl1z3jo3XHR1riLFKG5UAg"
-      }
+      },
+      "description": "時を操る探偵。ゲームの腕とトンデモ企画で愛されたポンコツ探偵。",
+      "twitter": "watsonameliaEN"
     },
     {
       "id": "gawr-gura",
@@ -1626,7 +1734,9 @@
       "emoji": "🔱",
       "youtube": {
         "channelId": "UCoSrY_IQQVpmIRZ9Xf-y93g"
-      }
+      },
+      "description": "サメの女の子。圧倒的人気と歌のうまさ、ゆるかわトークで一時代を築いた。",
+      "twitter": "gawrgura"
     },
     {
       "id": "irys",
@@ -1654,7 +1764,9 @@
       "emoji": "💎",
       "youtube": {
         "channelId": "UC8rcEBzJSleTkf_-agPM20g"
-      }
+      },
+      "description": "希望のネフィリム。VSinger出身の圧倒的歌唱力と天然な言動のギャップ。",
+      "twitter": "irys_en"
     },
     {
       "id": "tsukumo-sana",
@@ -1682,7 +1794,9 @@
       "emoji": "🪐",
       "youtube": {
         "channelId": "UCsUj0dszADCGbF3gNrQEuSQ"
-      }
+      },
+      "description": "宇宙規模のスケールを持つ明るいお姉さん。絵が上手く、ポジティブの塊だった。",
+      "twitter": "tsukumosana"
     },
     {
       "id": "ceres-fauna",
@@ -1712,7 +1826,9 @@
       "emoji": "🌿",
       "youtube": {
         "channelId": "UCO_aKKYxn4tvrqPjcTzZ6EQ"
-      }
+      },
+      "description": "自然の母。ASMRと囁き声の癒し特化で、まったりゲーム配信も人気だった。",
+      "twitter": "ceresfauna"
     },
     {
       "id": "ouro-kronii",
@@ -1741,7 +1857,9 @@
       "emoji": "⏳",
       "youtube": {
         "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg"
-      }
+      },
+      "description": "時の番人。イケボで硬派かと思いきや、ツッコミとノリの良さが光る。",
+      "twitter": "ourokronii"
     },
     {
       "id": "nanashi-mumei",
@@ -1770,7 +1888,9 @@
       "emoji": "🪶",
       "youtube": {
         "channelId": "UC3n5uGu18FoCy23ggWWp8tA"
-      }
+      },
+      "description": "文明の守護者のフクロウ。天然発言と可憐な歌声で愛された。",
+      "twitter": "nanashimumei_en"
     },
     {
       "id": "hakos-baelz",
@@ -1799,7 +1919,9 @@
       "emoji": "🎲",
       "youtube": {
         "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ"
-      }
+      },
+      "description": "混沌の体現者。ダンスとハイテンション、笑いの絶えない配信。",
+      "twitter": "hakosbaelz"
     },
     {
       "id": "shiori-novella",
@@ -1828,7 +1950,9 @@
       "emoji": "📚",
       "youtube": {
         "channelId": "UCgnfPPb9JI3e9A4cXHnWbyg"
-      }
+      },
+      "description": "本の虫の司書。独特の語り口とオタクトーク、ミステリアスな魅力。",
+      "twitter": "shiorinovella"
     },
     {
       "id": "koseki-bijou",
@@ -1857,7 +1981,9 @@
       "emoji": "🪨",
       "youtube": {
         "channelId": "UC9p_lqQ0FEDz327Vgf5JwqA"
-      }
+      },
+      "description": "宝石の少女。ゲームの腕前が本格派で、かわいい見た目と笑い声のギャップ。",
+      "twitter": "kosekibijou"
     },
     {
       "id": "nerissa-ravencroft",
@@ -1885,7 +2011,9 @@
       "emoji": "🐦‍⬛",
       "youtube": {
         "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg"
-      }
+      },
+      "description": "鴉の歌姫。圧倒的歌唱力と生真面目さ、いじられ体質が愛される。",
+      "twitter": "nerissa_en"
     },
     {
       "id": "fuwawa-abyssgard",
@@ -1914,7 +2042,9 @@
       "emoji": "🐾",
       "youtube": {
         "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA"
-      }
+      },
+      "description": "FUWAMOCOの姉。ふわふわ担当の優しさと、双子の息の合った掛け合いが名物。",
+      "twitter": "fuwamoco_en"
     },
     {
       "id": "mococo-abyssgard",
@@ -1943,7 +2073,9 @@
       "emoji": "🐾",
       "youtube": {
         "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA"
-      }
+      },
+      "description": "FUWAMOCOの妹。元気担当の「ばうばう」と、双子の掛け合いが名物。",
+      "twitter": "fuwamoco_en"
     },
     {
       "id": "elizabeth-rose-bloodflame",
@@ -1972,7 +2104,9 @@
       "emoji": "🌹",
       "youtube": {
         "channelId": "UCW5uhrG1eCBYditmhL0Ykjw"
-      }
+      },
+      "description": "炎の騎士。舞台仕込みの歌唱力と演技力、騎士道精神あふれる言動。",
+      "twitter": "ERBloodflame"
     },
     {
       "id": "gigi-murin",
@@ -2001,7 +2135,9 @@
       "emoji": "🪛",
       "youtube": {
         "channelId": "UCDHABijvPBnJm7F-KlNME3w"
-      }
+      },
+      "description": "いたずら大好きグレムリン。ハイテンションなカオスと、ゲームへの驚異的な集中力。",
+      "twitter": "gigimurin"
     },
     {
       "id": "cecilia-immergreen",
@@ -2030,7 +2166,9 @@
       "emoji": "🎻",
       "youtube": {
         "channelId": "UCvN5h1ShZtc7nly3pezRayg"
-      }
+      },
+      "description": "ゼンマイ仕掛けの人形発明家。音楽の才能と独特のユーモア。",
+      "twitter": "ceciliaimgreen"
     },
     {
       "id": "raora-panthera",
@@ -2059,7 +2197,9 @@
       "emoji": "🎨",
       "youtube": {
         "channelId": "UCl69AEx4MdqMZH7Jtsm7Tig"
-      }
+      },
+      "description": "イタリア出身の豹の絵師。温かい人柄と芸術の腕、癒しの雰囲気。",
+      "twitter": "raorapanthera"
     },
     {
       "id": "kiryu-coco",
@@ -2089,7 +2229,9 @@
       "emoji": "🐉",
       "youtube": {
         "channelId": "UCS9uQI-jC3DE0L4IpXyvr6w"
-      }
+      },
+      "description": "伝説の会長。型破りな企画「朝ココ」でホロライブを世界に広げた立役者。",
+      "twitter": "kiryucoco"
     },
     {
       "id": "minato-aqua",
@@ -2119,7 +2261,9 @@
       "emoji": "⚓",
       "youtube": {
         "channelId": "UC1opHUrw8rvnsadT-iGp7Cg"
-      }
+      },
+      "description": "ゲーマーメイド。ポンコツで人見知りだが、ゲームの腕前は箱トップクラスだった。",
+      "twitter": "minatoaqua"
     },
     {
       "id": "murasaki-shion",
@@ -2147,7 +2291,9 @@
       "emoji": "🌙",
       "youtube": {
         "channelId": "UCXTpFs_3PqI41qX2d9tL2Rw"
-      }
+      },
+      "description": "小悪魔魔法使い。生意気かわいい代表格として長く愛された。",
+      "twitter": "murasakishionch"
     },
     {
       "id": "amane-kanata",
@@ -2177,7 +2323,9 @@
       "emoji": "💫",
       "youtube": {
         "channelId": "UCZlDXzGoo7d44bwdNObFacg"
-      }
+      },
+      "description": "へい民を率いた天使。歌への努力と握力ゴリラのギャップ、愛される人柄。",
+      "twitter": "amanekanatach"
     }
   ],
   "paramScale": 10

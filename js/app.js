@@ -288,6 +288,100 @@ const App = {
     )}`;
   },
 
+  /** YouTube / X の外部リンク行 */
+  linkRow(member) {
+    const row = this.el("div", { class: "link-row" });
+    row.appendChild(
+      this.el("a", {
+        class: "yt-link",
+        href: this.channelUrl(member),
+        target: "_blank",
+        rel: "noopener",
+        text: "▶ YouTube",
+      })
+    );
+    if (member.twitter) {
+      row.appendChild(
+        this.el("a", {
+          class: "yt-link x-link",
+          href: `https://x.com/${member.twitter}`,
+          target: "_blank",
+          rel: "noopener",
+          text: `𝕏 @${member.twitter}`,
+        })
+      );
+    }
+    return row;
+  },
+
+  /** メンバー詳細モーダル */
+  showMemberModal(member) {
+    const close = () => {
+      overlay.remove();
+      document.removeEventListener("keydown", onKey);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") close();
+    };
+    document.addEventListener("keydown", onKey);
+
+    const overlay = this.el("div", {
+      class: "modal-overlay",
+      onclick: (e) => {
+        if (e.target === overlay) close();
+      },
+    });
+    const panel = this.el("div", {
+      class: "modal-panel",
+      style: `border-top: 6px solid ${member.color}`,
+      role: "dialog",
+      "aria-label": member.name,
+    });
+    panel.appendChild(
+      this.el("button", {
+        type: "button",
+        class: "modal-close",
+        text: "×",
+        "aria-label": "閉じる",
+        onclick: close,
+      })
+    );
+    const head = this.el("div", { class: "modal-head" }, [
+      this.avatar(member, "lg"),
+    ]);
+    const nameBox = this.el("div", {});
+    const h = this.el("h2", { text: member.name });
+    if (member.status === "graduated") {
+      h.appendChild(this.el("span", { class: "badge-grad", text: "卒業生" }));
+    }
+    nameBox.appendChild(h);
+    nameBox.appendChild(
+      this.el("p", {
+        class: "result-meta",
+        text: `${member.nameEn} / hololive ${member.branch} ${member.group}`,
+      })
+    );
+    head.appendChild(nameBox);
+    panel.appendChild(head);
+
+    if (member.description) {
+      panel.appendChild(
+        this.el("p", { class: "member-desc", text: member.description })
+      );
+    }
+    const tags = this.el("div", { class: "tag-list" });
+    for (const t of member.tags) {
+      tags.appendChild(this.el("span", { class: "tag", text: "#" + t }));
+    }
+    panel.appendChild(tags);
+    panel.appendChild(this.linkRow(member));
+    const embed = this.embedToggle(member);
+    if (embed) panel.appendChild(embed);
+
+    overlay.appendChild(panel);
+    document.body.appendChild(overlay);
+  },
+
   // ---- トップページ ----
   renderHome() {
     const s = this.state;
@@ -519,17 +613,14 @@ const App = {
         })
       );
     }
+    if (m.description) {
+      card.appendChild(
+        this.el("p", { class: "member-desc", text: m.description })
+      );
+    }
     card.appendChild(tags);
     card.appendChild(this.radarChart(m, profile));
-    card.appendChild(
-      this.el("a", {
-        class: "yt-link",
-        href: this.channelUrl(m),
-        target: "_blank",
-        rel: "noopener",
-        text: "▶ YouTubeチャンネルへ",
-      })
-    );
+    card.appendChild(this.linkRow(m));
     const embed = this.embedToggle(m);
     if (embed) card.appendChild(embed);
     return card;
@@ -673,9 +764,11 @@ const App = {
       wrap.appendChild(this.el("h2", { class: "group-heading", text: g }));
       const grid = this.el("div", { class: "member-grid" });
       for (const m of groupMap.get(g)) {
-        const card = this.el("div", {
+        const card = this.el("button", {
+          type: "button",
           class: "member-card",
           style: `border-top: 4px solid ${m.color}`,
+          onclick: () => this.showMemberModal(m),
         });
         const h = this.el("h3", {}, [this.avatar(m)]);
         h.appendChild(document.createTextNode(m.name));
@@ -693,13 +786,7 @@ const App = {
         }
         card.appendChild(tags);
         card.appendChild(
-          this.el("a", {
-            class: "yt-link",
-            href: this.channelUrl(m),
-            target: "_blank",
-            rel: "noopener",
-            text: "▶ YouTube",
-          })
+          this.el("span", { class: "detail-hint", text: "タップで詳細 ▸" })
         );
         grid.appendChild(card);
       }
