@@ -8,17 +8,21 @@
 
 // ---------- データ層 ----------
 
+// デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
+// (index.html の ?v= と合わせること)
+const APP_VERSION = "7";
+
 const DataSource = {
   async loadBrands() {
-    const res = await fetch("data/brands.json");
+    const res = await fetch(`data/brands.json?v=${APP_VERSION}`);
     if (!res.ok) throw new Error("ブランド一覧の読み込みに失敗しました");
     return (await res.json()).brands;
   },
 
   async load(brandId) {
     const [membersRes, questionsRes] = await Promise.all([
-      fetch(`data/${brandId}/members.json`),
-      fetch(`data/${brandId}/questions.json`),
+      fetch(`data/${brandId}/members.json?v=${APP_VERSION}`),
+      fetch(`data/${brandId}/questions.json?v=${APP_VERSION}`),
     ]);
     if (!membersRes.ok || !questionsRes.ok) {
       throw new Error("データの読み込みに失敗しました");
