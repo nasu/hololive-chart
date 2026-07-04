@@ -1,0 +1,2184 @@
+{
+  "version": 2,
+  "updatedAt": "2026-07-04",
+  "paramLabels": {
+    "energy": "元気・テンション",
+    "healing": "癒し",
+    "talk": "トーク・雑談",
+    "game": "ゲーム",
+    "music": "歌・音楽",
+    "comedy": "エンタメ・笑い",
+    "chaos": "カオス度",
+    "cute": "かわいい系",
+    "cool": "かっこいい系"
+  },
+  "members": [
+    {
+      "id": "tokino-sora",
+      "name": "ときのそら",
+      "nameEn": "Tokino Sora",
+      "branch": "JP",
+      "group": "0期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "アイドル",
+        "正統派",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 6,
+        "game": 4,
+        "music": 9,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#4166D5",
+      "emoji": "🎙️",
+      "youtube": {
+        "channelId": "UCp6993wxpyDPHUpavwDFqgg"
+      }
+    },
+    {
+      "id": "robocosan",
+      "name": "ロボ子さん",
+      "nameEn": "Robocosan",
+      "branch": "JP",
+      "group": "0期生",
+      "status": "active",
+      "tags": [
+        "FPS",
+        "ゲーマー",
+        "まったり",
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 6,
+        "game": 8,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#9E9EB8",
+      "emoji": "🤖",
+      "youtube": {
+        "channelId": "UCDqI2jOz0weumE8s7paEk6g"
+      }
+    },
+    {
+      "id": "aki-rosenthal",
+      "name": "アキ・ローゼンタール",
+      "nameEn": "Aki Rosenthal",
+      "branch": "JP",
+      "group": "0期生",
+      "status": "active",
+      "tags": [
+        "お姉さん",
+        "ダンス",
+        "お酒",
+        "癒し"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 6,
+        "game": 6,
+        "music": 6,
+        "comedy": 4,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#E85D75",
+      "emoji": "🍎",
+      "youtube": {
+        "channelId": "UCFTLzh12_nrtzqBPsTCqenA"
+      }
+    },
+    {
+      "id": "azki",
+      "name": "AZKi",
+      "nameEn": "AZKi",
+      "branch": "JP",
+      "group": "0期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "音楽制作",
+        "アーティスト"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 6,
+        "game": 4,
+        "music": 10,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 6,
+        "cool": 8
+      },
+      "color": "#E85298",
+      "emoji": "⚙️",
+      "youtube": {
+        "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw"
+      }
+    },
+    {
+      "id": "akai-haato",
+      "name": "赤井はあと",
+      "nameEn": "Akai Haato",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "カオス",
+        "料理",
+        "天然"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 6,
+        "game": 4,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 9,
+        "cute": 6,
+        "cool": 2
+      },
+      "color": "#E62E2E",
+      "emoji": "❤️",
+      "youtube": {
+        "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg"
+      }
+    },
+    {
+      "id": "shirakami-fubuki",
+      "name": "白上フブキ",
+      "nameEn": "Shirakami Fubuki",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "ケモミミ",
+        "ゲーマー",
+        "オタク",
+        "万能"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 6
+      },
+      "color": "#6EC5E9",
+      "emoji": "🌽",
+      "youtube": {
+        "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg"
+      }
+    },
+    {
+      "id": "natsuiro-matsuri",
+      "name": "夏色まつり",
+      "nameEn": "Natsuiro Matsuri",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "元気",
+        "アイドル",
+        "体を張る"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 8,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#FFA53C",
+      "emoji": "🏮",
+      "youtube": {
+        "channelId": "UCJFZiqLMntJufDCHc6bQixg"
+      }
+    },
+    {
+      "id": "nakiri-ayame",
+      "name": "百鬼あやめ",
+      "nameEn": "Nakiri Ayame",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "和風",
+        "笑い声",
+        "レア"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 6,
+        "game": 6,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#C41E3A",
+      "emoji": "😈",
+      "youtube": {
+        "channelId": "UC7fk0CB07ly8oSl0aqKkqFg"
+      }
+    },
+    {
+      "id": "yuzuki-choco",
+      "name": "癒月ちょこ",
+      "nameEn": "Yuzuki Choco",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "ASMR",
+        "お姉さん",
+        "セクシー",
+        "先生"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 10,
+        "talk": 6,
+        "game": 6,
+        "music": 4,
+        "comedy": 4,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 6
+      },
+      "color": "#D97B8E",
+      "emoji": "🍫",
+      "youtube": {
+        "channelId": "UC1suqwovbL1kzsoaZgFZLKg"
+      }
+    },
+    {
+      "id": "oozora-subaru",
+      "name": "大空スバル",
+      "nameEn": "Oozora Subaru",
+      "branch": "JP",
+      "group": "1期生",
+      "status": "active",
+      "tags": [
+        "元気",
+        "トーク",
+        "部活系"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 10,
+        "game": 6,
+        "music": 6,
+        "comedy": 9,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#7FD1E2",
+      "emoji": "🚑",
+      "youtube": {
+        "channelId": "UCvzGlP9oQwU--Y0r9id_jnA"
+      }
+    },
+    {
+      "id": "ookami-mio",
+      "name": "大神ミオ",
+      "nameEn": "Ookami Mio",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "active",
+      "tags": [
+        "ママ味",
+        "ケモミミ",
+        "占い",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 10,
+        "talk": 8,
+        "game": 4,
+        "music": 6,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#B71C34",
+      "emoji": "🌲",
+      "youtube": {
+        "channelId": "UCp-5t9SrOQwXMU7iIjQfARg"
+      }
+    },
+    {
+      "id": "sakura-miko",
+      "name": "さくらみこ",
+      "nameEn": "Sakura Miko",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "active",
+      "tags": [
+        "エリート",
+        "カオス",
+        "企画",
+        "GTA"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 9,
+        "chaos": 10,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#FF63A1",
+      "emoji": "🌸",
+      "youtube": {
+        "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA"
+      }
+    },
+    {
+      "id": "nekomata-okayu",
+      "name": "猫又おかゆ",
+      "nameEn": "Nekomata Okayu",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "active",
+      "tags": [
+        "低音ボイス",
+        "ケモミミ",
+        "まったり",
+        "RPG"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 10,
+        "talk": 8,
+        "game": 8,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 2,
+        "cute": 8,
+        "cool": 6
+      },
+      "color": "#B18BE0",
+      "emoji": "🍙",
+      "youtube": {
+        "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw"
+      }
+    },
+    {
+      "id": "inugami-korone",
+      "name": "戌神ころね",
+      "nameEn": "Inugami Korone",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "active",
+      "tags": [
+        "レトロゲーム",
+        "耐久",
+        "ケモミミ"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 6,
+        "game": 10,
+        "music": 4,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#E6B422",
+      "emoji": "🥐",
+      "youtube": {
+        "channelId": "UChAnqc_AY5_I3Px5dig3X1Q"
+      }
+    },
+    {
+      "id": "hoshimachi-suisei",
+      "name": "星街すいせい",
+      "nameEn": "Hoshimachi Suisei",
+      "branch": "JP",
+      "group": "3期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "アイドル",
+        "ストイック",
+        "テトリス"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 2,
+        "talk": 8,
+        "game": 8,
+        "music": 10,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 10
+      },
+      "color": "#46C0EE",
+      "emoji": "☄️",
+      "youtube": {
+        "channelId": "UC5CwaMl1eIgY8h02uZw7u8A"
+      }
+    },
+    {
+      "id": "usada-pekora",
+      "name": "兎田ぺこら",
+      "nameEn": "Usada Pekora",
+      "branch": "JP",
+      "group": "3期生",
+      "status": "active",
+      "tags": [
+        "企画",
+        "マイクラ",
+        "笑い声",
+        "建築"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 9,
+        "music": 4,
+        "comedy": 10,
+        "chaos": 8,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#83CFF0",
+      "emoji": "🥕",
+      "youtube": {
+        "channelId": "UC1DCedRgGHBdm81E1llLhOQ"
+      }
+    },
+    {
+      "id": "shiranui-flare",
+      "name": "不知火フレア",
+      "nameEn": "Shiranui Flare",
+      "branch": "JP",
+      "group": "3期生",
+      "status": "active",
+      "tags": [
+        "マイクラ",
+        "建築",
+        "お姉さん"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 6,
+        "game": 8,
+        "music": 8,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#FF7A2F",
+      "emoji": "🔥",
+      "youtube": {
+        "channelId": "UCvInZx9h3jC2JzsIzoOebWg"
+      }
+    },
+    {
+      "id": "shirogane-noel",
+      "name": "白銀ノエル",
+      "nameEn": "Shirogane Noel",
+      "branch": "JP",
+      "group": "3期生",
+      "status": "active",
+      "tags": [
+        "ASMR",
+        "お姉さん",
+        "騎士"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 6,
+        "game": 4,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#A8A8B0",
+      "emoji": "⚔️",
+      "youtube": {
+        "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ"
+      }
+    },
+    {
+      "id": "houshou-marine",
+      "name": "宝鐘マリン",
+      "nameEn": "Houshou Marine",
+      "branch": "JP",
+      "group": "3期生",
+      "status": "active",
+      "tags": [
+        "トーク",
+        "オタク",
+        "歌うま",
+        "企画",
+        "セクシー"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 10,
+        "game": 4,
+        "music": 10,
+        "comedy": 10,
+        "chaos": 8,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#C41E25",
+      "emoji": "🏴‍☠️",
+      "youtube": {
+        "channelId": "UCCzUftO8KOVkV4wQG1vkUvg"
+      }
+    },
+    {
+      "id": "tsunomaki-watame",
+      "name": "角巻わため",
+      "nameEn": "Tsunomaki Watame",
+      "branch": "JP",
+      "group": "4期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "耐久",
+        "雑談",
+        "ポエム"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 8,
+        "game": 6,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#F1D86F",
+      "emoji": "🐏",
+      "youtube": {
+        "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA"
+      }
+    },
+    {
+      "id": "tokoyami-towa",
+      "name": "常闇トワ",
+      "nameEn": "Tokoyami Towa",
+      "branch": "JP",
+      "group": "4期生",
+      "status": "active",
+      "tags": [
+        "FPS",
+        "歌うま",
+        "かっこいい",
+        "デビル"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 6,
+        "game": 8,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 9
+      },
+      "color": "#9A86E8",
+      "emoji": "👾",
+      "youtube": {
+        "channelId": "UC1uv2Oq6kNxgATlCiez59hw"
+      }
+    },
+    {
+      "id": "himemori-luna",
+      "name": "姫森ルーナ",
+      "nameEn": "Himemori Luna",
+      "branch": "JP",
+      "group": "4期生",
+      "status": "active",
+      "tags": [
+        "姫",
+        "ピアノ",
+        "マイクラ"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 6,
+        "game": 6,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 10,
+        "cool": 2
+      },
+      "color": "#F1A7DC",
+      "emoji": "🍬",
+      "youtube": {
+        "channelId": "UCa9Y57gfeY0Zro_noHRVrnw"
+      }
+    },
+    {
+      "id": "yukihana-lamy",
+      "name": "雪花ラミィ",
+      "nameEn": "Yukihana Lamy",
+      "branch": "JP",
+      "group": "5期生",
+      "status": "active",
+      "tags": [
+        "お酒",
+        "ASMR",
+        "清楚",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 9,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 4,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#6FC7E0",
+      "emoji": "⛄",
+      "youtube": {
+        "channelId": "UCFKOVgVbGmX65RxO3EtH3iw"
+      }
+    },
+    {
+      "id": "momosuzu-nene",
+      "name": "桃鈴ねね",
+      "nameEn": "Momosuzu Nene",
+      "branch": "JP",
+      "group": "5期生",
+      "status": "active",
+      "tags": [
+        "天然",
+        "アイドル",
+        "絵"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 6,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 8,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#FFA826",
+      "emoji": "🍑",
+      "youtube": {
+        "channelId": "UCAWSyEs_Io8MtpY3m-zqILA"
+      }
+    },
+    {
+      "id": "shishiro-botan",
+      "name": "獅白ぼたん",
+      "nameEn": "Shishiro Botan",
+      "branch": "JP",
+      "group": "5期生",
+      "status": "active",
+      "tags": [
+        "FPS",
+        "ゲーマー",
+        "姉御",
+        "笑い声"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 6,
+        "talk": 8,
+        "game": 10,
+        "music": 2,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 2,
+        "cool": 9
+      },
+      "color": "#A6D14E",
+      "emoji": "🦁",
+      "youtube": {
+        "channelId": "UCUKD-uaobj9jiqB-VXt71mA"
+      }
+    },
+    {
+      "id": "omaru-polka",
+      "name": "尾丸ポルカ",
+      "nameEn": "Omaru Polka",
+      "branch": "JP",
+      "group": "5期生",
+      "status": "active",
+      "tags": [
+        "芸人",
+        "歌うま",
+        "テンション"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 9,
+        "game": 4,
+        "music": 8,
+        "comedy": 10,
+        "chaos": 8,
+        "cute": 6,
+        "cool": 2
+      },
+      "color": "#E64A73",
+      "emoji": "🎪",
+      "youtube": {
+        "channelId": "UCK9V2B22uJYu3N7eR_BT9QA"
+      }
+    },
+    {
+      "id": "laplus-darknesss",
+      "name": "ラプラス・ダークネス",
+      "nameEn": "La+ Darknesss",
+      "branch": "JP",
+      "group": "秘密結社holoX",
+      "status": "active",
+      "tags": [
+        "ゲーマー",
+        "総帥",
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 4,
+        "comedy": 8,
+        "chaos": 8,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#7B68C8",
+      "emoji": "🛸",
+      "youtube": {
+        "channelId": "UCENwRMx5Yh42zWpzURebzTw"
+      }
+    },
+    {
+      "id": "takane-lui",
+      "name": "鷹嶺ルイ",
+      "nameEn": "Takane Lui",
+      "branch": "JP",
+      "group": "秘密結社holoX",
+      "status": "active",
+      "tags": [
+        "お姉さん",
+        "大人",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 2,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#DE5A93",
+      "emoji": "🥀",
+      "youtube": {
+        "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g"
+      }
+    },
+    {
+      "id": "hakui-koyori",
+      "name": "博衣こより",
+      "nameEn": "Hakui Koyori",
+      "branch": "JP",
+      "group": "秘密結社holoX",
+      "status": "active",
+      "tags": [
+        "早口",
+        "実験",
+        "耐久",
+        "元気"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 9,
+        "game": 8,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#FF8AC5",
+      "emoji": "🧪",
+      "youtube": {
+        "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw"
+      }
+    },
+    {
+      "id": "sakamata-chloe",
+      "name": "沙花叉クロヱ",
+      "nameEn": "Sakamata Chloe",
+      "branch": "JP",
+      "group": "秘密結社holoX",
+      "status": "graduated",
+      "tags": [
+        "シャチ",
+        "野性",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#D7003A",
+      "emoji": "🎣",
+      "youtube": {
+        "channelId": "UCIBY1ollUsauvVi4hW4cumw"
+      }
+    },
+    {
+      "id": "kazama-iroha",
+      "name": "風真いろは",
+      "nameEn": "Kazama Iroha",
+      "branch": "JP",
+      "group": "秘密結社holoX",
+      "status": "active",
+      "tags": [
+        "侍",
+        "癒し",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 6,
+        "game": 8,
+        "music": 4,
+        "comedy": 4,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 6
+      },
+      "color": "#8FD48B",
+      "emoji": "🍃",
+      "youtube": {
+        "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ"
+      }
+    },
+    {
+      "id": "otonose-kanade",
+      "name": "音乃瀬奏",
+      "nameEn": "Otonose Kanade",
+      "branch": "JP",
+      "group": "ReGLOSS",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "耐久",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 10,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#F6C445",
+      "emoji": "🎹",
+      "youtube": {
+        "channelId": "UCJFZiqLMntJufDCHc6bQixg"
+      }
+    },
+    {
+      "id": "ichijou-ririka",
+      "name": "一条莉々華",
+      "nameEn": "Ichijou Ririka",
+      "branch": "JP",
+      "group": "ReGLOSS",
+      "status": "active",
+      "tags": [
+        "社長",
+        "トーク",
+        "都会"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 10,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#F97CAE",
+      "emoji": "🌃",
+      "youtube": {
+        "channelId": "UCJFZiqLMntJufDCHc6bQixg"
+      }
+    },
+    {
+      "id": "juufuutei-raden",
+      "name": "儒烏風亭らでん",
+      "nameEn": "Juufuutei Raden",
+      "branch": "JP",
+      "group": "ReGLOSS",
+      "status": "active",
+      "tags": [
+        "落語",
+        "文化",
+        "お酒",
+        "博識"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 9,
+        "game": 4,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 6
+      },
+      "color": "#3A7D8C",
+      "emoji": "🐚",
+      "youtube": {
+        "channelId": "UCJFZiqLMntJufDCHc6bQixg"
+      }
+    },
+    {
+      "id": "todoroki-hajime",
+      "name": "轟はじめ",
+      "nameEn": "Todoroki Hajime",
+      "branch": "JP",
+      "group": "ReGLOSS",
+      "status": "active",
+      "tags": [
+        "元気",
+        "ゲーム",
+        "番長"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#B583DB",
+      "emoji": "🛼",
+      "youtube": {
+        "channelId": "UCJFZiqLMntJufDCHc6bQixg"
+      }
+    },
+    {
+      "id": "hiodoshi-ao",
+      "name": "火威青",
+      "nameEn": "Hiodoshi Ao",
+      "branch": "JP",
+      "group": "ReGLOSS",
+      "status": "graduated",
+      "tags": [
+        "イケメン",
+        "麻雀",
+        "低音ボイス"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 2,
+        "cool": 9
+      },
+      "color": "#2C4C9C",
+      "emoji": "🖋️",
+      "youtube": {
+        "channelId": "UCMGfV7TVTmHhEErVJg1oHBQ"
+      }
+    },
+    {
+      "id": "isaki-riona",
+      "name": "響咲リオナ",
+      "nameEn": "Isaki Riona",
+      "branch": "JP",
+      "group": "FLOW GLOW",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "アイドル"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#F25C8B",
+      "emoji": "📣",
+      "youtube": {
+        "channelId": "UC9LSiN9hXI55svYEBrrK-tw"
+      }
+    },
+    {
+      "id": "koganei-niko",
+      "name": "虎金妃笑虎",
+      "nameEn": "Koganei Niko",
+      "branch": "JP",
+      "group": "FLOW GLOW",
+      "status": "active",
+      "tags": [
+        "元気",
+        "虎",
+        "小さい"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 8,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#FF9A3C",
+      "emoji": "🐯",
+      "youtube": {
+        "channelId": "UCuI_opAVX6qbxZY-a-AxFuQ"
+      }
+    },
+    {
+      "id": "mizumiya-su",
+      "name": "水宮枢",
+      "nameEn": "Mizumiya Su",
+      "branch": "JP",
+      "group": "FLOW GLOW",
+      "status": "active",
+      "tags": [
+        "ミステリアス",
+        "歌"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 6,
+        "game": 6,
+        "music": 8,
+        "comedy": 4,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 8
+      },
+      "color": "#62B6CB",
+      "emoji": "💧",
+      "youtube": {
+        "channelId": "UCjk2nKmHzgH5Xy-C5qYRd5A"
+      }
+    },
+    {
+      "id": "rindo-chihaya",
+      "name": "輪堂千速",
+      "nameEn": "Rindo Chihaya",
+      "branch": "JP",
+      "group": "FLOW GLOW",
+      "status": "active",
+      "tags": [
+        "犬",
+        "元気",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#E4573D",
+      "emoji": "🐕",
+      "youtube": {
+        "channelId": "UCKMWFR6lAstLa7Vbf5dH7ig"
+      }
+    },
+    {
+      "id": "kikirara-vivi",
+      "name": "綺々羅々ヴィヴィ",
+      "nameEn": "Kikirara Vivi",
+      "branch": "JP",
+      "group": "FLOW GLOW",
+      "status": "active",
+      "tags": [
+        "アイドル",
+        "かわいい"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 9,
+        "cool": 2
+      },
+      "color": "#FF9EC4",
+      "emoji": "🎀",
+      "youtube": {
+        "channelId": "UCGzTVXqMQHa4AgJVJIVvtDQ"
+      }
+    },
+    {
+      "id": "ayunda-risu",
+      "name": "アユンダ・リス",
+      "nameEn": "Ayunda Risu",
+      "branch": "ID",
+      "group": "ID 1期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "リス",
+        "多言語"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 10,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#B0764A",
+      "emoji": "🐿️",
+      "youtube": {
+        "channelId": "UCOyYb1c43VlX9rc_lT6NKQw"
+      }
+    },
+    {
+      "id": "moona-hoshinova",
+      "name": "ムーナ・ホシノヴァ",
+      "nameEn": "Moona Hoshinova",
+      "branch": "ID",
+      "group": "ID 1期生",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "マイクラ",
+        "多言語"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 6,
+        "game": 8,
+        "music": 10,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 8
+      },
+      "color": "#7E6BC4",
+      "emoji": "🌙",
+      "youtube": {
+        "channelId": "UCP0BspO_AMEe3aQqqpo89Dg"
+      }
+    },
+    {
+      "id": "airani-iofifteen",
+      "name": "アイラニ・イオフィフティーン",
+      "nameEn": "Airani Iofifteen",
+      "branch": "ID",
+      "group": "ID 1期生",
+      "status": "active",
+      "tags": [
+        "絵",
+        "多言語",
+        "癒し"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#7AC943",
+      "emoji": "🖌️",
+      "youtube": {
+        "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg"
+      }
+    },
+    {
+      "id": "kureiji-ollie",
+      "name": "クレイジー・オリー",
+      "nameEn": "Kureiji Ollie",
+      "branch": "ID",
+      "group": "ID 2期生",
+      "status": "active",
+      "tags": [
+        "テンション",
+        "ゾンビ",
+        "コラボ",
+        "多言語"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 10,
+        "game": 6,
+        "music": 6,
+        "comedy": 10,
+        "chaos": 9,
+        "cute": 6,
+        "cool": 2
+      },
+      "color": "#C7383E",
+      "emoji": "🧟",
+      "youtube": {
+        "channelId": "UCYz_5n-uDuChHtLo7My1HnQ"
+      }
+    },
+    {
+      "id": "anya-melfissa",
+      "name": "アーニャ・メルフィッサ",
+      "nameEn": "Anya Melfissa",
+      "branch": "ID",
+      "group": "ID 2期生",
+      "status": "active",
+      "tags": [
+        "まったり",
+        "多言語",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 8,
+        "game": 6,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#E0B152",
+      "emoji": "🗡️",
+      "youtube": {
+        "channelId": "UC727SQYUvx5pDDGQpTICNWg"
+      }
+    },
+    {
+      "id": "pavolia-reine",
+      "name": "パヴォリア・レイネ",
+      "nameEn": "Pavolia Reine",
+      "branch": "ID",
+      "group": "ID 2期生",
+      "status": "active",
+      "tags": [
+        "お嬢様",
+        "絵",
+        "多言語"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#3EB4C6",
+      "emoji": "🦚",
+      "youtube": {
+        "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q"
+      }
+    },
+    {
+      "id": "vestia-zeta",
+      "name": "ベスティア・ゼータ",
+      "nameEn": "Vestia Zeta",
+      "branch": "ID",
+      "group": "ID 3期生",
+      "status": "active",
+      "tags": [
+        "ミステリアス",
+        "FPS",
+        "多言語"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 6,
+        "talk": 6,
+        "game": 8,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 8
+      },
+      "color": "#8E9BAE",
+      "emoji": "🕶️",
+      "youtube": {
+        "channelId": "UCTvHWSfBZgtxE4sILOaurIQ"
+      }
+    },
+    {
+      "id": "kaela-kovalskia",
+      "name": "カエラ・コヴァルスキア",
+      "nameEn": "Kaela Kovalskia",
+      "branch": "ID",
+      "group": "ID 3期生",
+      "status": "active",
+      "tags": [
+        "耐久",
+        "クラフト",
+        "鍛冶",
+        "多言語"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 10,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#EE7623",
+      "emoji": "🔨",
+      "youtube": {
+        "channelId": "UCZLZ8Jjx_RN2CXloOmgTHVg"
+      }
+    },
+    {
+      "id": "kobo-kanaeru",
+      "name": "こぼ・かなえる",
+      "nameEn": "Kobo Kanaeru",
+      "branch": "ID",
+      "group": "ID 3期生",
+      "status": "active",
+      "tags": [
+        "雨",
+        "生意気かわいい",
+        "多言語"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 2,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 8,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#3D6BCE",
+      "emoji": "☔",
+      "youtube": {
+        "channelId": "UCjLEmnpCNeisMxy134KPwWw"
+      }
+    },
+    {
+      "id": "mori-calliope",
+      "name": "森カリオペ",
+      "nameEn": "Mori Calliope",
+      "branch": "EN",
+      "group": "Myth",
+      "status": "active",
+      "tags": [
+        "ラップ",
+        "音楽制作",
+        "死神",
+        "お酒"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 10,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 2,
+        "cool": 10
+      },
+      "color": "#D94A66",
+      "emoji": "💀",
+      "youtube": {
+        "channelId": "UCL_qhgtOy0dy1Agp8vkySQg"
+      }
+    },
+    {
+      "id": "takanashi-kiara",
+      "name": "小鳥遊キアラ",
+      "nameEn": "Takanashi Kiara",
+      "branch": "EN",
+      "group": "Myth",
+      "status": "active",
+      "tags": [
+        "アイドル",
+        "多言語",
+        "不死鳥",
+        "元気"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 9,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#F26B3A",
+      "emoji": "🐔",
+      "youtube": {
+        "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww"
+      }
+    },
+    {
+      "id": "ninomae-inanis",
+      "name": "一伊那尓栖",
+      "nameEn": "Ninomae Ina'nis",
+      "branch": "EN",
+      "group": "Myth",
+      "status": "active",
+      "tags": [
+        "絵",
+        "まったり",
+        "ダジャレ",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 9,
+        "talk": 8,
+        "game": 6,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 2,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#7C6BD6",
+      "emoji": "🐙",
+      "youtube": {
+        "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg"
+      }
+    },
+    {
+      "id": "watson-amelia",
+      "name": "ワトソン・アメリア",
+      "nameEn": "Watson Amelia",
+      "branch": "EN",
+      "group": "Myth",
+      "status": "graduated",
+      "tags": [
+        "探偵",
+        "ゲーマー",
+        "企画"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 4,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#F2C230",
+      "emoji": "🔎",
+      "youtube": {
+        "channelId": "UCyl1z3jo3XHR1riLFKG5UAg"
+      }
+    },
+    {
+      "id": "gawr-gura",
+      "name": "がうる・ぐら",
+      "nameEn": "Gawr Gura",
+      "branch": "EN",
+      "group": "Myth",
+      "status": "graduated",
+      "tags": [
+        "サメ",
+        "歌うま",
+        "ゲーム"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 8,
+        "music": 9,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 10,
+        "cool": 4
+      },
+      "color": "#4FA3E3",
+      "emoji": "🔱",
+      "youtube": {
+        "channelId": "UCoSrY_IQQVpmIRZ9Xf-y93g"
+      }
+    },
+    {
+      "id": "irys",
+      "name": "IRyS",
+      "nameEn": "IRyS",
+      "branch": "EN",
+      "group": "Project: HOPE",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "ネフィリム"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#AA3E63",
+      "emoji": "💎",
+      "youtube": {
+        "channelId": "UC8rcEBzJSleTkf_-agPM20g"
+      }
+    },
+    {
+      "id": "tsukumo-sana",
+      "name": "九十九佐命",
+      "nameEn": "Tsukumo Sana",
+      "branch": "EN",
+      "group": "Council",
+      "status": "graduated",
+      "tags": [
+        "宇宙",
+        "絵"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#E8A33D",
+      "emoji": "🪐",
+      "youtube": {
+        "channelId": "UCsUj0dszADCGbF3gNrQEuSQ"
+      }
+    },
+    {
+      "id": "ceres-fauna",
+      "name": "セレス・ファウナ",
+      "nameEn": "Ceres Fauna",
+      "branch": "EN",
+      "group": "Council",
+      "status": "graduated",
+      "tags": [
+        "ASMR",
+        "自然",
+        "ママ味",
+        "癒し"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 10,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 2,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#6BCB77",
+      "emoji": "🌿",
+      "youtube": {
+        "channelId": "UCO_aKKYxn4tvrqPjcTzZ6EQ"
+      }
+    },
+    {
+      "id": "ouro-kronii",
+      "name": "オーロ・クロニー",
+      "nameEn": "Ouro Kronii",
+      "branch": "EN",
+      "group": "Council",
+      "status": "active",
+      "tags": [
+        "低音ボイス",
+        "時間",
+        "クール"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 9
+      },
+      "color": "#3E5C9A",
+      "emoji": "⏳",
+      "youtube": {
+        "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg"
+      }
+    },
+    {
+      "id": "nanashi-mumei",
+      "name": "七詩ムメイ",
+      "nameEn": "Nanashi Mumei",
+      "branch": "EN",
+      "group": "Council",
+      "status": "graduated",
+      "tags": [
+        "鳥",
+        "天然",
+        "歌"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#B08D57",
+      "emoji": "🪶",
+      "youtube": {
+        "channelId": "UC3n5uGu18FoCy23ggWWp8tA"
+      }
+    },
+    {
+      "id": "hakos-baelz",
+      "name": "ハコス・ベールズ",
+      "nameEn": "Hakos Baelz",
+      "branch": "EN",
+      "group": "Council",
+      "status": "active",
+      "tags": [
+        "カオス",
+        "ダンス",
+        "ネズミ"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 10,
+        "chaos": 9,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#D7263D",
+      "emoji": "🎲",
+      "youtube": {
+        "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ"
+      }
+    },
+    {
+      "id": "shiori-novella",
+      "name": "シオリ・ノヴェラ",
+      "nameEn": "Shiori Novella",
+      "branch": "EN",
+      "group": "Advent",
+      "status": "active",
+      "tags": [
+        "本",
+        "ミステリアス",
+        "オタク"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 10,
+        "game": 6,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#6E4FA3",
+      "emoji": "📚",
+      "youtube": {
+        "channelId": "UCgnfPPb9JI3e9A4cXHnWbyg"
+      }
+    },
+    {
+      "id": "koseki-bijou",
+      "name": "古石ビジュー",
+      "nameEn": "Koseki Bijou",
+      "branch": "EN",
+      "group": "Advent",
+      "status": "active",
+      "tags": [
+        "宝石",
+        "ゲーマー",
+        "かわいい"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 9,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 10,
+        "cool": 2
+      },
+      "color": "#6C8CD5",
+      "emoji": "🪨",
+      "youtube": {
+        "channelId": "UC9p_lqQ0FEDz327Vgf5JwqA"
+      }
+    },
+    {
+      "id": "nerissa-ravencroft",
+      "name": "ネリッサ・レイヴンクロフト",
+      "nameEn": "Nerissa Ravencroft",
+      "branch": "EN",
+      "group": "Advent",
+      "status": "active",
+      "tags": [
+        "歌うま",
+        "鳥"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#2F4090",
+      "emoji": "🐦‍⬛",
+      "youtube": {
+        "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg"
+      }
+    },
+    {
+      "id": "fuwawa-abyssgard",
+      "name": "フワワ・アビスガード",
+      "nameEn": "Fuwawa Abyssgard",
+      "branch": "EN",
+      "group": "Promise",
+      "status": "active",
+      "tags": [
+        "犬",
+        "ふわふわ",
+        "コンビ"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 9,
+        "cool": 2
+      },
+      "color": "#6FA8DC",
+      "emoji": "🐾",
+      "youtube": {
+        "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA"
+      }
+    },
+    {
+      "id": "mococo-abyssgard",
+      "name": "モココ・アビスガード",
+      "nameEn": "Mococo Abyssgard",
+      "branch": "EN",
+      "group": "Promise",
+      "status": "active",
+      "tags": [
+        "犬",
+        "元気",
+        "コンビ"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 9,
+        "cool": 2
+      },
+      "color": "#F49AC1",
+      "emoji": "🐾",
+      "youtube": {
+        "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA"
+      }
+    },
+    {
+      "id": "elizabeth-rose-bloodflame",
+      "name": "エリザベス・ローズ・ブラッドフレイム",
+      "nameEn": "Elizabeth Rose Bloodflame",
+      "branch": "EN",
+      "group": "Justice",
+      "status": "active",
+      "tags": [
+        "騎士",
+        "歌うま",
+        "演技"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 9,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 9
+      },
+      "color": "#C8A24B",
+      "emoji": "🌹",
+      "youtube": {
+        "channelId": "UCW5uhrG1eCBYditmhL0Ykjw"
+      }
+    },
+    {
+      "id": "gigi-murin",
+      "name": "ジジ・ムリン",
+      "nameEn": "Gigi Murin",
+      "branch": "EN",
+      "group": "Justice",
+      "status": "active",
+      "tags": [
+        "カオス",
+        "グレムリン",
+        "元気"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 8,
+        "music": 4,
+        "comedy": 10,
+        "chaos": 9,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#ED9B40",
+      "emoji": "🪛",
+      "youtube": {
+        "channelId": "UCDHABijvPBnJm7F-KlNME3w"
+      }
+    },
+    {
+      "id": "cecilia-immergreen",
+      "name": "セシリア・イマーグリーン",
+      "nameEn": "Cecilia Immergreen",
+      "branch": "EN",
+      "group": "Justice",
+      "status": "active",
+      "tags": [
+        "人形",
+        "発明",
+        "音楽"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#4DA167",
+      "emoji": "🎻",
+      "youtube": {
+        "channelId": "UCvN5h1ShZtc7nly3pezRayg"
+      }
+    },
+    {
+      "id": "raora-panthera",
+      "name": "ラオーラ・パンテーラ",
+      "nameEn": "Raora Panthera",
+      "branch": "EN",
+      "group": "Justice",
+      "status": "active",
+      "tags": [
+        "絵",
+        "お姉さん",
+        "イタリア"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#F48FB1",
+      "emoji": "🎨",
+      "youtube": {
+        "channelId": "UCl69AEx4MdqMZH7Jtsm7Tig"
+      }
+    },
+    {
+      "id": "kiryu-coco",
+      "name": "桐生ココ",
+      "nameEn": "Kiryu Coco",
+      "branch": "JP",
+      "group": "4期生",
+      "status": "graduated",
+      "tags": [
+        "会長",
+        "伝説",
+        "多言語",
+        "企画"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 9,
+        "game": 6,
+        "music": 6,
+        "comedy": 9,
+        "chaos": 10,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#F57C2A",
+      "emoji": "🐉",
+      "youtube": {
+        "channelId": "UCS9uQI-jC3DE0L4IpXyvr6w"
+      }
+    },
+    {
+      "id": "minato-aqua",
+      "name": "湊あくあ",
+      "nameEn": "Minato Aqua",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "graduated",
+      "tags": [
+        "ゲーマー",
+        "メイド",
+        "ぽんこつ",
+        "歌うま"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 6,
+        "game": 10,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 6,
+        "cute": 9,
+        "cool": 4
+      },
+      "color": "#DE58A5",
+      "emoji": "⚓",
+      "youtube": {
+        "channelId": "UC1opHUrw8rvnsadT-iGp7Cg"
+      }
+    },
+    {
+      "id": "murasaki-shion",
+      "name": "紫咲シオン",
+      "nameEn": "Murasaki Shion",
+      "branch": "JP",
+      "group": "2期生",
+      "status": "graduated",
+      "tags": [
+        "魔法使い",
+        "小悪魔"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#8A5FBF",
+      "emoji": "🌙",
+      "youtube": {
+        "channelId": "UCXTpFs_3PqI41qX2d9tL2Rw"
+      }
+    },
+    {
+      "id": "amane-kanata",
+      "name": "天音かなた",
+      "nameEn": "Amane Kanata",
+      "branch": "JP",
+      "group": "4期生",
+      "status": "graduated",
+      "tags": [
+        "歌うま",
+        "天使",
+        "耐久",
+        "握力"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 6,
+        "talk": 8,
+        "game": 6,
+        "music": 9,
+        "comedy": 8,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#9FC8F3",
+      "emoji": "💫",
+      "youtube": {
+        "channelId": "UCZlDXzGoo7d44bwdNObFacg"
+      }
+    }
+  ],
+  "paramScale": 10
+}

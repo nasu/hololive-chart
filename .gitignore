@@ -1,0 +1,19 @@
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (将来Node使う場合)
+node_modules/

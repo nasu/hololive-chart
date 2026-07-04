@@ -1,0 +1,323 @@
+{
+  "version": 3,
+  "modes": [
+    {
+      "id": "quick",
+      "label": "サクッと診断",
+      "desc": "10問・約2分",
+      "questionIds": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]
+    },
+    {
+      "id": "deep",
+      "label": "じっくり診断",
+      "desc": "30問・約6分でより精密に",
+      "questionIds": [
+        "q1", "q2", "q3", "q4", "q5", "q6",
+        "q11", "q12", "q13", "q14", "q15", "q16", "q17", "q18", "q19", "q20",
+        "q7", "q8", "q23", "q27", "q9", "q24", "q22", "q25", "q26", "q21", "q28", "q29", "q10", "q30"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "text": "まずは直感で。惹かれる見た目のタイプは？",
+      "options": [
+        { "label": "王道アイドル・正統派", "params": { "music": 1, "cute": 1, "energy": 1 }, "tags": ["アイドル", "正統派"] },
+        { "label": "ケモミミ・動物系", "params": { "cute": 2 }, "tags": ["ケモミミ", "犬", "虎", "リス", "サメ", "鳥"] },
+        { "label": "ダーク・かっこいい系", "params": { "cool": 2 }, "tags": ["デビル", "死神", "騎士", "イケメン"] },
+        { "label": "ゆるふわ・癒し系", "params": { "healing": 2 }, "tags": ["ふわふわ", "癒し", "ママ味"] }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "キャラクターの魅力、どこに一番グッとくる？",
+      "options": [
+        { "label": "とにかくかわいい！が正義", "params": { "cute": 3 }, "tags": [] },
+        { "label": "クールでかっこいい存在感", "params": { "cool": 3 }, "tags": ["イケメン"] },
+        { "label": "普段とのギャップにやられる", "params": { "cute": 1, "cool": 1, "music": 1 }, "tags": ["低音ボイス"] },
+        { "label": "面白さこそ最大の魅力", "params": { "comedy": 3 }, "tags": ["芸人"] }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "好きな性格のタイプは？",
+      "options": [
+        { "label": "ぽんこつ・天然でほっとけない", "params": { "cute": 2, "comedy": 1 }, "tags": ["ぽんこつ", "天然"] },
+        { "label": "しっかり者・努力家でストイック", "params": { "cool": 2, "game": 1 }, "tags": ["ストイック"] },
+        { "label": "自由奔放・マイペース", "params": { "chaos": 2, "energy": 1 }, "tags": ["カオス"] },
+        { "label": "ミステリアス・独特の世界観", "params": { "cool": 1, "healing": 1, "music": 1 }, "tags": ["ミステリアス"] }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "そばにいてほしいのは、どんな雰囲気の子？",
+      "options": [
+        { "label": "太陽みたいに明るくて元気", "params": { "energy": 3 }, "tags": ["元気"] },
+        { "label": "月みたいに穏やかで安らぐ", "params": { "healing": 3 }, "tags": ["癒し", "まったり"] },
+        { "label": "凛としていてクール", "params": { "cool": 3 }, "tags": [] },
+        { "label": "嵐みたいに予測不能", "params": { "chaos": 3 }, "tags": ["カオス"] }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "好きな声のタイプは？",
+      "options": [
+        { "label": "かわいい系ボイス", "params": { "cute": 3 }, "tags": [] },
+        { "label": "低音・落ち着いたボイス", "params": { "cool": 2, "healing": 1 }, "tags": ["低音ボイス"] },
+        { "label": "ハイテンションで賑やかな声", "params": { "energy": 2, "comedy": 1 }, "tags": [] },
+        { "label": "お姉さん系の優しい声", "params": { "healing": 2, "cool": 1 }, "tags": ["お姉さん"] }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "推しにはどんな存在でいてほしい？",
+      "options": [
+        { "label": "とにかく笑わせてほしい", "params": { "comedy": 3, "chaos": 1 }, "tags": ["芸人"] },
+        { "label": "癒し・安らぎをくれる存在", "params": { "healing": 3, "cute": 1 }, "tags": ["癒し", "ASMR"] },
+        { "label": "憧れ・尊敬できる存在", "params": { "cool": 3, "music": 1 }, "tags": ["ストイック"] },
+        { "label": "一緒に盛り上がれる仲間", "params": { "energy": 3, "comedy": 1 }, "tags": ["元気"] }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "ここからは活動について。配信や動画を見るなら、何が見たい？",
+      "options": [
+        { "label": "ゲーム実況", "params": { "game": 3 }, "tags": ["ゲーマー"] },
+        { "label": "雑談・トーク", "params": { "talk": 3 }, "tags": ["雑談", "トーク"] },
+        { "label": "歌・音楽", "params": { "music": 3 }, "tags": ["歌うま"] },
+        { "label": "企画・バラエティ", "params": { "comedy": 2, "talk": 1 }, "tags": ["企画"] }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "ゲーム配信を見るとしたら？",
+      "options": [
+        { "label": "FPS・アクションでガチ勝負", "params": { "game": 2, "cool": 1 }, "tags": ["FPS", "ゲーマー"] },
+        { "label": "マイクラなどまったりクラフト", "params": { "game": 2, "healing": 1 }, "tags": ["マイクラ", "建築", "クラフト"] },
+        { "label": "レトロゲームやRPGをじっくり", "params": { "game": 2, "talk": 1 }, "tags": ["レトロゲーム", "RPG", "耐久"] },
+        { "label": "ゲームはあまり見ないかも", "params": { "talk": 1, "music": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "歌・音楽はどのくらい重視する？",
+      "options": [
+        { "label": "歌が上手いのは絶対条件！", "params": { "music": 3 }, "tags": ["歌うま"] },
+        { "label": "オリジナル曲や音楽活動に注目", "params": { "music": 2, "cool": 1 }, "tags": ["音楽制作", "アーティスト"] },
+        { "label": "歌枠をたまに楽しめれば十分", "params": { "music": 1 }, "tags": [] },
+        { "label": "音楽よりトークやゲーム", "params": { "talk": 1, "game": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "推しの特技・趣味で気になるのは？",
+      "options": [
+        { "label": "絵・クリエイティブ", "params": { "healing": 1, "talk": 1 }, "tags": ["絵"] },
+        { "label": "料理・お酒・大人の楽しみ", "params": { "talk": 1, "healing": 1 }, "tags": ["お酒", "料理"] },
+        { "label": "ダンス・パフォーマンス", "params": { "energy": 1, "music": 1 }, "tags": ["ダンス", "アイドル"] },
+        { "label": "文化・知識系（落語・本・歴史）", "params": { "talk": 2 }, "tags": ["落語", "文化", "博識", "本"] }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "推しとの距離感、理想は？",
+      "options": [
+        { "label": "ぐいぐい来てくれる積極派", "params": { "energy": 2, "talk": 1 }, "tags": [] },
+        { "label": "ほどよい距離の安心感", "params": { "healing": 2, "talk": 1 }, "tags": [] },
+        { "label": "普段クール、たまにデレ", "params": { "cool": 2, "cute": 1 }, "tags": [] },
+        { "label": "守ってあげたくなる感じ", "params": { "cute": 2, "healing": 1 }, "tags": ["ぽんこつ"] }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "笑い方・笑い声について",
+      "options": [
+        { "label": "特徴的な笑い声、大好物", "params": { "comedy": 2 }, "tags": ["笑い声"] },
+        { "label": "上品にふふっと笑う感じが好き", "params": { "healing": 1, "cool": 1 }, "tags": ["お姉さん", "お嬢様"] },
+        { "label": "ゲラゲラ一緒に大笑いしたい", "params": { "comedy": 2, "energy": 1 }, "tags": [] },
+        { "label": "笑い方は特に気にしない", "params": { "talk": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "しゃべり方の好みは？",
+      "options": [
+        { "label": "早口マシンガントーク", "params": { "talk": 2, "energy": 1 }, "tags": ["早口"] },
+        { "label": "ゆったり・おっとり", "params": { "healing": 2 }, "tags": ["まったり"] },
+        { "label": "ハキハキ元気いっぱい", "params": { "energy": 2 }, "tags": ["元気"] },
+        { "label": "独特な口調・語尾がクセになる", "params": { "cute": 1, "comedy": 1 }, "tags": ["侍", "エリート"] }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "推しに感じたい関係性は？",
+      "options": [
+        { "label": "お姉さん・ママに甘えたい", "params": { "healing": 2 }, "tags": ["お姉さん", "ママ味", "先生"] },
+        { "label": "同年代の相棒・親友みたいな", "params": { "energy": 1, "talk": 1 }, "tags": ["元気"] },
+        { "label": "妹や娘のように見守りたい", "params": { "cute": 2 }, "tags": ["姫", "生意気かわいい"] },
+        { "label": "年齢感は気にしない", "params": { "talk": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "大人の色気・セクシーさは？",
+      "options": [
+        { "label": "大事な魅力のひとつ", "params": { "cool": 1, "healing": 1 }, "tags": ["セクシー", "お姉さん"] },
+        { "label": "色気よりかわいさ重視", "params": { "cute": 2 }, "tags": [] },
+        { "label": "色気よりかっこよさ重視", "params": { "cool": 2 }, "tags": [] },
+        { "label": "清楚・清純派が好き", "params": { "healing": 1, "cute": 1 }, "tags": ["清楚", "正統派"] }
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "好きな世界観・モチーフは？",
+      "options": [
+        { "label": "和風・日本文化", "params": { "talk": 1, "cool": 1 }, "tags": ["和風", "侍", "落語"] },
+        { "label": "神話・ファンタジー", "params": { "cool": 1, "music": 1 }, "tags": ["デビル", "死神", "天使", "騎士", "魔法使い", "不死鳥", "ネフィリム"] },
+        { "label": "動物・けもの", "params": { "cute": 2 }, "tags": ["ケモミミ", "犬", "虎", "リス", "サメ", "鳥", "シャチ", "孔雀"] },
+        { "label": "メカ・宇宙・不思議設定", "params": { "cool": 1, "game": 1 }, "tags": ["宇宙", "時間", "発明", "人形"] }
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "いたずらっ子・小悪魔属性はアリ？",
+      "options": [
+        { "label": "大好物です", "params": { "chaos": 2, "cute": 1 }, "tags": ["小悪魔", "生意気かわいい", "グレムリン"] },
+        { "label": "たまのいたずらなら楽しい", "params": { "comedy": 1, "cute": 1 }, "tags": [] },
+        { "label": "素直でまっすぐな子がいい", "params": { "healing": 1, "cute": 1 }, "tags": ["正統派", "清楚"] },
+        { "label": "大人の余裕がある方が好き", "params": { "cool": 1, "healing": 1 }, "tags": ["お姉さん", "大人"] }
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "ぽんこつ度、どこまでOK？",
+      "options": [
+        { "label": "ぽんこつこそ愛おしい", "params": { "comedy": 2, "cute": 1 }, "tags": ["ぽんこつ", "天然"] },
+        { "label": "有能で頼れる子がいい", "params": { "cool": 2 }, "tags": ["ストイック", "万能"] },
+        { "label": "普段しっかり、たまにぽんこつ", "params": { "cute": 1, "comedy": 1 }, "tags": [] },
+        { "label": "カオスなくらいがちょうどいい", "params": { "chaos": 2 }, "tags": ["カオス"] }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "知性・才能で惹かれるのは？",
+      "options": [
+        { "label": "博識・教養のある子", "params": { "talk": 2, "cool": 1 }, "tags": ["博識", "文化", "先生", "実験", "本"] },
+        { "label": "芸術肌・クリエイター気質", "params": { "music": 1, "healing": 1 }, "tags": ["絵", "音楽制作", "アーティスト"] },
+        { "label": "直感型・本能で生きてる子", "params": { "energy": 1, "chaos": 1 }, "tags": ["野性"] },
+        { "label": "特にこだわらない", "params": { "talk": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "推し方のイメージに近いのは？",
+      "options": [
+        { "label": "仲良しコンビ・ユニットごと推したい", "params": { "cute": 1, "comedy": 1 }, "tags": ["コンビ"] },
+        { "label": "ソロで輝く姿を追いたい", "params": { "cool": 1, "music": 1 }, "tags": ["アーティスト", "ストイック"] },
+        { "label": "大人数でわいわいしてるのが好き", "params": { "energy": 1, "comedy": 1 }, "tags": ["コラボ", "企画"] },
+        { "label": "箱ごと好きになりそう", "params": { "talk": 1, "healing": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q21",
+      "text": "配信のスタイル、好みは？",
+      "options": [
+        { "label": "長時間の耐久を一緒に走破したい", "params": { "game": 1, "energy": 1 }, "tags": ["耐久"] },
+        { "label": "短くても中身の濃い配信", "params": { "comedy": 1, "talk": 1 }, "tags": [] },
+        { "label": "不定期でもレア感を楽しむ", "params": { "cute": 1 }, "tags": ["レア"] },
+        { "label": "コツコツ定期配信派", "params": { "talk": 1, "healing": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q22",
+      "text": "ASMR・癒しコンテンツは？",
+      "options": [
+        { "label": "寝る前に聴きたい", "params": { "healing": 2 }, "tags": ["ASMR"] },
+        { "label": "作業用BGMにしたい", "params": { "healing": 1, "talk": 1 }, "tags": ["まったり"] },
+        { "label": "あまり興味ない", "params": { "energy": 1 }, "tags": [] },
+        { "label": "癒されるなら歌がいい", "params": { "music": 2 }, "tags": ["歌うま"] }
+      ]
+    },
+    {
+      "id": "q23",
+      "text": "ゲームへの向き合い方、どっちが好き？",
+      "options": [
+        { "label": "大会・ランクで勝ちに行く姿に痺れる", "params": { "game": 2, "cool": 1 }, "tags": ["FPS", "ゲーマー"] },
+        { "label": "上手くなくても楽しそうなのが一番", "params": { "comedy": 1, "healing": 1 }, "tags": [] },
+        { "label": "やり込み・職人プレイを堪能したい", "params": { "game": 2 }, "tags": ["耐久", "レトロゲーム"] },
+        { "label": "ゲーム以外で輝いてほしい", "params": { "music": 1, "talk": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q24",
+      "text": "歌・音楽で一番見たいのは？",
+      "options": [
+        { "label": "3Dライブ・ステージパフォーマンス", "params": { "music": 2, "energy": 1 }, "tags": ["アイドル", "ダンス"] },
+        { "label": "オリジナル曲・MV", "params": { "music": 2, "cool": 1 }, "tags": ["音楽制作", "アーティスト"] },
+        { "label": "まったり歌枠", "params": { "music": 1, "healing": 1 }, "tags": ["歌うま"] },
+        { "label": "歌ってみた・カバー曲", "params": { "music": 2 }, "tags": ["歌うま"] }
+      ]
+    },
+    {
+      "id": "q25",
+      "text": "トークで聴きたいのは？",
+      "options": [
+        { "label": "抱腹絶倒のエピソードトーク", "params": { "talk": 2, "comedy": 1 }, "tags": ["トーク"] },
+        { "label": "オタク趣味を語り倒すやつ", "params": { "talk": 2 }, "tags": ["オタク", "本"] },
+        { "label": "人生相談・しっとり深い話", "params": { "talk": 1, "healing": 2 }, "tags": ["ママ味"] },
+        { "label": "ゆる〜いどうでもいい話", "params": { "healing": 1, "talk": 1 }, "tags": ["まったり", "雑談"] }
+      ]
+    },
+    {
+      "id": "q26",
+      "text": "大型企画・イベントでの推しの姿、どれが見たい？",
+      "options": [
+        { "label": "主催してみんなを巻き込む姿", "params": { "comedy": 2, "energy": 1 }, "tags": ["企画"] },
+        { "label": "参加してはしゃぐ姿", "params": { "energy": 2 }, "tags": ["元気", "コラボ"] },
+        { "label": "イベントよりソロ配信が至高", "params": { "talk": 1, "healing": 1 }, "tags": [] },
+        { "label": "記念ライブ・節目で感動したい", "params": { "music": 2 }, "tags": ["アイドル"] }
+      ]
+    },
+    {
+      "id": "q27",
+      "text": "マイクラなど長期プロジェクトは？",
+      "options": [
+        { "label": "圧巻の建築美に感動したい", "params": { "game": 1, "cool": 1 }, "tags": ["建築", "マイクラ"] },
+        { "label": "わいわい開拓・ハプニングが見たい", "params": { "game": 1, "energy": 1 }, "tags": ["マイクラ"] },
+        { "label": "黙々と作業する姿を眺めていたい", "params": { "game": 1, "healing": 1 }, "tags": ["クラフト", "耐久"] },
+        { "label": "あまり興味ない", "params": { "talk": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q28",
+      "text": "飲食系の配信は？",
+      "options": [
+        { "label": "晩酌配信で一緒に飲みたい", "params": { "talk": 1, "healing": 1 }, "tags": ["お酒"] },
+        { "label": "料理配信（波乱含み）が見たい", "params": { "comedy": 1, "chaos": 1 }, "tags": ["料理"] },
+        { "label": "おいしそうに食べる姿に癒されたい", "params": { "cute": 1, "healing": 1 }, "tags": [] },
+        { "label": "飲食系はあまり見ない", "params": { "music": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q29",
+      "text": "言葉・国際色について",
+      "options": [
+        { "label": "多言語を操る国際派がかっこいい", "params": { "talk": 1, "cool": 1 }, "tags": ["多言語"] },
+        { "label": "がんばって話す姿が尊い", "params": { "cute": 1, "talk": 1 }, "tags": ["多言語"] },
+        { "label": "言葉の壁を越えるパワー型が好き", "params": { "energy": 1, "comedy": 1 }, "tags": [] },
+        { "label": "特に気にしない", "params": { "healing": 1 }, "tags": [] }
+      ]
+    },
+    {
+      "id": "q30",
+      "text": "最後に。あなたの推し活スタイルは？",
+      "options": [
+        { "label": "配信もSNSも全部追いかけたい", "params": { "energy": 1, "talk": 1 }, "tags": [] },
+        { "label": "ライブ・イベント参戦派", "params": { "music": 1, "energy": 1 }, "tags": ["アイドル"] },
+        { "label": "ファンアート・創作で応援したい", "params": { "healing": 1 }, "tags": ["絵"] },
+        { "label": "静かに長く応援し続けたい", "params": { "healing": 1, "cool": 1 }, "tags": [] }
+      ]
+    }
+  ]
+}
