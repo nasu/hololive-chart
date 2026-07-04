@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "hololive",
+      "name": "ホロライブ",
+      "tagline": "hololive production",
+      "color": "#35c1e7",
+      "emoji": "🔷",
+      "count": 74
+    },
+    {
+      "id": "nijisanji",
+      "name": "にじさんじ",
+      "tagline": "NIJISANJI",
+      "color": "#f43f5e",
+      "emoji": "🌈",
+      "count": 209
+    }
+  ]
+}

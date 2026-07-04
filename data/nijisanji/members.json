@@ -1,0 +1,6286 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-04",
+  "paramScale": 10,
+  "paramLabels": {
+    "energy": "元気・テンション",
+    "healing": "癒し",
+    "talk": "トーク・雑談",
+    "game": "ゲーム",
+    "music": "歌・音楽",
+    "comedy": "エンタメ・笑い",
+    "chaos": "カオス度",
+    "cute": "かわいい系",
+    "cool": "かっこいい系"
+  },
+  "members": [
+    {
+      "id": "kuzuha",
+      "name": "葛葉",
+      "nameEn": "Kuzuha",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "FPS",
+        "ダーク",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 2,
+        "talk": 8,
+        "game": 10,
+        "music": 7,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 3,
+        "cool": 9
+      },
+      "color": "#B91C1C",
+      "emoji": "🧛",
+      "description": "ニートゲーマー吸血鬼。FPSや格ゲーの実力と口の悪さ、たまに見せる可愛げで男女問わず絶大な人気。にじさんじ登録者数トップ。",
+      "twitter": "vamp_kuzu",
+      "youtube": {
+        "channelId": "UCSFCh5NL4qXrAy9u-u2lX3g"
+      }
+    },
+    {
+      "id": "salome-hyakumantenbara",
+      "name": "壱百満天原サロメ",
+      "nameEn": "Hyakumantenbara Salome",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お嬢様",
+        "トーク",
+        "カオス",
+        "笑い声"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 9,
+        "game": 6,
+        "music": 4,
+        "comedy": 10,
+        "chaos": 8,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#D946EF",
+      "emoji": "👑",
+      "description": "「お嬢様言葉」で一世を風靡した自称庶民のお嬢様。独特の笑い方と絶妙な庶民感覚のギャップで社会現象級のバズを起こした。",
+      "twitter": "1000000lome",
+      "youtube": {
+        "channelId": "UCgIfLpQvelloDi8I0Ycbwpg"
+      }
+    },
+    {
+      "id": "kanae",
+      "name": "叶",
+      "nameEn": "Kanae",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "FPS",
+        "イケメン",
+        "雑談"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 8,
+        "game": 9,
+        "music": 7,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 4,
+        "cool": 9
+      },
+      "color": "#38BDF8",
+      "emoji": "🌙",
+      "description": "ChroNoiRの相方その2。柔らかい声と高いゲームスキル、聞き上手な雑談で「彼氏力」の高さに定評。",
+      "twitter": "kanae_2434",
+      "youtube": {
+        "channelId": "UCspv01oxUFf_MTSipURRhkA"
+      }
+    },
+    {
+      "id": "mito-tsukino",
+      "name": "月ノ美兎",
+      "nameEn": "Tsukino Mito",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "委員長",
+        "トーク",
+        "オタク",
+        "カオス"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 10,
+        "game": 5,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DC2626",
+      "emoji": "🐰",
+      "description": "にじさんじの顔・清楚(自称)な学級委員長。サブカル知識と怪文書じみた発想力、唯一無二のトークで「バーチャルの文化人」と呼ばれる存在。",
+      "twitter": "MitoTsukino",
+      "youtube": {
+        "channelId": "UCD-miitqNY3nyukJ4Fnf4_A"
+      }
+    },
+    {
+      "id": "vox-akuma",
+      "name": "ヴォックス・アクマ",
+      "nameEn": "Vox Akuma",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ダーク",
+        "低音ボイス",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 9,
+        "game": 5,
+        "music": 6,
+        "comedy": 7,
+        "chaos": 5,
+        "cute": 2,
+        "cool": 10
+      },
+      "color": "#7F1D1D",
+      "emoji": "😈",
+      "description": "Vox Akuma。低音ボイスの悪魔。没入感あるロールプレイ配信で英語圏を席巻したNIJISANJI ENの看板の一人。",
+      "twitter": "Vox_Akuma",
+      "youtube": {
+        "channelId": "UCckdfYDGrjojJM28n5SHYrA"
+      }
+    },
+    {
+      "id": "toya-kenmochi",
+      "name": "剣持刀也",
+      "nameEn": "Kenmochi Toya",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク",
+        "ツッコミ",
+        "和風",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 4,
+        "talk": 10,
+        "game": 6,
+        "music": 7,
+        "comedy": 9,
+        "chaos": 4,
+        "cute": 2,
+        "cool": 8
+      },
+      "color": "#334155",
+      "emoji": "⚔️",
+      "description": "真面目風味の皮肉屋な剣士。切れ味鋭いツッコミと語りの上手さ、意外な歌唱力。ラジオ感覚で聴ける配信が人気。",
+      "twitter": "rei_Toya_rei",
+      "youtube": {
+        "channelId": "UCv1fFr156jc65EMiLbaLImw"
+      }
+    },
+    {
+      "id": "sara-hoshikawa",
+      "name": "星川サラ",
+      "nameEn": "Hoshikawa Sara",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ギャル",
+        "トーク",
+        "カオス"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 2,
+        "talk": 9,
+        "game": 5,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#F472B6",
+      "emoji": "🌟",
+      "description": "ド派手なギャル系女子高生。物怖じしないトークと男性ライバーへの塩対応芸、実は面倒見が良いところも魅力。",
+      "twitter": "Sara_Hoshikawa",
+      "youtube": {
+        "channelId": "UC9V3Y3_uzU5e-usObb6IE1w"
+      }
+    },
+    {
+      "id": "minato-fuwa",
+      "name": "不破湊",
+      "nameEn": "Fuwa Minato",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "歌うま",
+        "音楽制作",
+        "イケメン",
+        "トーク"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 9,
+        "game": 5,
+        "music": 10,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 3,
+        "cool": 8
+      },
+      "color": "#7C3AED",
+      "emoji": "🎤",
+      "description": "ホストじみた軽妙な喋りとガチの歌唱力・音楽制作力を併せ持つ。歌ってみた動画のクオリティは箱屈指。",
+      "twitter": "Fuwa_Minato",
+      "youtube": {
+        "channelId": "UC6wvdADTJ88OfIbJYIpAaDA"
+      }
+    },
+    {
+      "id": "lauren-iroas",
+      "name": "ローレン・イロアス",
+      "nameEn": "Lauren Iroas",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "FPS",
+        "ゲーマー",
+        "低音ボイス"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 3,
+        "talk": 7,
+        "game": 9,
+        "music": 6,
+        "comedy": 7,
+        "chaos": 5,
+        "cute": 2,
+        "cool": 8
+      },
+      "color": "#991B1B",
+      "emoji": "🏴‍☠️",
+      "description": "ローレン・イロアス。FPS強者の海賊風男子。低い声と軽いノリ、確かな射撃センス。",
+      "twitter": "Lauren_iroas",
+      "youtube": {
+        "channelId": "UCgmFrRcyH7d1zR9sIVQhFow"
+      }
+    },
+    {
+      "id": "luca-kaneshiro",
+      "name": "ルカ・カネシロ",
+      "nameEn": "Luca Kaneshiro",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "元気",
+        "カオス",
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 4,
+        "cool": 5
+      },
+      "color": "#F59E0B",
+      "emoji": "🦁",
+      "description": "Luca Kaneshiro。マフィアのボス(ポジティブ)。底抜けの明るさと「POGGERS」なノリで場を支配するムードメーカー。",
+      "twitter": "Luca_Kaneshiro",
+      "youtube": {
+        "channelId": "UC7Gb7Uawe20QyFibhLl1lzA"
+      }
+    },
+    {
+      "id": "kaede-higuchi",
+      "name": "樋口楓",
+      "nameEn": "Higuchi Kaede",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "関西弁",
+        "姉御"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 9,
+        "game": 6,
+        "music": 9,
+        "comedy": 7,
+        "chaos": 4,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#EF4444",
+      "emoji": "🍁",
+      "description": "樋口楓。にじさんじ一期生の姉御。関西弁のパワフルトークと歌手デビューも果たした歌唱力、頼れる姉貴分。",
+      "twitter": "Higuchikaede",
+      "youtube": {
+        "channelId": "UCsg-YqdqQ-KFF0LNk23BY4A"
+      }
+    },
+    {
+      "id": "ange-katrina",
+      "name": "アンジュ・カトリーナ",
+      "nameEn": "Ange Katrina",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "低音ボイス",
+        "お酒",
+        "トーク",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 9,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 3,
+        "cool": 8
+      },
+      "color": "#DC2626",
+      "emoji": "🗡️",
+      "description": "紅髪の諜報員。声の低さと面倒見の良さ、酒好きで有名。さんばか随一のトーク力と包容力。",
+      "twitter": "ange_katrina_",
+      "youtube": {
+        "channelId": "UCHVXbQzkl3rDfsXWo8xi2qw"
+      }
+    },
+    {
+      "id": "lize-helesta",
+      "name": "リゼ・ヘルエスタ",
+      "nameEn": "Lize Helesta",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お嬢様",
+        "ゲーマー",
+        "ストイック"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 8,
+        "music": 6,
+        "comedy": 7,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 8
+      },
+      "color": "#6D28D9",
+      "emoji": "👑",
+      "description": "ヘルエスタ王国の第二皇女。気品と知性、そしてゲームでの負けず嫌いな一面。皇女らしからぬ絶叫も名物。",
+      "twitter": "Lize_Helesta",
+      "youtube": {
+        "channelId": "UCZ1xuCK1kNmn5RzPYIZop3w"
+      }
+    },
+    {
+      "id": "toko-inui",
+      "name": "戌亥とこ",
+      "nameEn": "Inui Toko",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "犬",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 7,
+        "game": 5,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#4ADE80",
+      "emoji": "🐕",
+      "description": "犬系お姉さん。伸びやかな歌声とゆるいトーク、さんばかでの愛されっぷりが有名。",
+      "twitter": "inui_toko",
+      "youtube": {
+        "channelId": "UCXRlIK3Cw_TJIQC5kSJJQMg"
+      }
+    },
+    {
+      "id": "saku-sasaki",
+      "name": "笹木咲",
+      "nameEn": "Sasaki Saku",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "企画",
+        "トーク"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 8,
+        "game": 8,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 6,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#10B981",
+      "emoji": "🐼",
+      "description": "ゲームと動画編集のセンスが光るパンダ娘。テンポの良い毒舌と企画力、長い付き合いのファンとの空気感が心地よい。",
+      "twitter": "saku_sasaki",
+      "youtube": {
+        "channelId": "UCoztvTULBYd3WmStqYeoHcA"
+      }
+    },
+    {
+      "id": "shu-yamino",
+      "name": "闇ノシュウ",
+      "nameEn": "Shu Yamino",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "まったり",
+        "博識"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 6,
+        "talk": 7,
+        "game": 8,
+        "music": 7,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 3,
+        "cool": 7
+      },
+      "color": "#8B5CF6",
+      "emoji": "🔮",
+      "description": "Shu Yamino。陰陽師系の魔法使い。穏やかで器用、ゲームも歌も編集もこなす縁の下の力持ち。",
+      "twitter": "Shu_Yamino",
+      "youtube": {
+        "channelId": "UCG0rzBZV_QMP4MtWg6IjhEA"
+      }
+    },
+    {
+      "id": "hayato-kagami",
+      "name": "加賀美ハヤト",
+      "nameEn": "Kagami Hayato",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "社長",
+        "歌うま",
+        "企画",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 9,
+        "game": 5,
+        "music": 9,
+        "comedy": 9,
+        "chaos": 5,
+        "cute": 2,
+        "cool": 8
+      },
+      "color": "#0F766E",
+      "emoji": "🏢",
+      "description": "社長キャラの常識人…かと思いきや企画でぶっ飛ぶギャップの人。歌唱力と進行力を兼ね備えたエンターテイナー。",
+      "twitter": "H_KAGAMI2434",
+      "youtube": {
+        "channelId": "UCmovZ2th3Sqpd00F5RdeigQ"
+      }
+    },
+    {
+      "id": "kizuku-yashiro",
+      "name": "社築",
+      "nameEn": "Yashiro Kizuku",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "オタク",
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 4,
+        "talk": 9,
+        "game": 9,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 3,
+        "cute": 2,
+        "cool": 7
+      },
+      "color": "#475569",
+      "emoji": "💻",
+      "description": "社築。ゲームとリズムゲーを愛する社会人系オタク。オタク早口の解説力と仕事のできる男感。",
+      "twitter": "846kizuq",
+      "youtube": {
+        "channelId": "UCKMYISTJAQ8xTplUPHiABlA"
+      }
+    },
+    {
+      "id": "lunlun",
+      "name": "ルンルン",
+      "nameEn": "Lunlun",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ミステリアス"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#58A55C",
+      "emoji": "🌙",
+      "description": "2024年デビュー。ミステリアスを軸に活動するライバー。",
+      "twitter": "mo_lunlun_gu"
+    },
+    {
+      "id": "ibrahim",
+      "name": "イブラヒム",
+      "nameEn": "Ibrahim",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "まったり",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 7,
+        "talk": 8,
+        "game": 9,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 3,
+        "cute": 3,
+        "cool": 8
+      },
+      "color": "#0D9488",
+      "emoji": "♨️",
+      "description": "イブラヒム。温泉郷のプリンス。脱力系トークと高いゲームセンス、「にじさんじの良心」的ポジション。",
+      "twitter": "honmono_ibrahim",
+      "youtube": {
+        "channelId": "UCmZ1Rbthn-6Jm_qOGjYsh5A"
+      }
+    },
+    {
+      "id": "chima-machita",
+      "name": "町田ちま",
+      "nameEn": "Machita Chima",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "まったり",
+        "天然"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 7,
+        "talk": 6,
+        "game": 4,
+        "music": 10,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 7,
+        "cool": 4
+      },
+      "color": "#FCD34D",
+      "emoji": "🐣",
+      "description": "町田ちま。圧倒的歌唱力の持ち主。ふわふわした喋りと歌モードの豹変ぶりが有名。",
+      "twitter": "chima_machita23",
+      "youtube": {
+        "channelId": "UCo7TRj3cS-f_1D9ZDmuTsjw"
+      }
+    },
+    {
+      "id": "yuika-shiina",
+      "name": "椎名唯華",
+      "nameEn": "Shiina Yuika",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "猫",
+        "トーク",
+        "企画",
+        "小悪魔"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 4,
+        "talk": 9,
+        "game": 7,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 6,
+        "cute": 7,
+        "cool": 3
+      },
+      "color": "#FB923C",
+      "emoji": "🐱",
+      "description": "あざとさを自称する猫系配信者。実際は面倒見が良く、ゲームも企画も器用にこなす配信慣れの塊。",
+      "twitter": "yuika_siina",
+      "youtube": {
+        "channelId": "UC_4tXjqecqox5Uc05ncxpxg"
+      }
+    },
+    {
+      "id": "ars-almal",
+      "name": "アルス・アルマル",
+      "nameEn": "Ars Almal",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🎈",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "ars_almal",
+      "youtube": {
+        "channelId": "UCdpUojq0KWZCN9bxXnZwz5w"
+      }
+    },
+    {
+      "id": "furen-e-lustario",
+      "name": "フレン・E・ルスタリオ",
+      "nameEn": "Furen E Lustario",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🪄",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "furen_2434",
+      "youtube": {
+        "channelId": "UCuep1JCrMvSxOGgGhBfJuYw"
+      }
+    },
+    {
+      "id": "ryushen",
+      "name": "緑仙",
+      "nameEn": "Ryushen",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "歌好き",
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#F2A33C",
+      "emoji": "🎵",
+      "description": "2018年デビュー。歌好き・本を軸に活動するライバー。",
+      "twitter": "midori_2434",
+      "youtube": {
+        "channelId": "UCt5-0i4AVHXaWJrL8Wql3mw"
+      }
+    },
+    {
+      "id": "kokoro-amamiya",
+      "name": "天宮こころ",
+      "nameEn": "Amamiya Kokoro",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "癒し",
+        "ドラゴン"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 7,
+        "game": 8,
+        "music": 5,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 8,
+        "cool": 4
+      },
+      "color": "#67E8F9",
+      "emoji": "🐉",
+      "description": "龍の巫女。おっとり見えて芯が強く、ゲームやりこみ勢。かわいい声と意外な男前発言のギャップ。",
+      "twitter": "amamiya_kokoro",
+      "youtube": {
+        "channelId": "UCkIimWZ9gBJRamKF0rmPU8w"
+      }
+    },
+    {
+      "id": "himawari-honma",
+      "name": "本間ひまわり",
+      "nameEn": "Honma Himawari",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "元気",
+        "ゲーマー",
+        "笑い声"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 3,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 7,
+        "cute": 6,
+        "cool": 2
+      },
+      "color": "#FACC15",
+      "emoji": "🌻",
+      "description": "天真爛漫な明るさとよく通る声の元気娘。ゲーム実況の絶叫と裏表のない人柄で愛される。",
+      "twitter": "honmahimawari",
+      "youtube": {
+        "channelId": "UC0g1AE0DOjBYnLhkgoRWN1w"
+      }
+    },
+    {
+      "id": "lulu-suzuhara",
+      "name": "鈴原るる",
+      "nameEn": "Suzuhara Lulu",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌好き"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🎵",
+      "description": "2019年デビュー。歌好きを軸に活動するライバー。",
+      "twitter": "lulu_suzuhara"
+    },
+    {
+      "id": "alban-knox",
+      "name": "アルバーン・ノックス",
+      "nameEn": "Alban Knox",
+      "branch": "EN",
+      "group": "Noctyx",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "自由人",
+        "小悪魔"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "🍀",
+      "description": "2022年デビュー。自由人・小悪魔を軸に活動するライバー。",
+      "twitter": "alban_knox",
+      "youtube": {
+        "channelId": "UCQ1zGxHrfEmmW4CPpBx9-qw"
+      }
+    },
+    {
+      "id": "haru-kaida",
+      "name": "甲斐田晴",
+      "nameEn": "Kaida Haru",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "歌うま",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 8,
+        "game": 8,
+        "music": 8,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 3,
+        "cool": 8
+      },
+      "color": "#0EA5E9",
+      "emoji": "🌤️",
+      "description": "爽やか大学生風の見た目に反してゲームが上手く、歌も達者な多才ライバー。落ち着いたトークで安心して聴ける。",
+      "twitter": "Kaida_Haru",
+      "youtube": {
+        "channelId": "UCo2N7C-Z91waaR6lF3LL_jw"
+      }
+    },
+    {
+      "id": "akina-saegusa",
+      "name": "三枝明那",
+      "nameEn": "Saegusa Akina",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "元気",
+        "歌うま",
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 10,
+        "healing": 2,
+        "talk": 8,
+        "game": 7,
+        "music": 8,
+        "comedy": 9,
+        "chaos": 6,
+        "cute": 2,
+        "cool": 6
+      },
+      "color": "#EF4444",
+      "emoji": "🔥",
+      "description": "三枝明那。声量おばけの熱血男子。ゲームも歌もコラボも全力、盛り上げ力は箱トップクラス。",
+      "twitter": "333akina",
+      "youtube": {
+        "channelId": "UCNW1Ex0r6HsWRD4LCtPwvoQ"
+      }
+    },
+    {
+      "id": "elu",
+      "name": "える",
+      "nameEn": "Elu",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "天然",
+        "トーク",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 8,
+        "game": 4,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 3
+      },
+      "color": "#22C55E",
+      "emoji": "🧚",
+      "description": "える。森の妖精。独特な感性の雑談と、突然のパワーワードを生む天然力。にじさんじ最古参の一人。",
+      "twitter": "elu_world",
+      "youtube": {
+        "channelId": "UCYKP16oMX9KKPbrNgo_Kgag"
+      }
+    },
+    {
+      "id": "meloco-kyoran",
+      "name": "狂蘭 メロコ",
+      "nameEn": "Meloco Kyoran",
+      "branch": "EN",
+      "group": "XSOLEIL",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#8E7CC3",
+      "emoji": "😈",
+      "description": "2022年デビュー。ダークを軸に活動するライバー。",
+      "twitter": "MelocoKyoran"
+    },
+    {
+      "id": "nui-sociere",
+      "name": "ニュイ・ソシエール",
+      "nameEn": "Nui Sociere",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#EE7623",
+      "emoji": "📚",
+      "description": "2019年デビュー。本を軸に活動するライバー。",
+      "twitter": "Nui_Sociere",
+      "youtube": {
+        "channelId": "UCUc8GZfFxtmk7ZwSO7ccQ0g"
+      }
+    },
+    {
+      "id": "chigusa-nishizono",
+      "name": "西園チグサ",
+      "nameEn": "Nishizono Chigusa",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "元気",
+        "ゲーマー",
+        "正統派"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 5,
+        "talk": 7,
+        "game": 7,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 7,
+        "cool": 3
+      },
+      "color": "#34D399",
+      "emoji": "🌱",
+      "description": "新潟育ちの元気な後輩系女子。ゲームの上達力と素直なリアクション、まっすぐな人柄が愛される。",
+      "twitter": "Chigusa_24zono",
+      "youtube": {
+        "channelId": "UCkngxfPbmGyGl_RIq4FA3MQ"
+      }
+    },
+    {
+      "id": "sango-suo",
+      "name": "周央サンゴ",
+      "nameEn": "Suo Sango",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "トーク",
+        "カオス",
+        "芸人"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 10,
+        "game": 5,
+        "music": 5,
+        "comedy": 10,
+        "chaos": 8,
+        "cute": 5,
+        "cool": 3
+      },
+      "color": "#FB7185",
+      "emoji": "🪸",
+      "description": "独特の語彙と例えツッコミが炸裂する「サンゴ語」の使い手。聞けば聞くほどクセになる唯一無二のトーク。",
+      "twitter": "Suo_Sango",
+      "youtube": {
+        "channelId": "UCL_O_HXgLJx3Auteer0n0pA"
+      }
+    },
+    {
+      "id": "uki-violeta",
+      "name": "浮奇・ヴィオレタ",
+      "nameEn": "Uki Violeta",
+      "branch": "EN",
+      "group": "Noctyx",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6C8CD5",
+      "emoji": "🍀",
+      "description": "2022年デビュー。にじさんじ所属ライバー。",
+      "twitter": "uki_violeta",
+      "youtube": {
+        "channelId": "UChJ5FTsHOu72_5OVx0rvsvQ"
+      }
+    },
+    {
+      "id": "enna-alouette",
+      "name": "エナー・アールウェット",
+      "nameEn": "Enna Alouette",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "毒舌",
+        "トーク"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 2,
+        "talk": 9,
+        "game": 5,
+        "music": 10,
+        "comedy": 9,
+        "chaos": 7,
+        "cute": 4,
+        "cool": 5
+      },
+      "color": "#A78BFA",
+      "emoji": "🐦",
+      "description": "Enna Alouette。歌姫にして毒舌の鳥。圧倒的な歌唱力と、口の悪さすら芸にする喋りのキレ。",
+      "twitter": "EnnaAlouette",
+      "youtube": {
+        "channelId": "UCR6qhsLpn62WVxCBK1dkLow"
+      }
+    },
+    {
+      "id": "kana-sukoya",
+      "name": "健屋花那",
+      "nameEn": "Sukoya Kana",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お酒",
+        "元気"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#58A55C",
+      "emoji": "🍶",
+      "description": "2019年デビュー。お酒・元気を軸に活動するライバー。",
+      "twitter": "sukosuko_sukoya",
+      "youtube": {
+        "channelId": "UC8C1LLhBhf_E2IBPLSDJXlQ"
+      }
+    },
+    {
+      "id": "hibari-watarai",
+      "name": "渡会雲雀",
+      "nameEn": "Watarai Hibari",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "元気",
+        "歌好き",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 6,
+        "music": 7,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 3,
+        "cool": 7
+      },
+      "color": "#38BDF8",
+      "emoji": "🕊️",
+      "description": "爽やかな見た目と裏腹に、トークも歌もゲームも全力で泥臭い努力家。同期VOLTACTIONの明るいムードメーカー。",
+      "twitter": "watarai_hibari",
+      "youtube": {
+        "channelId": "UC4l9gz3q65lTBFfFtW5LLeA"
+      }
+    },
+    {
+      "id": "debidebi-debiru",
+      "name": "でびでび・でびる",
+      "nameEn": "Debidebi Debiru",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#E85D75",
+      "emoji": "😈",
+      "description": "2018年デビュー。ダークを軸に活動するライバー。",
+      "twitter": "debidebiru_sama",
+      "youtube": {
+        "channelId": "UCjlmCrq4TP1I4xguOtJ-31w"
+      }
+    },
+    {
+      "id": "joe-rikiichi",
+      "name": "ジョー・力一",
+      "nameEn": "Joe Rikiichi",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "芸人",
+        "トーク",
+        "歌うま",
+        "文化"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 4,
+        "talk": 10,
+        "game": 4,
+        "music": 9,
+        "comedy": 10,
+        "chaos": 6,
+        "cute": 2,
+        "cool": 7
+      },
+      "color": "#7E22CE",
+      "emoji": "🎪",
+      "description": "ジョー・力一。バーチャルピエロ。落語のような話芸と歌のうまさ、大人の色気を併せ持つ唯一無二の存在。",
+      "twitter": "joerikiichi",
+      "youtube": {
+        "channelId": "UChUJbHiTVeGrSkTdBzVfNCQ"
+      }
+    },
+    {
+      "id": "ratna-petit",
+      "name": "ラトナ・プティ",
+      "nameEn": "Ratna Petit",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🎮",
+      "description": "2019年デビュー。ゲーマー・まったりを軸に活動するライバー。",
+      "twitter": "ratna_petit",
+      "youtube": {
+        "channelId": "UCIG9rDtgR45VCZmYnd-4DUw"
+      }
+    },
+    {
+      "id": "sister-claire",
+      "name": "シスター・クレア",
+      "nameEn": "Sister Claire",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🌊",
+      "description": "2018年デビュー。トークを軸に活動するライバー。",
+      "twitter": "sistercleaire",
+      "youtube": {
+        "channelId": "UC1zFJrfEKvCixhsjNSb1toQ"
+      }
+    },
+    {
+      "id": "marin-hayama",
+      "name": "葉山舞鈴",
+      "nameEn": "Hayama Marin",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#F2A33C",
+      "emoji": "🎮",
+      "description": "2019年デビュー。ゲーマーを軸に活動するライバー。",
+      "twitter": "Hayama_Marin",
+      "youtube": {
+        "channelId": "UCfipDDn7wY-C-SoUChgxCQQ"
+      }
+    },
+    {
+      "id": "meme-mashiro",
+      "name": "ましろ爻",
+      "nameEn": "Mashiro Meme",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "🎯",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "mashiro2434",
+      "youtube": {
+        "channelId": "UCS-XXTgVkotkbkDnGEprXpg"
+      }
+    },
+    {
+      "id": "rena-yorumi",
+      "name": "夜見れな",
+      "nameEn": "Yorumi Rena",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "癒し",
+        "耐久"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 6,
+        "game": 8,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 3,
+        "cute": 7,
+        "cool": 4
+      },
+      "color": "#A78BFA",
+      "emoji": "🌃",
+      "description": "夜見の名の通り深夜帯の配信が多い、ゆるふわ声のゲーマー。長時間配信の安定感と癒しボイス。",
+      "twitter": "rena_yorumi",
+      "youtube": {
+        "channelId": "UCL34fAoFim9oHLbVzMKFavQ"
+      }
+    },
+    {
+      "id": "makaino-ririmu",
+      "name": "魔界ノりりむ",
+      "nameEn": "Makaino Ririmu",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "本",
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 8
+      },
+      "color": "#7B68C8",
+      "emoji": "🎮",
+      "description": "2018年デビュー。ゲーマー・本・ダークを軸に活動するライバー。",
+      "twitter": "makaino_ririmu",
+      "youtube": {
+        "channelId": "UC9EjSJ8pvxtvPdxLOElv73w"
+      }
+    },
+    {
+      "id": "mikoto-rindou",
+      "name": "竜胆尊",
+      "nameEn": "Rindou Mikoto",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "✨",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "rindoumikoto",
+      "youtube": {
+        "channelId": "UCPvGypSgfDkVe7JG2KygK7A"
+      }
+    },
+    {
+      "id": "ex-albio",
+      "name": "エクス・アルビオ",
+      "nameEn": "Ex Albio",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "マイクラ",
+        "元気"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 7,
+        "game": 9,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 3,
+        "cool": 6
+      },
+      "color": "#2563EB",
+      "emoji": "🛡️",
+      "description": "エクス・アルビオ。勇者を名乗る熱血ゲーマー。マイクラやRPGでの本気っぷりと、いじられ体質の愛嬌。",
+      "twitter": "ex_albio",
+      "youtube": {
+        "channelId": "UCIytNcoz4pWzXfLda0DoULQ"
+      }
+    },
+    {
+      "id": "chaika-hanabatake",
+      "name": "花畑チャイカ",
+      "nameEn": "Hanabatake Chaika",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "お酒"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D06AA8",
+      "emoji": "🍶",
+      "description": "2018年デビュー。お酒を軸に活動するライバー。",
+      "twitter": "zulmihp1nlmot5y",
+      "youtube": {
+        "channelId": "UCsFn_ueskBkMCEyzCEqAOvg"
+      }
+    },
+    {
+      "id": "rion-takamiya",
+      "name": "鷹宮リオン",
+      "nameEn": "Takamiya Rion",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "🌊",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "takamiyarion",
+      "youtube": {
+        "channelId": "UCV5ZZlLjk5MKGg3L0n0vbzw"
+      }
+    },
+    {
+      "id": "kei-nagao",
+      "name": "長尾景",
+      "nameEn": "Nagao Kei",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "🍀",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "kei_nagao2434",
+      "youtube": {
+        "channelId": "UCXW4MqCQn-jCaxlX-nn-BYg"
+      }
+    },
+    {
+      "id": "ren-zotto",
+      "name": "レン ゾット",
+      "nameEn": "Ren Zotto",
+      "branch": "EN",
+      "group": "ILUNA",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "王子様"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#EE7623",
+      "emoji": "👑",
+      "description": "2022年デビュー。王子様を軸に活動するライバー。",
+      "twitter": "RenZott0",
+      "youtube": {
+        "channelId": "UCKu59gTZ_rdEmerdx5rV4Yg"
+      }
+    },
+    {
+      "id": "sonny-brisko",
+      "name": "サニー・ブリスコー",
+      "nameEn": "Sonny Brisko",
+      "branch": "EN",
+      "group": "Noctyx",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎈",
+      "description": "2022年デビュー。にじさんじ所属ライバー。",
+      "twitter": "sonny_brisko",
+      "youtube": {
+        "channelId": "UCuuAb_72QzK0M1USPMEl1yw"
+      }
+    },
+    {
+      "id": "elira-pendora",
+      "name": "エリーラ ペンドラ",
+      "nameEn": "Elira Pendora",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "ドラゴン",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 6,
+        "music": 9,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#38BDF8",
+      "emoji": "🐉",
+      "description": "Elira Pendora。空の竜の少女。LazuLightの一人として EN 初期から活動する歌好きお姉さん。",
+      "twitter": "EliraPendora",
+      "youtube": {
+        "channelId": "UCIeSUTOTkF9Hs7q3SGcO-Ow"
+      }
+    },
+    {
+      "id": "leos-vincent",
+      "name": "レオス・ヴィンセント",
+      "nameEn": "Leos Vincent",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#6C8CD5",
+      "emoji": "🔬",
+      "description": "2021年デビュー。博識を軸に活動するライバー。",
+      "twitter": "Leos_Vincent",
+      "youtube": {
+        "channelId": "UC-6rZgmxZSIbq786j3RD5ow"
+      }
+    },
+    {
+      "id": "petra-gurin",
+      "name": "ペトラ グリン",
+      "nameEn": "Petra Gurin",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "多言語",
+        "まったり",
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 4,
+        "music": 6,
+        "comedy": 7,
+        "chaos": 4,
+        "cute": 7,
+        "cool": 3
+      },
+      "color": "#67E8F9",
+      "emoji": "🐧",
+      "description": "Petra Gurin。ペンギンの女の子。日英バイリンガルのゆるいトークと、いじられ属性の愛嬌。",
+      "twitter": "Petra_Gurin",
+      "youtube": {
+        "channelId": "UCgA2jKRkqpY_8eysPUs8sjw"
+      }
+    },
+    {
+      "id": "belmond-banderas",
+      "name": "ベルモンド・バンデラス",
+      "nameEn": "Belmond Banderas",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "本",
+        "自由人"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#58A55C",
+      "emoji": "📚",
+      "description": "2018年デビュー。本・自由人を軸に活動するライバー。",
+      "twitter": "belmond_b_2434",
+      "youtube": {
+        "channelId": "UCbc8fwhdUNlqi-J99ISYu4A"
+      }
+    },
+    {
+      "id": "millie-parfait",
+      "name": "ミリー・パフェ",
+      "nameEn": "Millie Parfait",
+      "branch": "EN",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "カオス",
+        "多言語",
+        "元気"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 5,
+        "music": 7,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 5,
+        "cool": 3
+      },
+      "color": "#FBBF24",
+      "emoji": "🧹",
+      "description": "Millie Parfait。フィリピン出身の魔女。自由奔放な発想とノリ、多言語を操るエンターテイナー。",
+      "twitter": "MillieParfait",
+      "youtube": {
+        "channelId": "UC47rNmkDcNgbOcM-2BwzJTQ"
+      }
+    },
+    {
+      "id": "akira-shikinagi",
+      "name": "四季凪アキラ",
+      "nameEn": "Shikinagi Akira",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "歌うま",
+        "アイドル",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 9,
+        "comedy": 5,
+        "chaos": 3,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#818CF8",
+      "emoji": "🎭",
+      "description": "端正な見た目と甘い歌声のアイドル系男子。丁寧なファン対応と芯のある活動姿勢。",
+      "twitter": "Shikinagi_2434",
+      "youtube": {
+        "channelId": "UCcDDxnoQcezyTUzHg5uHaKg"
+      }
+    },
+    {
+      "id": "rou-koyanagi",
+      "name": "小柳ロウ",
+      "nameEn": "Koyanagi Rou",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "本",
+        "猫",
+        "犬",
+        "まったり"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 8,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 7,
+        "cool": 6
+      },
+      "color": "#4A90D9",
+      "emoji": "📚",
+      "description": "2023年デビュー。本・猫・犬を軸に活動するライバー。",
+      "twitter": "Rou_2434"
+    },
+    {
+      "id": "maria-marionette",
+      "name": "マリア マリオネット",
+      "nameEn": "Maria Marionette",
+      "branch": "EN",
+      "group": "ILUNA",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#6BBF59",
+      "emoji": "📚",
+      "description": "2022年デビュー。本を軸に活動するライバー。",
+      "twitter": "MariaMari0nette",
+      "youtube": {
+        "channelId": "UCwaS8_S7kMiKA3izlTWHbQg"
+      }
+    },
+    {
+      "id": "finana-ryugu",
+      "name": "フィナーナ 竜宮",
+      "nameEn": "Finana Ryugu",
+      "branch": "EN",
+      "group": "LazuLight",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🪄",
+      "description": "2021年デビュー。にじさんじ所属ライバー。",
+      "twitter": "FinanaRyugu",
+      "youtube": {
+        "channelId": "UCu-J8uIXuLZh16gG-cT1naw"
+      }
+    },
+    {
+      "id": "fuyuki-hakase",
+      "name": "葉加瀬冬雪",
+      "nameEn": "Hakase Fuyuki",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#F2A33C",
+      "emoji": "📚",
+      "description": "2019年デビュー。本を軸に活動するライバー。",
+      "twitter": "hakase_fuyuki",
+      "youtube": {
+        "channelId": "UCGYAYLDE7TZiiC8U6teciDQ"
+      }
+    },
+    {
+      "id": "sho-hoshirube",
+      "name": "星導ショウ",
+      "nameEn": "Hoshirube Sho",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "⭐",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Show_SylveSTAR"
+    },
+    {
+      "id": "keisuke-maimoto",
+      "name": "舞元啓介",
+      "nameEn": "Maimoto Keisuke",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク",
+        "司会",
+        "おじさん"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 10,
+        "game": 5,
+        "music": 4,
+        "comedy": 9,
+        "chaos": 4,
+        "cute": 1,
+        "cool": 6
+      },
+      "color": "#65A30D",
+      "emoji": "🌾",
+      "description": "舞元啓介。農業高校職員のおじさん。スポーツ・時事・雑談なんでもこなす進行力と包容力で「箱の司会者」的存在。",
+      "twitter": "maimoto_k",
+      "youtube": {
+        "channelId": "UCJubINhCcFXlsBwnHp0wl_g"
+      }
+    },
+    {
+      "id": "ruri-shioriha",
+      "name": "栞葉るり",
+      "nameEn": "Shioriha Ruri",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本",
+        "犬",
+        "自由人"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#7B68C8",
+      "emoji": "📚",
+      "description": "2023年デビュー。本・犬・自由人を軸に活動するライバー。",
+      "twitter": "Ruri_4ori8"
+    },
+    {
+      "id": "tomoe-shirayuki",
+      "name": "白雪巴",
+      "nameEn": "Shirayuki Tomoe",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "料理"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "🍳",
+      "description": "2019年デビュー。料理を軸に活動するライバー。",
+      "twitter": "Tomoe_Shirayuki",
+      "youtube": {
+        "channelId": "UCuvk5PilcvDECU7dDZhQiEw"
+      }
+    },
+    {
+      "id": "lain-paterson",
+      "name": "レイン・パターソン",
+      "nameEn": "Lain Paterson",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E6A422",
+      "emoji": "🎯",
+      "description": "2021年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Lain_Paterson",
+      "youtube": {
+        "channelId": "UCRm6lqtdxs_Qo6HeL-SRQ-w"
+      }
+    },
+    {
+      "id": "kou-uzuki",
+      "name": "卯月コウ",
+      "nameEn": "Uzuki Kou",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#D06AA8",
+      "emoji": "📚",
+      "description": "2018年デビュー。本を軸に活動するライバー。",
+      "twitter": "udukikohh",
+      "youtube": {
+        "channelId": "UC3lNFeJiTq6L3UWoz4g1e-A"
+      }
+    },
+    {
+      "id": "tamaki-fumino",
+      "name": "文野環",
+      "nameEn": "Fumino Tamaki",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "猫",
+        "カオス",
+        "自由人"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 4,
+        "music": 4,
+        "comedy": 9,
+        "chaos": 10,
+        "cute": 6,
+        "cool": 2
+      },
+      "color": "#F97316",
+      "emoji": "🐈",
+      "description": "文野環。野良猫を自称するフリーダムな存在。予測不能な行動力と、なぜか憎めない愛嬌の塊。",
+      "twitter": "nekokan_chu",
+      "youtube": {
+        "channelId": "UCBiqkFJljoxAj10SoP2w2Cg"
+      }
+    },
+    {
+      "id": "nozomi-ishigami",
+      "name": "石神のぞみ",
+      "nameEn": "Ishigami Nozomi",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "元気",
+        "正統派"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 4,
+        "talk": 7,
+        "game": 7,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 8,
+        "cool": 3
+      },
+      "color": "#93C5FD",
+      "emoji": "🪨",
+      "description": "小柄で愛らしい見た目と、ゲームでの負けん気の強さのギャップ。素直なリアクションが人気。",
+      "twitter": "I_Nozomi_",
+      "youtube": {
+        "channelId": "UCtLfA_qUqCJtjXJM2ZR_keg"
+      }
+    },
+    {
+      "id": "kanato-fura",
+      "name": "風楽奏斗",
+      "nameEn": "Fura Kanato",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EE7623",
+      "emoji": "⭐",
+      "description": "2022年デビュー。にじさんじ所属ライバー。",
+      "twitter": "KNTFR2434",
+      "youtube": {
+        "channelId": "UCC7rRD6P7RQcx0hKv9RQP4w"
+      }
+    },
+    {
+      "id": "seraph-dazzlegarden",
+      "name": "セラフ・ダズルガーデン",
+      "nameEn": "Seraph Dazzlegarden",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ダーク",
+        "FPS",
+        "歌うま"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 7,
+        "game": 8,
+        "music": 8,
+        "comedy": 7,
+        "chaos": 6,
+        "cute": 4,
+        "cool": 7
+      },
+      "color": "#4C1D95",
+      "emoji": "🖤",
+      "description": "悪魔執事。ハイトーンの歌声とFPSの腕、テンションの振れ幅が大きい配信で人気。",
+      "twitter": "SerAph_DazZ",
+      "youtube": {
+        "channelId": "UC5dJFf4m-mEcoyJRfhBljoA"
+      }
+    },
+    {
+      "id": "riri-yuhi",
+      "name": "夕陽リリ",
+      "nameEn": "Yuhi Riri",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#C75B39",
+      "emoji": "🌊",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "yuuhi_riri",
+      "youtube": {
+        "channelId": "UC48jH1ul-6HOrcSSfoR02fQ"
+      }
+    },
+    {
+      "id": "shellin-burgundy",
+      "name": "シェリン・バーガンディ",
+      "nameEn": "Shellin Burgundy",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "探偵",
+        "トーク",
+        "元気"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 9,
+        "game": 6,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 5,
+        "cute": 2,
+        "cool": 6
+      },
+      "color": "#B45309",
+      "emoji": "🔍",
+      "description": "シェリン・バーガンディ。名探偵を名乗る快活な男。推理力よりツッコミ力、テンションの高い実況が名物。",
+      "twitter": "ShellinBurgundy",
+      "youtube": {
+        "channelId": "UCHBhnG2G-qN0JrrWmMO2FTA"
+      }
+    },
+    {
+      "id": "mana-hibachi",
+      "name": "緋八マナ",
+      "nameEn": "Hibachi Mana",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#A6528F",
+      "emoji": "🎯",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Hibachi_Mana"
+    },
+    {
+      "id": "rai-inami",
+      "name": "伊波ライ",
+      "nameEn": "Inami Rai",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#58A55C",
+      "emoji": "🎈",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "rai_173"
+    },
+    {
+      "id": "tojiro-genzuki",
+      "name": "弦月藤士郎",
+      "nameEn": "Genzuki Tojiro",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🪄",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "1O46V",
+      "youtube": {
+        "channelId": "UCGw7lrT-rVZCWHfdG9Frcgg"
+      }
+    },
+    {
+      "id": "rin-shizuka",
+      "name": "静凛",
+      "nameEn": "Shizuka Rin",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "お姉さん",
+        "耐久"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 7,
+        "talk": 7,
+        "game": 9,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 2,
+        "cute": 4,
+        "cool": 7
+      },
+      "color": "#8B5CF6",
+      "emoji": "🔮",
+      "description": "静凛。一期生の落ち着いたお姉さん。ゲームのやり込みと安定した長時間配信、聞き心地の良い声。",
+      "twitter": "ShizuRin23",
+      "youtube": {
+        "channelId": "UC6oDys1BGgBsIC3WhG1BovQ"
+      }
+    },
+    {
+      "id": "sophia-valentine",
+      "name": "ソフィア・ヴァレンタイン",
+      "nameEn": "Sophia Valentine",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "トーク",
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 9,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#4A90D9",
+      "emoji": "📚",
+      "description": "2023年デビュー。トーク・本を軸に活動するライバー。",
+      "twitter": "SophiaV214",
+      "youtube": {
+        "channelId": "UCivwPlOp0ojnMPZj5pNOPPA"
+      }
+    },
+    {
+      "id": "ittetsu-saiki",
+      "name": "佐伯イッテツ",
+      "nameEn": "Saiki Ittetsu",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🌸",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Saiki_Supadari"
+    },
+    {
+      "id": "toru-koshimizu",
+      "name": "小清水透",
+      "nameEn": "Koshimizu Toru",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "FPS",
+        "低音ボイス",
+        "ストイック"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 4,
+        "talk": 7,
+        "game": 9,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 2,
+        "cute": 4,
+        "cool": 8
+      },
+      "color": "#60A5FA",
+      "emoji": "🚰",
+      "description": "ハスキーボイスの正統派。FPSの腕前と真摯な配信姿勢でファンを増やし続けるストイック系。",
+      "twitter": "toru_2434",
+      "youtube": {
+        "channelId": "UCUP8TmlO7NNra88AMqGU_vQ"
+      }
+    },
+    {
+      "id": "kakeru-yumeoi",
+      "name": "夢追翔",
+      "nameEn": "Yumeoi Kakeru",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "音楽制作",
+        "歌うま",
+        "アーティスト"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 4,
+        "talk": 7,
+        "game": 5,
+        "music": 10,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 2,
+        "cool": 7
+      },
+      "color": "#3B82F6",
+      "emoji": "🎸",
+      "description": "夢追翔。シンガーソングライター系ライバー。オリジナル曲の制作数は箱でも屈指、努力型の音楽人。",
+      "twitter": "kakeru_yumeoi",
+      "youtube": {
+        "channelId": "UCTIE7LM5X15NVugV7Krp9Hw"
+      }
+    },
+    {
+      "id": "kagetsu-murakumo",
+      "name": "叢雲カゲツ",
+      "nameEn": "Murakumo Kagetsu",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "和風"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#46C0AA",
+      "emoji": "⛩️",
+      "description": "2023年デビュー。和風を軸に活動するライバー。",
+      "twitter": "Kagetsu_2434"
+    },
+    {
+      "id": "levi-elipha",
+      "name": "レヴィ・エリファ",
+      "nameEn": "Levi Elipha",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D95970",
+      "emoji": "🎈",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Levi_E_2434",
+      "youtube": {
+        "channelId": "UCtnO2N4kPTXmyvedjGWdx3Q"
+      }
+    },
+    {
+      "id": "dola",
+      "name": "ドーラ",
+      "nameEn": "Dola",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "歌好き",
+        "料理"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 7,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🎮",
+      "description": "2018年デビュー。ゲーマー・歌好き・料理を軸に活動するライバー。",
+      "twitter": "___dola",
+      "youtube": {
+        "channelId": "UC53UDnhAAYwvNO7j_2Ju1cQ"
+      }
+    },
+    {
+      "id": "gaku-fushimi",
+      "name": "伏見ガク",
+      "nameEn": "Fushimi Gaku",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "犬",
+        "元気",
+        "トーク"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 5,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 7,
+        "chaos": 3,
+        "cute": 4,
+        "cool": 5
+      },
+      "color": "#16A34A",
+      "emoji": "🐕",
+      "description": "伏見ガク。爽やか犬系男子。フットワークの軽さと素直な人柄、コラボでの立ち回りの良さ。",
+      "twitter": "gaku_fushimi",
+      "youtube": {
+        "channelId": "UCXU7YYxy_iQd3ulXyO-zC2w"
+      }
+    },
+    {
+      "id": "oliver-evans",
+      "name": "オリバー・エバンス",
+      "nameEn": "Oliver Evans",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E6A422",
+      "emoji": "⭐",
+      "description": "2021年デビュー。にじさんじ所属ライバー。",
+      "twitter": "oliverD_23",
+      "youtube": {
+        "channelId": "UCqjTqdVlvIipZXIKeCkHKUA"
+      }
+    },
+    {
+      "id": "scarle-yonaguni",
+      "name": "スカーレ ヨナグニ",
+      "nameEn": "Scarle Yonaguni",
+      "branch": "EN",
+      "group": "ILUNA",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D06AA8",
+      "emoji": "🌸",
+      "description": "2022年デビュー。にじさんじ所属ライバー。",
+      "twitter": "ScarleYonaguni",
+      "youtube": {
+        "channelId": "UCFgXWZOUZA2oYHNr6qDmsTQ"
+      }
+    },
+    {
+      "id": "rito-usami",
+      "name": "宇佐美リト",
+      "nameEn": "Usami Rito",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "🌊",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "usamirito_power"
+    },
+    {
+      "id": "kaisei",
+      "name": "魁星",
+      "nameEn": "Kaisei",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#8E7CC3",
+      "emoji": "📚",
+      "description": "2024年デビュー。本を軸に活動するライバー。",
+      "twitter": "Kaisei_2434"
+    },
+    {
+      "id": "rika-igarashi",
+      "name": "五十嵐梨花",
+      "nameEn": "Igarashi Rika",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "トーク",
+        "耐久"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 3,
+        "talk": 9,
+        "game": 8,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#F87171",
+      "emoji": "🍓",
+      "description": "配信勢の申し子のような立ち回りのゲーマー女子。長時間配信とハイテンポなトークで急成長した実力派。",
+      "twitter": "1garashi_Rika",
+      "youtube": {
+        "channelId": "UCu-rV2gPtJ-CsGxe71z_BrQ"
+      }
+    },
+    {
+      "id": "nana-tamanoi",
+      "name": "珠乃井ナナ",
+      "nameEn": "Tamanoi Nana",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌好き",
+        "料理",
+        "ダンス"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 8,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎵",
+      "description": "2024年デビュー。歌好き・料理・ダンスを軸に活動するライバー。",
+      "twitter": "7_tamanoi"
+    },
+    {
+      "id": "wen-akagi",
+      "name": "赤城ウェン",
+      "nameEn": "Akagi Wen",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#C75B39",
+      "emoji": "📚",
+      "description": "2023年デビュー。本を軸に活動するライバー。",
+      "twitter": "akagi_wen"
+    },
+    {
+      "id": "ness-sakaki",
+      "name": "榊ネス",
+      "nameEn": "Sakaki Ness",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "王子様"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#6C8CD5",
+      "emoji": "👑",
+      "description": "2024年デビュー。王子様を軸に活動するライバー。",
+      "twitter": "Ness_Sakaki"
+    },
+    {
+      "id": "kazaki-morinaka",
+      "name": "森中花咲",
+      "nameEn": "Morinaka Kazaki",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ぽんこつ",
+        "動物好き",
+        "元気"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 4,
+        "talk": 7,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 8,
+        "cool": 2
+      },
+      "color": "#F9A8D4",
+      "emoji": "🐻",
+      "description": "森中花咲。動物好きの小さな淑女。かわいい声からの突然の絶叫、ゲームでの大胆さのギャップ。",
+      "twitter": "kazakimorinaka",
+      "youtube": {
+        "channelId": "UCtpB6Bvhs1Um93ziEDACQ8g"
+      }
+    },
+    {
+      "id": "akari-shishido",
+      "name": "獅子堂あかり",
+      "nameEn": "Shishido Akari",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お嬢様",
+        "ゲーマー",
+        "元気"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 4
+      },
+      "color": "#FBBF24",
+      "emoji": "🦁",
+      "description": "獅子堂グループのご令嬢。物怖じしない発言力とゲームへの熱中度、愛されいじられキャラ。",
+      "twitter": "44do_akari",
+      "youtube": {
+        "channelId": "UCWRPqA0ehhWV4Hnp27PJCkQ"
+      }
+    },
+    {
+      "id": "yang-nari",
+      "name": "ヤン ナリ",
+      "nameEn": "Yang Nari",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🌊",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "NariYang2434",
+      "youtube": {
+        "channelId": "UCCHH0nWYXFZmtDS_4tvMxHQ"
+      }
+    },
+    {
+      "id": "roa-yuzuki",
+      "name": "夢月ロア",
+      "nameEn": "Yuzuki Roa",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本",
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 8
+      },
+      "color": "#E85D75",
+      "emoji": "📚",
+      "description": "2019年デビュー。本・ダークを軸に活動するライバー。",
+      "twitter": "yuzuki_roa",
+      "youtube": {
+        "channelId": "UCCVwhI5trmaSxfcze_Ovzfw"
+      }
+    },
+    {
+      "id": "masaru-suzuki",
+      "name": "鈴木勝",
+      "nameEn": "Suzuki Masaru",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "お酒"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4A90D9",
+      "emoji": "🍶",
+      "description": "2018年デビュー。お酒を軸に活動するライバー。",
+      "twitter": "darkness_eater",
+      "youtube": {
+        "channelId": "UCryOPk2GZ1meIDt53tL30Tw"
+      }
+    },
+    {
+      "id": "hisui-kitakoji",
+      "name": "北小路ヒスイ",
+      "nameEn": "Kitakoji Hisui",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "小悪魔",
+        "トーク",
+        "和風"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 8,
+        "cool": 3
+      },
+      "color": "#2DD4BF",
+      "emoji": "💎",
+      "description": "京都から来たあざとかわいい系。したたかさを隠さないスタイルと、実際に器用な立ち回りが面白い。",
+      "twitter": "Hisui_Kitakoji",
+      "youtube": {
+        "channelId": "UCRqBKoKuX30ruKAq05pCeRQ"
+      }
+    },
+    {
+      "id": "nei-ponto",
+      "name": "先斗寧",
+      "nameEn": "Ponto Nei",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "料理"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🍳",
+      "description": "2022年デビュー。料理を軸に活動するライバー。",
+      "twitter": "ponto_nei",
+      "youtube": {
+        "channelId": "UCe22Bcwd_GCpTjLxn83zl7A"
+      }
+    },
+    {
+      "id": "mao-matsukai",
+      "name": "魔使マオ",
+      "nameEn": "Matsukai Mao",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#F2A33C",
+      "emoji": "✨",
+      "description": "2019年デビュー。ぽんこつを軸に活動するライバー。",
+      "twitter": "matsukai_mao",
+      "youtube": {
+        "channelId": "UCerkculBD7YLc_vOGrF7tKg"
+      }
+    },
+    {
+      "id": "vantacrow-bringer",
+      "name": "ベンタクロウ ブリンガー",
+      "nameEn": "Vantacrow Bringer",
+      "branch": "EN",
+      "group": "Krisis",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "⭐",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Tyrant_Vanta"
+    },
+    {
+      "id": "milan-kestrel",
+      "name": "ミラン・ケストレル",
+      "nameEn": "Milan Kestrel",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本",
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#D95970",
+      "emoji": "📚",
+      "description": "2023年デビュー。本・博識を軸に活動するライバー。",
+      "twitter": "Milan_Kestrel"
+    },
+    {
+      "id": "shiba-kuroi",
+      "name": "黒井しば",
+      "nameEn": "Kuroi Shiba",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "犬"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🐶",
+      "description": "2018年デビュー。犬を軸に活動するライバー。",
+      "twitter": "blackshiba_chan",
+      "youtube": {
+        "channelId": "UCmeyo5pRj_6PXG-CsGUuWWg"
+      }
+    },
+    {
+      "id": "sou-hayase",
+      "name": "早瀬走",
+      "nameEn": "Hayase Sou",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お姉さん",
+        "元気",
+        "ホラー"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 4,
+        "talk": 8,
+        "game": 6,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 5,
+        "cute": 4,
+        "cool": 5
+      },
+      "color": "#FB923C",
+      "emoji": "🏃",
+      "description": "早瀬走。スポーティーで気さくなお姉さん。ホラー耐性ゼロの絶叫と、面倒見の良い人柄。",
+      "twitter": "SouHayase",
+      "youtube": {
+        "channelId": "UC2OacIzd2UxGHRGhdHl1Rhw"
+      }
+    },
+    {
+      "id": "mugi-ienaga",
+      "name": "家長むぎ",
+      "nameEn": "Ienaga Mugi",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "料理",
+        "本",
+        "猫"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#E6A422",
+      "emoji": "🍳",
+      "description": "2018年デビュー。料理・本・猫を軸に活動するライバー。",
+      "twitter": "ienaga_mugi23",
+      "youtube": {
+        "channelId": "UC_GCs6GARLxEHxy1w40d6VQ"
+      }
+    },
+    {
+      "id": "karuta-yamagami",
+      "name": "山神カルタ",
+      "nameEn": "Yamagami Karuta",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "自由人"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D06AA8",
+      "emoji": "🎈",
+      "description": "2019年デビュー。自由人を軸に活動するライバー。",
+      "twitter": "karuta_Yamagami",
+      "youtube": {
+        "channelId": "UCllKI7VjyANuS1RXatizfLQ"
+      }
+    },
+    {
+      "id": "aia-amare",
+      "name": "アイア アマレ",
+      "nameEn": "Aia Amare",
+      "branch": "EN",
+      "group": "ILUNA",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "天使",
+        "小悪魔"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 7,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "😇",
+      "description": "2022年デビュー。天使・小悪魔を軸に活動するライバー。",
+      "twitter": "AiaAmare",
+      "youtube": {
+        "channelId": "UCN68LoM3khS4gdBMiWJO8WA"
+      }
+    },
+    {
+      "id": "meruto-kuramochi",
+      "name": "倉持めると",
+      "nameEn": "Kuramochi Meruto",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "✨",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "k_meruto",
+      "youtube": {
+        "channelId": "UCiA-trSZfB0i92V_-dyDqBw"
+      }
+    },
+    {
+      "id": "suzuna-nanase",
+      "name": "七瀬すず菜",
+      "nameEn": "Nanase Suzuna",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EE7623",
+      "emoji": "⭐",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Suzuna_Nanase"
+    },
+    {
+      "id": "berry-saotome",
+      "name": "早乙女ベリー",
+      "nameEn": "Saotome Berry",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "料理",
+        "自由人"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🍳",
+      "description": "2024年デビュー。料理・自由人を軸に活動するライバー。",
+      "twitter": "Saotome_Berry"
+    },
+    {
+      "id": "trout-nagisa",
+      "name": "渚トラウト",
+      "nameEn": "Nagisa Trout",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "料理",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 8,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#C75B39",
+      "emoji": "🍳",
+      "description": "2024年デビュー。料理・まったりを軸に活動するライバー。",
+      "twitter": "Tr0uT_2434"
+    },
+    {
+      "id": "ritsuki-sakura",
+      "name": "桜凛月",
+      "nameEn": "Sakura Ritsuki",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "元気"
+      ],
+      "params": {
+        "energy": 7,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6C8CD5",
+      "emoji": "☀️",
+      "description": "2018年デビュー。元気を軸に活動するライバー。",
+      "twitter": "sakura_ritsuki",
+      "youtube": {
+        "channelId": "UCfQVs_KuXeNAlGa3fb8rlnQ"
+      }
+    },
+    {
+      "id": "hana-macchia",
+      "name": "ハナ マキア",
+      "nameEn": "Hana Macchia",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#A6528F",
+      "emoji": "🎯",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Hana_Macchia",
+      "youtube": {
+        "channelId": "UCpJtk0myFr5WnyfsmnInP-w"
+      }
+    },
+    {
+      "id": "yusei-kitami",
+      "name": "北見遊征",
+      "nameEn": "Kitami Yusei",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ミステリアス"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#58A55C",
+      "emoji": "🌙",
+      "description": "2024年デビュー。ミステリアスを軸に活動するライバー。",
+      "twitter": "Kitami_Coolguy"
+    },
+    {
+      "id": "fumi",
+      "name": "フミ",
+      "nameEn": "Fumi",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🪄",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "FumiVirtual",
+      "youtube": {
+        "channelId": "UCwrjITPwG4q71HzihV2C7Nw"
+      }
+    },
+    {
+      "id": "yotsuha-umise",
+      "name": "海妹四葉",
+      "nameEn": "Umise Yotsuha",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#E85D75",
+      "emoji": "📚",
+      "description": "2022年デビュー。本を軸に活動するライバー。",
+      "twitter": "Yotsuha_Umise",
+      "youtube": {
+        "channelId": "UCtHY-tP0dyykhTRMmnfPs_g"
+      }
+    },
+    {
+      "id": "shoichi-kanda",
+      "name": "神田笑一",
+      "nameEn": "Kanda Shoichi",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4A90D9",
+      "emoji": "⭐",
+      "description": "2018年デビュー。トークを軸に活動するライバー。",
+      "twitter": "kanda_shoichi",
+      "youtube": {
+        "channelId": "UCWz0CSYCxf4MhRKPDm220AQ"
+      }
+    },
+    {
+      "id": "natsume-kurusu",
+      "name": "来栖夏芽",
+      "nameEn": "Kurusu Natsume",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌好き",
+        "絵"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 6,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🎵",
+      "description": "2019年デビュー。歌好き・絵を軸に活動するライバー。",
+      "twitter": "kurusu72me",
+      "youtube": {
+        "channelId": "UCRcLAVTbmx2-iNcXSsupdNA"
+      }
+    },
+    {
+      "id": "alice-mononobe",
+      "name": "物述有栖",
+      "nameEn": "Mononobe Alice",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#B57EDC",
+      "emoji": "📚",
+      "description": "2018年デビュー。本を軸に活動するライバー。",
+      "twitter": "alicemononobe",
+      "youtube": {
+        "channelId": "UCt0clH12Xk1-Ej5PXKGfdPA"
+      }
+    },
+    {
+      "id": "doppio-dropscythe",
+      "name": "ドッピオ ドロップサイト",
+      "nameEn": "Doppio Dropscythe",
+      "branch": "EN",
+      "group": "XSOLEIL",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#F2A33C",
+      "emoji": "🍀",
+      "description": "2022年デビュー。にじさんじ所属ライバー。",
+      "twitter": "D_Dropscythe"
+    },
+    {
+      "id": "luis-cammy",
+      "name": "ルイス・キャミー",
+      "nameEn": "Luis Cammy",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本",
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 8
+      },
+      "color": "#46C0AA",
+      "emoji": "📚",
+      "description": "2019年デビュー。本・ダークを軸に活動するライバー。",
+      "twitter": "Luis_Cammy",
+      "youtube": {
+        "channelId": "UCb6ObE-XGCctO3WrjRZC-cw"
+      }
+    },
+    {
+      "id": "soma-sakayori",
+      "name": "酒寄颯馬",
+      "nameEn": "Sakayori Soma",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D95970",
+      "emoji": "🎈",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "sakayori_soma"
+    },
+    {
+      "id": "roco-kaburaki",
+      "name": "鏑木ろこ",
+      "nameEn": "Kaburaki Roco",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🪄",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "65_kaburaki",
+      "youtube": {
+        "channelId": "UClrQ7xhRBxS_v_-WuudGKmA"
+      }
+    },
+    {
+      "id": "eli-conifer",
+      "name": "エリー・コニファー",
+      "nameEn": "Eli Conifer",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "✨",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Eli_Conifer",
+      "youtube": {
+        "channelId": "UCpNH2Zk2gw3JBjWAKSyZcQQ"
+      }
+    },
+    {
+      "id": "ver-vermillion",
+      "name": "ヴェール ヴァーミリオン",
+      "nameEn": "Ver Vermillion",
+      "branch": "EN",
+      "group": "XSOLEIL",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ミステリアス"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#E6A422",
+      "emoji": "🌙",
+      "description": "2022年デビュー。ミステリアスを軸に活動するライバー。",
+      "twitter": "Ver_Vermillion"
+    },
+    {
+      "id": "yu-q-wilson",
+      "name": "ユウ Q ウィルソン",
+      "nameEn": "Yu Q. Wilson",
+      "branch": "EN",
+      "group": "Krisis",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D06AA8",
+      "emoji": "🌸",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "YuQWilson"
+    },
+    {
+      "id": "riko-shiga",
+      "name": "司賀りこ",
+      "nameEn": "Shiga Riko",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "アイドル"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 6,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "🎀",
+      "description": "2024年デビュー。アイドルを軸に活動するライバー。",
+      "twitter": "Shigariko_"
+    },
+    {
+      "id": "seffyna",
+      "name": "セフィナ",
+      "nameEn": "Seffyna",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "歌好き",
+        "料理"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "🎵",
+      "description": "2021年デビュー。歌好き・料理を軸に活動するライバー。",
+      "twitter": "Seffyna2434",
+      "youtube": {
+        "channelId": "UCeGendL8CO5RkffB6IFwHow"
+      }
+    },
+    {
+      "id": "emma-august",
+      "name": "えま★おうがすと",
+      "nameEn": "Emma August",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お酒",
+        "料理",
+        "ダーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#EE7623",
+      "emoji": "🍶",
+      "description": "2019年デビュー。お酒・料理・ダークを軸に活動するライバー。",
+      "twitter": "emma_august_",
+      "youtube": {
+        "channelId": "UCl1oLKcAq93p-pwKfDGhiYQ"
+      }
+    },
+    {
+      "id": "vezalius-bandage",
+      "name": "ヴェザリウス バンデージ",
+      "nameEn": "Vezalius Bandage",
+      "branch": "EN",
+      "group": "Krisis",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎈",
+      "description": "2023年デビュー。にじさんじ所属ライバー。",
+      "twitter": "VezaliusBandage"
+    },
+    {
+      "id": "kaelix-debonair",
+      "name": "ケイリクス・デボネア",
+      "nameEn": "Kaelix Debonair",
+      "branch": "EN",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#C75B39",
+      "emoji": "🪄",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "KaelixDebonair"
+    },
+    {
+      "id": "sayo-amemori",
+      "name": "雨森小夜",
+      "nameEn": "Amemori Sayo",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6C8CD5",
+      "emoji": "✨",
+      "description": "2018年デビュー。トークを軸に活動するライバー。",
+      "twitter": "sayo_amemori",
+      "youtube": {
+        "channelId": "UCRWOdwLRsenx2jLaiCAIU4A"
+      }
+    },
+    {
+      "id": "youko-akabane",
+      "name": "赤羽葉子",
+      "nameEn": "Akabane Youko",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ホラー",
+        "ゲーマー",
+        "姉御"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 3,
+        "talk": 8,
+        "game": 8,
+        "music": 4,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 3,
+        "cool": 7
+      },
+      "color": "#DC2626",
+      "emoji": "👻",
+      "description": "赤羽葉子。ホラーゲームを愛する女帝。肝の据わり方と乾いた笑い、フリーダムな配信スタイル。",
+      "twitter": "youko_akabane",
+      "youtube": {
+        "channelId": "UCBi8YaVyZpiKWN3_Z0dCTfQ"
+      }
+    },
+    {
+      "id": "mahiro-yukishiro",
+      "name": "雪城眞尋",
+      "nameEn": "Yukishiro Mahiro",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#58A55C",
+      "emoji": "🌸",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "mahiroyukishiro",
+      "youtube": {
+        "channelId": "UCHX7YpFG8rVwhsHCx34xt7w"
+      }
+    },
+    {
+      "id": "kisara",
+      "name": "綺沙良",
+      "nameEn": "Kisara",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🌊",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Kisara_2434"
+    },
+    {
+      "id": "kirame-sorahoshi",
+      "name": "空星きらめ",
+      "nameEn": "Sorahoshi Kirame",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E85D75",
+      "emoji": "🍀",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "kirame_2434",
+      "youtube": {
+        "channelId": "UC_82HBGtvwN1hcGeOGHzUBQ"
+      }
+    },
+    {
+      "id": "ayato-hitotsubashi",
+      "name": "一橋綾人",
+      "nameEn": "Hitotsubashi Ayato",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4A90D9",
+      "emoji": "🎯",
+      "description": "2025年デビュー。トークを軸に活動するライバー。",
+      "twitter": "Aya10_1tsubashi"
+    },
+    {
+      "id": "kohaku-todo",
+      "name": "東堂コハク",
+      "nameEn": "Todo Kohaku",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "関西弁",
+        "ゲーマー",
+        "姉御"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 4,
+        "cool": 6
+      },
+      "color": "#F59E0B",
+      "emoji": "🏍️",
+      "description": "関西弁のバイク好き女子。ノリの良さと姉御肌、ゲームでの思い切りの良さが魅力。",
+      "twitter": "kohaku_todo",
+      "youtube": {
+        "channelId": "UCebT4Aq-3XWb5je1S1FvR_A"
+      }
+    },
+    {
+      "id": "gilzaren-iii",
+      "name": "ギルザレンⅢ世",
+      "nameEn": "Gilzaren III",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ダーク",
+        "低音ボイス",
+        "レア"
+      ],
+      "params": {
+        "energy": 2,
+        "healing": 6,
+        "talk": 5,
+        "game": 3,
+        "music": 5,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 2,
+        "cool": 10
+      },
+      "color": "#1E1B4B",
+      "emoji": "🦇",
+      "description": "ギルザレンIII世。滅多に配信しない吸血鬼の当主。低音ボイスと「配信するだけでトレンド入り」のレア度。",
+      "twitter": "gilzaren_iii",
+      "youtube": {
+        "channelId": "UCUzJ90o1EjqUbk2pBAy0_aw"
+      }
+    },
+    {
+      "id": "air-harusaki",
+      "name": "春崎エアル",
+      "nameEn": "Harusaki Air",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク",
+        "王子様"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 7
+      },
+      "color": "#F2A33C",
+      "emoji": "👑",
+      "description": "2018年デビュー。トーク・王子様を軸に活動するライバー。",
+      "twitter": "harusakiair2434",
+      "youtube": {
+        "channelId": "UCtAvQ5U0aXyKwm2i4GqFgJg"
+      }
+    },
+    {
+      "id": "rine-yaguruma",
+      "name": "矢車りね",
+      "nameEn": "Yaguruma Rine",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "⭐",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "rine_yaguruma",
+      "youtube": {
+        "channelId": "UCvzVB-EYuHFXHZrObB8a_Og"
+      }
+    },
+    {
+      "id": "tamako-kirara",
+      "name": "雲母たまこ",
+      "nameEn": "Kirara Tamako",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D95970",
+      "emoji": "🌸",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "kirara_tamako"
+    },
+    {
+      "id": "freodore",
+      "name": "フリオドール",
+      "nameEn": "Freodore",
+      "branch": "EN",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🌊",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Freo_2434"
+    },
+    {
+      "id": "ichigo-ushimi",
+      "name": "宇志海いちご",
+      "nameEn": "Ushimi Ichigo",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "🍀",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "ushimi_ichigo",
+      "youtube": {
+        "channelId": "UCmUjjW5zF1MMOhYUwwwQv9Q"
+      }
+    },
+    {
+      "id": "manami-aizono",
+      "name": "愛園愛美",
+      "nameEn": "Aizono Manami",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "お姉さん",
+        "癒し",
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 8,
+        "talk": 8,
+        "game": 5,
+        "music": 6,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EC4899",
+      "emoji": "💗",
+      "description": "愛園愛美。包容力の塊のようなお姉さん。恋愛相談と癒しボイス、たまに見せる乙女な一面。",
+      "twitter": "manami_aizono",
+      "youtube": {
+        "channelId": "UC0WwEfE-jOM2rzjpdfhTzZA"
+      }
+    },
+    {
+      "id": "zeal-ginjoka",
+      "name": "ジール・ギンジョウカ",
+      "nameEn": "Zeal Ginjoka",
+      "branch": "EN",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "お酒",
+        "ミステリアス"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#D06AA8",
+      "emoji": "🍶",
+      "description": "2025年デビュー。お酒・ミステリアスを軸に活動するライバー。",
+      "twitter": "ZealGinjoka"
+    },
+    {
+      "id": "min-suha",
+      "name": "ミン スゥーハ",
+      "nameEn": "Min Suha",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "🪄",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "SuhaMin2434",
+      "youtube": {
+        "channelId": "UCUtKkGKef8BYMs3h-3zQm9A"
+      }
+    },
+    {
+      "id": "toto-tachitsute",
+      "name": "立伝都々",
+      "nameEn": "Tachitsute Toto",
+      "branch": "JP",
+      "group": "2023年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "お酒"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "🍶",
+      "description": "2023年デビュー。お酒を軸に活動するライバー。",
+      "twitter": "tctt10_10"
+    },
+    {
+      "id": "seible",
+      "name": "セイブル",
+      "nameEn": "Seible",
+      "branch": "EN",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EE7623",
+      "emoji": "⭐",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Seible_2434"
+    },
+    {
+      "id": "hajime-shibuya",
+      "name": "渋谷ハジメ",
+      "nameEn": "Shibuya Hajime",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎮",
+      "description": "2018年デビュー。ゲーマー・トークを軸に活動するライバー。",
+      "twitter": "sibuya_hajime",
+      "youtube": {
+        "channelId": "UCeK9HFcRZoTrvqcUCtccMoQ"
+      }
+    },
+    {
+      "id": "claude-clawmark",
+      "name": "クロード クローマーク",
+      "nameEn": "Claude Clawmark",
+      "branch": "EN",
+      "group": "Denauth",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#C75B39",
+      "emoji": "🔬",
+      "description": "2023年デビュー。博識を軸に活動するライバー。",
+      "twitter": "ClaudeClawmark"
+    },
+    {
+      "id": "sakyo-itsuki",
+      "name": "五木左京",
+      "nameEn": "Itsuki Sakyo",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6C8CD5",
+      "emoji": "🍀",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Itsuki_Sakyo"
+    },
+    {
+      "id": "mone-kozue",
+      "name": "梢桃音",
+      "nameEn": "Kozue Mone",
+      "branch": "JP",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#A6528F",
+      "emoji": "🎯",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "KozueMone"
+    },
+    {
+      "id": "moira",
+      "name": "モイラ",
+      "nameEn": "Moira",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "本",
+        "自由人"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#58A55C",
+      "emoji": "📚",
+      "description": "2018年デビュー。本・自由人を軸に活動するライバー。",
+      "twitter": "moiramoimoimoi",
+      "youtube": {
+        "channelId": "UCvmppcdYf4HOv-tFQhHHJMA"
+      }
+    },
+    {
+      "id": "kyoko-todoroki",
+      "name": "轟京子",
+      "nameEn": "Todoroki Kyoko",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🪄",
+      "description": "2018年デビュー。にじさんじ所属ライバー。",
+      "twitter": "kt_seeds",
+      "youtube": {
+        "channelId": "UCRV9d6YCYIMUszK-83TwxVA"
+      }
+    },
+    {
+      "id": "kotone-mikogami",
+      "name": "御子神琴音",
+      "nameEn": "Mikogami Kotone",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "お嬢様"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#E85D75",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマー・お嬢様を軸に活動するライバー。",
+      "twitter": "Mikogami_Kotone"
+    },
+    {
+      "id": "muyu-amagase",
+      "name": "天ヶ瀬むゆ",
+      "nameEn": "Amagase Muyu",
+      "branch": "JP",
+      "group": "2022年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "料理",
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#4A90D9",
+      "emoji": "🍳",
+      "description": "2022年デビュー。料理・本を軸に活動するライバー。",
+      "twitter": "Muyu_Amagase",
+      "youtube": {
+        "channelId": "UCAQDFeCTVdx90GtwohwjHzQ"
+      }
+    },
+    {
+      "id": "miku-nekoyashiki",
+      "name": "猫屋敷美紅",
+      "nameEn": "Nekoyashiki Miku",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "猫"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🐱",
+      "description": "2025年デビュー。猫を軸に活動するライバー。",
+      "twitter": "Nekoyashiki_39"
+    },
+    {
+      "id": "reina",
+      "name": "Rei7",
+      "nameEn": "Reina",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマーを軸に活動するライバー。",
+      "twitter": "Rei7_2434"
+    },
+    {
+      "id": "ha-yun",
+      "name": "ハ ユン",
+      "nameEn": "Ha Yun",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#F2A33C",
+      "emoji": "🍀",
+      "description": "2021年デビュー。にじさんじ所属ライバー。",
+      "twitter": "HaYun2434",
+      "youtube": {
+        "channelId": "UCrhhJPNsOqzNIkUfTABoSpg"
+      }
+    },
+    {
+      "id": "madoka-minamo",
+      "name": "水面まどか",
+      "nameEn": "Minamo Madoka",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "絵"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "🎨",
+      "description": "2026年デビュー。絵を軸に活動するライバー。",
+      "twitter": "Madoka_Minamo"
+    },
+    {
+      "id": "isumi-shirose",
+      "name": "城瀬いすみ",
+      "nameEn": "Shirose Isumi",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D95970",
+      "emoji": "🎈",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Shiro_Isumyan"
+    },
+    {
+      "id": "ayane-shirasa",
+      "name": "白砂あやね",
+      "nameEn": "Shirasa Ayane",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#7B68C8",
+      "emoji": "🪄",
+      "description": "2026年デビュー。にじさんじ所属ライバー。",
+      "twitter": "shirasa_ayane"
+    },
+    {
+      "id": "mikaru-kadou",
+      "name": "蝸堂みかる",
+      "nameEn": "Kadou Mikaru",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "まったり",
+        "自由人"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 5,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "🍵",
+      "description": "2025年デビュー。まったり・自由人を軸に活動するライバー。",
+      "twitter": "Kadou_Mikaru"
+    },
+    {
+      "id": "reo-sumeragi",
+      "name": "皇れお",
+      "nameEn": "Sumeragi Reo",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E6A422",
+      "emoji": "⭐",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "sumeragi_0o"
+    },
+    {
+      "id": "tsumugu-kataribe",
+      "name": "語部紡",
+      "nameEn": "Kataribe Tsumugu",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "トーク",
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 9,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#D06AA8",
+      "emoji": "📚",
+      "description": "2019年デビュー。トーク・本を軸に活動するライバー。",
+      "twitter": "KataribeTsumugu",
+      "youtube": {
+        "channelId": "UCufQu4q65z63IgE4cfKs1BQ"
+      }
+    },
+    {
+      "id": "lee-roha",
+      "name": "イ ロハ",
+      "nameEn": "Lee Roha",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "アイドル",
+        "本"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 6,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 6
+      },
+      "color": "#4FB06D",
+      "emoji": "🎀",
+      "description": "2020年デビュー。アイドル・本を軸に活動するライバー。",
+      "twitter": "RohaLee2434",
+      "youtube": {
+        "channelId": "UCClwIqTUn5LDpFucHyaAhHg"
+      }
+    },
+    {
+      "id": "hina-asuka",
+      "name": "飛鳥ひな",
+      "nameEn": "Asuka Hina",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "🍵",
+      "description": "2018年デビュー。まったりを軸に活動するライバー。",
+      "twitter": "hina__asuka",
+      "youtube": {
+        "channelId": "UCiSRx1a2k-0tOg-fs6gAolQ"
+      }
+    },
+    {
+      "id": "tsubasa-hanakago",
+      "name": "花籠つばさ",
+      "nameEn": "Hanakago Tsubasa",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EE7623",
+      "emoji": "🎯",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Hanakago_2434rr"
+    },
+    {
+      "id": "klara-charmwood",
+      "name": "クララ チャームウッド",
+      "nameEn": "Klara Charmwood",
+      "branch": "EN",
+      "group": "Denauth",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎮",
+      "description": "2024年デビュー。ゲーマーを軸に活動するライバー。",
+      "twitter": "KlaraCharmwood"
+    },
+    {
+      "id": "nonoha-togawa",
+      "name": "十河ののは",
+      "nameEn": "Togawa Nonoha",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#C75B39",
+      "emoji": "🪄",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Togawa_Nonoha"
+    },
+    {
+      "id": "ayumu-senri",
+      "name": "千凛あゆむ",
+      "nameEn": "Senri Ayumu",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ゲーマー",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 7,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#6C8CD5",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマー・まったりを軸に活動するライバー。",
+      "twitter": "Senri_Ayumu"
+    },
+    {
+      "id": "onotora",
+      "name": "男虎",
+      "nameEn": "Onotora",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ミステリアス"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#A6528F",
+      "emoji": "🌙",
+      "description": "2026年デビュー。ミステリアスを軸に活動するライバー。",
+      "twitter": "OnoTora333"
+    },
+    {
+      "id": "yuno-shinomiya",
+      "name": "篠宮ゆの",
+      "nameEn": "Shinomiya Yuno",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#58A55C",
+      "emoji": "🌸",
+      "description": "2025年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Yuno_Shino38"
+    },
+    {
+      "id": "daichi-tsukahara",
+      "name": "塚原大地",
+      "nameEn": "Tsukahara Daichi",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "歌好き",
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 7,
+        "comedy": 6,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#DE5A93",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマー・歌好き・ぽんこつを軸に活動するライバー。",
+      "twitter": "BIG_Tsukahara"
+    },
+    {
+      "id": "so-nagi",
+      "name": "ソ ナギ",
+      "nameEn": "So Nagi",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E85D75",
+      "emoji": "🍀",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "NagiSo2434",
+      "youtube": {
+        "channelId": "UC5ek2GWKvUKFgnKSHuuCFrw"
+      }
+    },
+    {
+      "id": "rayon",
+      "name": "レヨン",
+      "nameEn": "Rayon",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ゲーマー",
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#4A90D9",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマー・博識を軸に活動するライバー。",
+      "twitter": "Rayon_2434"
+    },
+    {
+      "id": "na-sera",
+      "name": "ナ セラ",
+      "nameEn": "Na Sera",
+      "branch": "JP",
+      "group": "2021年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "アイドル"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 6,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 5
+      },
+      "color": "#6BBF59",
+      "emoji": "🎀",
+      "description": "2021年デビュー。アイドルを軸に活動するライバー。",
+      "twitter": "NaSera2434",
+      "youtube": {
+        "channelId": "UCX88Pe54pxbJDSGIyGrzNdg"
+      }
+    },
+    {
+      "id": "shino-yagyu",
+      "name": "夜牛詩乃",
+      "nameEn": "Yagyu Shino",
+      "branch": "JP",
+      "group": "2025年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "料理",
+        "まったり"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 8,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#B57EDC",
+      "emoji": "🍳",
+      "description": "2025年デビュー。料理・まったりを軸に活動するライバー。",
+      "twitter": "YagyuShino"
+    },
+    {
+      "id": "layla-alstroemeria",
+      "name": "ライラ アルストロエメリア",
+      "nameEn": "Layla Alstroemeria",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#F2A33C",
+      "emoji": "✨",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "LaylaAlstro2434",
+      "youtube": {
+        "channelId": "UCyRkQSuhJILuGOuXk10voPg"
+      }
+    },
+    {
+      "id": "ryoma-barrenwort",
+      "name": "凉舞 バレンウォート",
+      "nameEn": "Ryoma Barrenwort",
+      "branch": "EN",
+      "group": "2024年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#46C0AA",
+      "emoji": "⭐",
+      "description": "2024年デビュー。にじさんじ所属ライバー。",
+      "twitter": "RyomaBarrenwort"
+    },
+    {
+      "id": "iruka-kokonami",
+      "name": "小々波いるか",
+      "nameEn": "Kokonami Iruka",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "ゲーマー"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#D95970",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマーを軸に活動するライバー。",
+      "twitter": "Kokonami_Iruka"
+    },
+    {
+      "id": "eita-kuri",
+      "name": "九里詠太",
+      "nameEn": "Kuri Eita",
+      "branch": "JP",
+      "group": "2026年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "ゲーマー",
+        "料理",
+        "博識"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 8,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#7B68C8",
+      "emoji": "🎮",
+      "description": "2026年デビュー。ゲーマー・料理・博識を軸に活動するライバー。",
+      "twitter": "Eita_2434"
+    },
+    {
+      "id": "oh-jiyu",
+      "name": "オ ジユ",
+      "nameEn": "Oh Jiyu",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#5CA9E6",
+      "emoji": "🍀",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "JiyuOh2434",
+      "youtube": {
+        "channelId": "UCnzZmBOSrQf2wDBbnsDajVw"
+      }
+    },
+    {
+      "id": "etna-crimson",
+      "name": "エトナ クリムソン",
+      "nameEn": "Etna Crimson",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#E6A422",
+      "emoji": "🎯",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Etna_Crimson",
+      "youtube": {
+        "channelId": "UCjFu-9GHnabzSFRAYm1B9Dw"
+      }
+    },
+    {
+      "id": "akira-ray",
+      "name": "明楽レイ",
+      "nameEn": "Akira Ray",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "トーク",
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 9,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#D06AA8",
+      "emoji": "📚",
+      "description": "2020年デビュー。トーク・本を軸に活動するライバー。",
+      "twitter": "RayAkira2434",
+      "youtube": {
+        "channelId": "UC7hffDQLKIEG-_zoAQkMIvg"
+      }
+    },
+    {
+      "id": "rai-galilei",
+      "name": "ライ ガリレイ",
+      "nameEn": "Rai Galilei",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#4FB06D",
+      "emoji": "🪄",
+      "description": "2019年デビュー。にじさんじ所属ライバー。",
+      "twitter": "Rai_Galilei",
+      "youtube": {
+        "channelId": "UC8Snw5i4eOJXEQqURAK17hQ"
+      }
+    },
+    {
+      "id": "gaon",
+      "name": "ガオン",
+      "nameEn": "Gaon",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "m",
+      "tags": [
+        "歌好き",
+        "お酒",
+        "トーク"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 9,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#8E7CC3",
+      "emoji": "🎵",
+      "description": "2020年デビュー。歌好き・お酒・トークを軸に活動するライバー。",
+      "twitter": "Gaon2434",
+      "youtube": {
+        "channelId": "UCpRXCTyNNa-MnjhK6gisnRw"
+      }
+    },
+    {
+      "id": "derem-kado",
+      "name": "デレム カド",
+      "nameEn": "Derem Kado",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "にじさんじ"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 5
+      },
+      "color": "#EE7623",
+      "emoji": "⭐",
+      "description": "2020年デビュー。にじさんじ所属ライバー。",
+      "twitter": "DeremKado",
+      "youtube": {
+        "channelId": "UCMzVa7B8UEdrvUGsPmSgyjA"
+      }
+    },
+    {
+      "id": "ryu-hari",
+      "name": "リュ ハリ",
+      "nameEn": "Ryu Hari",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "f",
+      "tags": [
+        "ゲーマー",
+        "ダーク",
+        "猫"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 6,
+        "talk": 6,
+        "game": 7,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 6,
+        "cool": 7
+      },
+      "color": "#3EB4C6",
+      "emoji": "🎮",
+      "description": "2020年デビュー。ゲーマー・ダーク・猫を軸に活動するライバー。",
+      "twitter": "HariRyu2434",
+      "youtube": {
+        "channelId": "UClS6k3w1sPwlVFqK3-yID5A"
+      }
+    },
+    {
+      "id": "nagisa-arcinia",
+      "name": "ナギサ アルシニア",
+      "nameEn": "Nagisa Arcinia",
+      "branch": "JP",
+      "group": "2020年デビュー",
+      "status": "active",
+      "gender": "u",
+      "tags": [
+        "本"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 5,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#C75B39",
+      "emoji": "📚",
+      "description": "2020年デビュー。本を軸に活動するライバー。",
+      "twitter": "NagisaArcinia",
+      "youtube": {
+        "channelId": "UCijNnZ-6m8g85UGaRAWuw7g"
+      }
+    },
+    {
+      "id": "yuki-chihiro",
+      "name": "勇気ちひろ",
+      "nameEn": "Chihiro Yuki",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "FPS",
+        "ゲーマー",
+        "ストイック"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 3,
+        "talk": 6,
+        "game": 10,
+        "music": 4,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 7,
+        "cool": 7
+      },
+      "color": "#60A5FA",
+      "emoji": "🔫",
+      "description": "FPSに人生を捧げた一期生。Apexの鬼練習と、かわいい見た目に反するガチ勢っぷりで一時代を築いた。",
+      "twitter": null
+    },
+    {
+      "id": "suzuya-aki",
+      "name": "鈴谷アキ",
+      "nameEn": "Aki Suzuya",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "graduated",
+      "gender": "m",
+      "tags": [
+        "癒し",
+        "まったり"
+      ],
+      "params": {
+        "energy": 3,
+        "healing": 8,
+        "talk": 6,
+        "game": 5,
+        "music": 6,
+        "comedy": 4,
+        "chaos": 2,
+        "cute": 8,
+        "cool": 3
+      },
+      "color": "#FDA4AF",
+      "emoji": "🌸",
+      "description": "ふんわり癒し系の男の子。優しい声と丁寧な配信で長く愛された一期生。",
+      "twitter": null
+    },
+    {
+      "id": "suzuka-utako",
+      "name": "鈴鹿詩子",
+      "nameEn": "Utako Suzuka",
+      "branch": "JP",
+      "group": "2018年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "歌うま",
+        "オタク",
+        "カオス"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 3,
+        "talk": 8,
+        "game": 4,
+        "music": 9,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 4,
+        "cool": 3
+      },
+      "color": "#F472B6",
+      "emoji": "🎀",
+      "description": "歌のお姉さん…の皮を被った腐女子。振り切ったオタクトークと確かな歌唱力のギャップ。",
+      "twitter": null
+    },
+    {
+      "id": "mayuzumi-kai",
+      "name": "黛灰",
+      "nameEn": "Kai Mayuzumi",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "m",
+      "tags": [
+        "ミステリアス",
+        "博識",
+        "イケメン"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 3,
+        "talk": 8,
+        "game": 7,
+        "music": 4,
+        "comedy": 6,
+        "chaos": 5,
+        "cute": 2,
+        "cool": 10
+      },
+      "color": "#64748B",
+      "emoji": "🖥️",
+      "description": "ハッカー設定を物語として貫いた異色の存在。現実とバーチャルを往復する演出は伝説に。",
+      "twitter": null
+    },
+    {
+      "id": "otogibara-era",
+      "name": "御伽原江良",
+      "nameEn": "Era Otogibara",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "トーク",
+        "カオス",
+        "元気"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 2,
+        "talk": 10,
+        "game": 4,
+        "music": 5,
+        "comedy": 10,
+        "chaos": 9,
+        "cute": 5,
+        "cool": 2
+      },
+      "color": "#C084FC",
+      "emoji": "🎠",
+      "description": "「ギバラ」の愛称で愛された天真爛漫トークの怪物。伝説級の雑談力で今も語り継がれる。",
+      "twitter": null
+    },
+    {
+      "id": "gundou-mirei",
+      "name": "郡道美玲",
+      "nameEn": "Mirei Gundou",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "毒舌",
+        "先生",
+        "トーク"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 2,
+        "talk": 9,
+        "game": 5,
+        "music": 4,
+        "comedy": 9,
+        "chaos": 7,
+        "cute": 3,
+        "cool": 6
+      },
+      "color": "#E11D48",
+      "emoji": "📕",
+      "description": "毒舌教師キャラの先生。攻めた発言と生徒(ファン)との軽妙な掛け合いで人気を博した。",
+      "twitter": null
+    },
+    {
+      "id": "kudou-chitose",
+      "name": "久遠千歳",
+      "nameEn": "Chitose Kudou",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "ミステリアス",
+        "歌好き"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 5,
+        "talk": 6,
+        "game": 5,
+        "music": 7,
+        "comedy": 5,
+        "chaos": 4,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#A5B4FC",
+      "emoji": "🕊️",
+      "description": "不思議な世界観と歌声を持つライバー。短い活動期間ながら強い印象を残した。",
+      "twitter": null
+    },
+    {
+      "id": "seto-miyako",
+      "name": "瀬戸美夜子",
+      "nameEn": "Miyako Seto",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "博識",
+        "まったり",
+        "発明"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 7,
+        "talk": 7,
+        "game": 5,
+        "music": 5,
+        "comedy": 5,
+        "chaos": 3,
+        "cute": 5,
+        "cool": 6
+      },
+      "color": "#2DD4BF",
+      "emoji": "🔧",
+      "description": "機械いじりが得意な発明家気質。穏やかで知的な配信が持ち味だった。",
+      "twitter": null
+    },
+    {
+      "id": "onomachi-haruka",
+      "name": "小野町春香",
+      "nameEn": "Haruka Onomachi",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "和風",
+        "癒し",
+        "お姉さん"
+      ],
+      "params": {
+        "energy": 4,
+        "healing": 8,
+        "talk": 7,
+        "game": 4,
+        "music": 6,
+        "comedy": 5,
+        "chaos": 2,
+        "cute": 5,
+        "cool": 4
+      },
+      "color": "#4ADE80",
+      "emoji": "⛩️",
+      "description": "お寺の娘の和風お姉さん。おっとりした語り口と面倒見の良さで愛された。",
+      "twitter": null
+    },
+    {
+      "id": "warabeda-meiji",
+      "name": "童田明治",
+      "nameEn": "Meiji Warabeda",
+      "branch": "JP",
+      "group": "2019年デビュー",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "犬",
+        "元気",
+        "ぽんこつ"
+      ],
+      "params": {
+        "energy": 6,
+        "healing": 4,
+        "talk": 6,
+        "game": 6,
+        "music": 5,
+        "comedy": 7,
+        "chaos": 5,
+        "cute": 9,
+        "cool": 2
+      },
+      "color": "#F87171",
+      "emoji": "🧶",
+      "description": "赤ずきんの狼っ娘。舌足らずなかわいい声と、ゲームでの意外な负けん気。",
+      "twitter": null
+    },
+    {
+      "id": "pomu-rainpuff",
+      "name": "Pomu Rainpuff",
+      "nameEn": "Pomu Rainpuff",
+      "branch": "EN",
+      "group": "LazuLight",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "オタク",
+        "元気",
+        "多言語"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 3,
+        "talk": 8,
+        "game": 5,
+        "music": 6,
+        "comedy": 8,
+        "chaos": 6,
+        "cute": 6,
+        "cool": 3
+      },
+      "color": "#86EFAC",
+      "emoji": "🧚",
+      "description": "妖精のOL。日本のオタク文化への深い愛とエネルギッシュな配信でEN初期を支えた立役者。",
+      "twitter": null
+    },
+    {
+      "id": "mysta-rias",
+      "name": "Mysta Rias",
+      "nameEn": "Mysta Rias",
+      "branch": "EN",
+      "group": "Luxiem",
+      "status": "graduated",
+      "gender": "m",
+      "tags": [
+        "ぽんこつ",
+        "元気",
+        "ケモミミ"
+      ],
+      "params": {
+        "energy": 8,
+        "healing": 2,
+        "talk": 8,
+        "game": 5,
+        "music": 5,
+        "comedy": 9,
+        "chaos": 8,
+        "cute": 5,
+        "cool": 4
+      },
+      "color": "#FBBF24",
+      "emoji": "🦊",
+      "description": "探偵見習いの狐。ポンコツで熱くて涙もろい、感情表現の豊かさで愛されたLuxiemの一員。",
+      "twitter": null
+    },
+    {
+      "id": "nina-kosaka",
+      "name": "Nina Kosaka",
+      "nameEn": "Nina Kosaka",
+      "branch": "EN",
+      "group": "Ethyria",
+      "status": "graduated",
+      "gender": "f",
+      "tags": [
+        "お姉さん",
+        "ケモミミ",
+        "癒し"
+      ],
+      "params": {
+        "energy": 5,
+        "healing": 8,
+        "talk": 8,
+        "game": 4,
+        "music": 5,
+        "comedy": 6,
+        "chaos": 3,
+        "cute": 4,
+        "cool": 6
+      },
+      "color": "#FB923C",
+      "emoji": "🦊",
+      "description": "九尾の狐のお姉さん。「ハニー」と呼びかける包容力と大人の余裕でENの母的存在だった。",
+      "twitter": null
+    }
+  ],
+  "brand": {
+    "id": "nijisanji",
+    "name": "にじさんじ",
+    "label": "にじさんじ",
+    "branches": [
+      {
+        "key": "JP",
+        "label": "JP",
+        "desc": "日本"
+      },
+      {
+        "key": "EN",
+        "label": "EN",
+        "desc": "English"
+      }
+    ]
+  }
+}

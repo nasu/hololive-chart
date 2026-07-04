@@ -2328,5 +2328,27 @@
       "twitter": "amanekanatach"
     }
   ],
-  "paramScale": 10
+  "paramScale": 10,
+  "brand": {
+    "id": "hololive",
+    "name": "ホロライブ",
+    "label": "hololive",
+    "branches": [
+      {
+        "key": "JP",
+        "label": "JP",
+        "desc": "日本"
+      },
+      {
+        "key": "EN",
+        "label": "EN",
+        "desc": "English"
+      },
+      {
+        "key": "ID",
+        "label": "ID",
+        "desc": "Indonesia"
+      }
+    ]
+  }
 }

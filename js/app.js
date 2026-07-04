@@ -1,17 +1,24 @@
 /**
- * ホロライブ推し探しチャート
+ * V ライバー推し探しチャート（ホロライブ / にじさんじ）
  *
- * データ層は data/*.json に分離。将来サーバー管理に移行する場合は
- * DataSource.load() の fetch 先を API エンドポイントに差し替えるだけでよい。
+ * データ層は data/<brand>/*.json に分離。将来サーバー管理に移行する場合は
+ * DataSource の fetch 先を API エンドポイントに差し替えるだけでよい。
+ * 文言・ブランチ構成・性別フィルタの有無はすべてデータ駆動。
  */
 
 // ---------- データ層 ----------
 
 const DataSource = {
-  async load() {
+  async loadBrands() {
+    const res = await fetch("data/brands.json");
+    if (!res.ok) throw new Error("ブランド一覧の読み込みに失敗しました");
+    return (await res.json()).brands;
+  },
+
+  async load(brandId) {
     const [membersRes, questionsRes] = await Promise.all([
-      fetch("data/members.json"),
-      fetch("data/questions.json"),
+      fetch(`data/${brandId}/members.json`),
+      fetch(`data/${brandId}/questions.json`),
     ]);
     if (!membersRes.ok || !questionsRes.ok) {
       throw new Error("データの読み込みに失敗しました");
@@ -19,6 +26,7 @@ const DataSource = {
     const membersData = await membersRes.json();
     const questionsData = await questionsRes.json();
     return {
+      brand: membersData.brand,
       paramLabels: membersData.paramLabels,
       paramScale: membersData.paramScale || 10,
       members: membersData.members,
@@ -89,12 +97,13 @@ const Matcher = {
     return { percent: Math.round(shape * 90 + tagPoints), hitTags };
   },
 
-  rank(members, answers, { branches, includeGraduated, scale = 10 }) {
+  rank(members, answers, { branches, includeGraduated, gender = "all", scale = 10 }) {
     const profile = this.buildProfile(answers);
     const pool = members.filter(
       (m) =>
         branches.includes(m.branch) &&
-        (includeGraduated || m.status === "active")
+        (includeGraduated || m.status === "active") &&
+        (gender === "all" || !m.gender || m.gender === "u" || m.gender === gender)
     );
     const keys = pool.length > 0 ? Object.keys(pool[0].params) : [];
     const userVals = this.userVector(profile, keys, scale);
@@ -110,15 +119,52 @@ const Matcher = {
 // ---------- UI ----------
 
 const App = {
+  brands: null,
   data: null,
   state: {
-    view: "home", // home | quiz | result | members
-    branches: ["JP", "EN", "ID"],
+    view: "landing", // landing | home | quiz | result | members
+    brand: null,
+    branches: [],
+    gender: "all", // all | f | m
     includeGraduated: false,
     mode: "quick", // quick | deep
     currentQuestion: 0,
     answers: [], // 選択した option
     memberFilter: "ALL",
+  },
+
+  /** 性別データを持つブランドかどうか（性別フィルタの表示判定） */
+  hasGenderFilter() {
+    const genders = new Set(
+      this.data.members.map((m) => m.gender).filter((g) => g && g !== "u")
+    );
+    return genders.size > 1;
+  },
+
+  matchesGender(m) {
+    const g = this.state.gender;
+    return g === "all" || !m.gender || m.gender === "u" || m.gender === g;
+  },
+
+  async selectBrand(brandId) {
+    this.root.innerHTML = '<div class="loading">読み込み中…</div>';
+    try {
+      this.data = await DataSource.load(brandId);
+    } catch (e) {
+      this.root.innerHTML = `<div class="loading">読み込みエラー: ${e.message}</div>`;
+      return;
+    }
+    const s = this.state;
+    s.brand = brandId;
+    s.branches = this.data.brand.branches.map((b) => b.key);
+    s.gender = "all";
+    s.includeGraduated = false;
+    s.mode = "quick";
+    s.currentQuestion = 0;
+    s.answers = [];
+    s.memberFilter = "ALL";
+    s.view = "home";
+    this.render();
   },
 
   /** 選択中モードの質問リスト */
@@ -131,15 +177,15 @@ const App = {
   async init() {
     this.root = document.getElementById("app");
     document.getElementById("brandBtn").addEventListener("click", () => {
-      this.state.view = "home";
+      this.state.view = "landing";
       this.render();
     });
     document.getElementById("navMembersBtn").addEventListener("click", () => {
-      this.state.view = "members";
+      this.state.view = this.data ? "members" : "landing";
       this.render();
     });
     try {
-      this.data = await DataSource.load();
+      this.brands = await DataSource.loadBrands();
     } catch (e) {
       this.root.innerHTML = `<div class="loading">読み込みエラー: ${e.message}<br>ローカルで開く場合は簡易サーバー（例: npx serve）経由でアクセスしてください。</div>`;
       return;
@@ -149,6 +195,7 @@ const App = {
 
   render() {
     const views = {
+      landing: () => this.renderLanding(),
       home: () => this.renderHome(),
       quiz: () => this.renderQuiz(),
       result: () => this.renderResult(),
@@ -157,6 +204,36 @@ const App = {
     this.root.innerHTML = "";
     this.root.appendChild(views[this.state.view]());
     window.scrollTo(0, 0);
+  },
+
+  // ---- ブランド選択 ----
+  renderLanding() {
+    const wrap = this.el("div");
+    wrap.appendChild(
+      this.el("div", { class: "hero" }, [
+        this.el("h1", { text: "推し探しチャート" }),
+        this.el("p", {
+          text: "質問に答えて、あなたにぴったりのVライバー（推し）を見つけよう！まずは箱を選んでね。",
+        }),
+      ])
+    );
+    const row = this.el("div", { class: "brand-row" });
+    for (const b of this.brands) {
+      const btn = this.el("button", {
+        type: "button",
+        class: "brand-card",
+        style: `border-color: ${b.color}`,
+        onclick: () => this.selectBrand(b.id),
+      });
+      btn.appendChild(this.el("span", { class: "brand-emoji", text: b.emoji }));
+      btn.appendChild(this.el("span", { class: "brand-name", text: b.name }));
+      btn.appendChild(
+        this.el("small", { text: `${b.tagline} / ${b.count}名収録` })
+      );
+      row.appendChild(btn);
+    }
+    wrap.appendChild(row);
+    return wrap;
   },
 
   el(tag, attrs = {}, children = []) {
@@ -284,7 +361,7 @@ const App = {
       return `https://www.youtube.com/channel/${member.youtube.channelId}`;
     }
     return `https://www.youtube.com/results?search_query=${encodeURIComponent(
-      member.name + " hololive"
+      member.name + " " + this.data.brand.label
     )}`;
   },
 
@@ -358,7 +435,7 @@ const App = {
     nameBox.appendChild(
       this.el("p", {
         class: "result-meta",
-        text: `${member.nameEn} / hololive ${member.branch} ${member.group}`,
+        text: `${member.nameEn} / ${this.data.brand.label} ${member.branch} ${member.group}`,
       })
     );
     head.appendChild(nameBox);
@@ -389,9 +466,9 @@ const App = {
 
     wrap.appendChild(
       this.el("div", { class: "hero" }, [
-        this.el("h1", { text: "ホロライブ推し探しチャート" }),
+        this.el("h1", { text: `${this.data.brand.name}推し探しチャート` }),
         this.el("p", {
-          text: "質問に答えて、あなたにぴったりのホロメンを見つけよう！",
+          text: "質問に答えて、あなたにぴったりの推しを見つけよう！",
         }),
       ])
     );
@@ -403,11 +480,7 @@ const App = {
       this.el("h2", { text: "どのブランチから探す？（複数選択OK）" }),
     ]);
     const branchRow = this.el("div", { class: "choice-row" });
-    const branchDefs = [
-      { key: "JP", label: "JP", desc: "日本" },
-      { key: "EN", label: "EN", desc: "English" },
-      { key: "ID", label: "ID", desc: "Indonesia" },
-    ];
+    const branchDefs = this.data.brand.branches;
     for (const b of branchDefs) {
       const btn = this.el("button", {
         type: "button",
@@ -452,6 +525,33 @@ const App = {
     gradSection.appendChild(gradRow);
     card.appendChild(gradSection);
 
+    // 性別フィルタ（男女両方いるブランドのみ表示）
+    if (this.hasGenderFilter()) {
+      const genderSection = this.el("section", {}, [
+        this.el("h2", { text: "推したいライバーは？" }),
+      ]);
+      const genderRow = this.el("div", { class: "choice-row" });
+      for (const [val, label, desc] of [
+        ["all", "どちらも", "全ライバー対象"],
+        ["f", "女性ライバー", ""],
+        ["m", "男性ライバー", ""],
+      ]) {
+        const btn = this.el("button", {
+          type: "button",
+          class: "choice" + (s.gender === val ? " selected" : ""),
+          onclick: () => {
+            s.gender = val;
+            this.render();
+          },
+        });
+        btn.appendChild(document.createTextNode(label));
+        if (desc) btn.appendChild(this.el("small", { text: desc }));
+        genderRow.appendChild(btn);
+      }
+      genderSection.appendChild(genderRow);
+      card.appendChild(genderSection);
+    }
+
     // 診断モード
     const modeSection = this.el("section", {}, [
       this.el("h2", { text: "診断モード" }),
@@ -492,7 +592,8 @@ const App = {
     const count = this.data.members.filter(
       (m) =>
         s.branches.includes(m.branch) &&
-        (s.includeGraduated || m.status === "active")
+        (s.includeGraduated || m.status === "active") &&
+        this.matchesGender(m)
     ).length;
     wrap.appendChild(
       this.el("p", {
@@ -600,7 +701,7 @@ const App = {
       this.el("p", {
         class: "result-meta",
         text:
-          `hololive ${m.branch} / ${m.group}` +
+          `${this.data.brand.label} ${m.branch} / ${m.group}` +
           (m.status === "graduated" ? "（卒業生）" : ""),
       })
     );
@@ -632,6 +733,7 @@ const App = {
     const ranked = Matcher.rank(this.data.members, s.answers, {
       branches: s.branches,
       includeGraduated: s.includeGraduated,
+      gender: s.gender,
     });
     const profile = Matcher.buildProfile(s.answers);
     const wrap = this.el("div");
@@ -725,7 +827,8 @@ const App = {
       this.el("h1", { text: "メンバー一覧" }),
     ]);
     const filters = this.el("div", { class: "filter-row" });
-    for (const f of ["ALL", "JP", "EN", "ID", "卒業生"]) {
+    const filterKeys = ["ALL", ...this.data.brand.branches.map((b) => b.key), "卒業生"];
+    for (const f of filterKeys) {
       filters.appendChild(
         this.el("button", {
           type: "button",
@@ -778,7 +881,7 @@ const App = {
         }
         card.appendChild(h);
         card.appendChild(
-          this.el("div", { class: "meta", text: `hololive ${m.branch}` })
+          this.el("div", { class: "meta", text: `${this.data.brand.label} ${m.branch}` })
         );
         const tags = this.el("div", { class: "tag-list" });
         for (const t of m.tags) {

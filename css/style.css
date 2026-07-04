@@ -136,6 +136,39 @@ main {
 
 .hint { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 12px; }
 
+/* ---- Landing ---- */
+.brand-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.brand-card {
+  flex: 1;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 32px 24px;
+  background: var(--surface);
+  border: 3px solid;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.12s, box-shadow 0.15s;
+}
+.brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(31, 42, 61, 0.15);
+}
+.brand-emoji { font-size: 2.2rem; }
+.brand-name { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+.brand-card small { color: var(--muted); }
+
 /* ---- Quiz ---- */
 .progress-wrap { margin-bottom: 24px; }
 .progress-label { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
