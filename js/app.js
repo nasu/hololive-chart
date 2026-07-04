@@ -201,6 +201,8 @@ const App = {
       result: () => this.renderResult(),
       members: () => this.renderMembers(),
     };
+    // メンバー一覧はブランド選択後のみ意味を持つ
+    document.getElementById("navMembersBtn").hidden = !this.data;
     this.root.innerHTML = "";
     this.root.appendChild(views[this.state.view]());
     window.scrollTo(0, 0);
@@ -211,9 +213,9 @@ const App = {
     const wrap = this.el("div");
     wrap.appendChild(
       this.el("div", { class: "hero" }, [
-        this.el("h1", { text: "推し探しチャート" }),
+        this.el("h1", { text: "推しあわせ" }),
         this.el("p", {
-          text: "質問に答えて、あなたにぴったりのVライバー（推し）を見つけよう！まずは箱を選んでね。",
+          text: "質問に答えて、あなたにぴったりのVライバー（推し）と出会う診断チャート。まずは箱を選んでね。",
         }),
       ])
     );
