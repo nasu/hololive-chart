@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "8";
+const APP_VERSION = "9";
 
 const DataSource = {
   async loadBrands() {
@@ -859,16 +859,19 @@ const App = {
       wrap.appendChild(list);
     }
 
-    // 事務所紹介（brand.agencies があるブランドのみ）
+    // 事務所紹介（brand.agencies があるブランドのみ・毎回ランダムに4社）
     if (this.data.brand.agencies && this.data.brand.agencies.length > 0) {
       const ag = this.el("div", { class: "agency-card" }, [
         this.el("h3", { text: "🏢 事務所から探すのもおすすめ" }),
         this.el("p", {
           class: "hint-small",
-          text: "IRIAMには多数のライバー事務所があり、事務所の所属一覧から探すのも近道。代表的な大手はこちら（タイプ別の得意分野までは紐付けていないので、あくまで入口として）。",
+          text: "IRIAMには100社以上のライバー事務所があり、事務所の所属一覧から探すのも近道。実在確認済みの事務所から毎回ランダムに4社紹介するよ（タイプ別の得意分野までは紐付けていないので、あくまで入口として）。",
         }),
       ]);
-      for (const a of this.data.brand.agencies) {
+      const picked = [...this.data.brand.agencies]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 4);
+      for (const a of picked) {
         const row = this.el("div", { class: "agency-row" });
         row.appendChild(
           this.el("a", {
