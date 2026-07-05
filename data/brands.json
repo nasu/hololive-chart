@@ -7,7 +7,7 @@
       "tagline": "hololive production",
       "color": "#35c1e7",
       "emoji": "▶️",
-      "count": 74
+      "countLabel": "74名収録"
     },
     {
       "id": "nijisanji",
@@ -15,7 +15,15 @@
       "tagline": "NIJISANJI",
       "color": "#f43f5e",
       "emoji": "🌈",
-      "count": 209
+      "countLabel": "209名収録"
+    },
+    {
+      "id": "iriam",
+      "name": "IRIAM",
+      "tagline": "Vライブ配信アプリ",
+      "color": "#8B5CF6",
+      "emoji": "💜",
+      "countLabel": "タイプ診断"
     }
   ]
 }

@@ -2349,6 +2349,7 @@
         "label": "ID",
         "desc": "Indonesia"
       }
-    ]
+    ],
+    "youtubeFallback": true
   }
 }

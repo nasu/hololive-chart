@@ -6281,6 +6281,7 @@
         "label": "EN",
         "desc": "English"
       }
-    ]
+    ],
+    "youtubeFallback": true
   }
 }

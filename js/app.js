@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "7";
+const APP_VERSION = "8";
 
 const DataSource = {
   async loadBrands() {
@@ -206,7 +206,11 @@ const App = {
       members: () => this.renderMembers(),
     };
     // メンバー一覧はブランド選択後のみ意味を持つ
-    document.getElementById("navMembersBtn").hidden = !this.data;
+    const navBtn = document.getElementById("navMembersBtn");
+    navBtn.hidden = !this.data;
+    if (this.data) {
+      navBtn.textContent = this.data.brand.membersLabel || "メンバー一覧";
+    }
     this.root.innerHTML = "";
     this.root.appendChild(views[this.state.view]());
     window.scrollTo(0, 0);
@@ -234,7 +238,7 @@ const App = {
       btn.appendChild(this.el("span", { class: "brand-emoji", text: b.emoji }));
       btn.appendChild(this.el("span", { class: "brand-name", text: b.name }));
       btn.appendChild(
-        this.el("small", { text: `${b.tagline} / ${b.count}名収録` })
+        this.el("small", { text: `${b.tagline} / ${b.countLabel}` })
       );
       row.appendChild(btn);
     }
@@ -374,15 +378,17 @@ const App = {
   /** YouTube / X の外部リンク行 */
   linkRow(member) {
     const row = this.el("div", { class: "link-row" });
-    row.appendChild(
-      this.el("a", {
-        class: "yt-link",
-        href: this.channelUrl(member),
-        target: "_blank",
-        rel: "noopener",
-        text: "▶ YouTube",
-      })
-    );
+    if (member.youtube || this.data.brand.youtubeFallback) {
+      row.appendChild(
+        this.el("a", {
+          class: "yt-link",
+          href: this.channelUrl(member),
+          target: "_blank",
+          rel: "noopener",
+          text: "▶ YouTube",
+        })
+      );
+    }
     if (member.twitter) {
       row.appendChild(
         this.el("a", {
@@ -394,7 +400,7 @@ const App = {
         })
       );
     }
-    return row;
+    return row.children.length > 0 ? row : null;
   },
 
   /** メンバー詳細モーダル */
@@ -441,7 +447,10 @@ const App = {
     nameBox.appendChild(
       this.el("p", {
         class: "result-meta",
-        text: `${member.nameEn} / ${this.data.brand.label} ${member.branch} ${member.group}`,
+        text:
+          this.data.brand.branches.length > 1
+            ? `${member.nameEn} / ${this.data.brand.label} ${member.branch} ${member.group}`
+            : `${member.nameEn} / ${this.data.brand.label} ${member.group}`,
       })
     );
     head.appendChild(nameBox);
@@ -457,7 +466,10 @@ const App = {
       tags.appendChild(this.el("span", { class: "tag", text: "#" + t }));
     }
     panel.appendChild(tags);
-    panel.appendChild(this.linkRow(member));
+    const stBlock = this.searchTagsBlock(member);
+    if (stBlock) panel.appendChild(stBlock);
+    const links = this.linkRow(member);
+    if (links) panel.appendChild(links);
     const embed = this.embedToggle(member);
     if (embed) panel.appendChild(embed);
 
@@ -481,55 +493,59 @@ const App = {
 
     const card = this.el("div", { class: "setup-card" });
 
-    // ブランチ選択（複数可）
-    const branchSection = this.el("section", {}, [
-      this.el("h2", { text: "どのブランチから探す？（複数選択OK）" }),
-    ]);
-    const branchRow = this.el("div", { class: "choice-row" });
+    // ブランチ選択（複数ブランチのあるブランドのみ）
     const branchDefs = this.data.brand.branches;
-    for (const b of branchDefs) {
-      const btn = this.el("button", {
-        type: "button",
-        class: "choice" + (s.branches.includes(b.key) ? " selected" : ""),
-        onclick: () => {
-          if (s.branches.includes(b.key)) {
-            s.branches = s.branches.filter((x) => x !== b.key);
-          } else {
-            s.branches.push(b.key);
-          }
-          this.render();
-        },
-      });
-      btn.appendChild(document.createTextNode(b.label));
-      btn.appendChild(this.el("small", { text: b.desc }));
-      branchRow.appendChild(btn);
+    if (branchDefs.length > 1) {
+      const branchSection = this.el("section", {}, [
+        this.el("h2", { text: "どのブランチから探す？（複数選択OK）" }),
+      ]);
+      const branchRow = this.el("div", { class: "choice-row" });
+      for (const b of branchDefs) {
+        const btn = this.el("button", {
+          type: "button",
+          class: "choice" + (s.branches.includes(b.key) ? " selected" : ""),
+          onclick: () => {
+            if (s.branches.includes(b.key)) {
+              s.branches = s.branches.filter((x) => x !== b.key);
+            } else {
+              s.branches.push(b.key);
+            }
+            this.render();
+          },
+        });
+        btn.appendChild(document.createTextNode(b.label));
+        btn.appendChild(this.el("small", { text: b.desc }));
+        branchRow.appendChild(btn);
+      }
+      branchSection.appendChild(branchRow);
+      card.appendChild(branchSection);
     }
-    branchSection.appendChild(branchRow);
-    card.appendChild(branchSection);
 
-    // 卒業生
-    const gradSection = this.el("section", {}, [
-      this.el("h2", { text: "卒業生も含める？" }),
-    ]);
-    const gradRow = this.el("div", { class: "choice-row" });
-    for (const [val, label, desc] of [
-      [false, "現役のみ", "いま活動中のメンバー"],
-      [true, "卒業生も含める", "伝説にも会いたい"],
-    ]) {
-      const btn = this.el("button", {
-        type: "button",
-        class: "choice" + (s.includeGraduated === val ? " selected" : ""),
-        onclick: () => {
-          s.includeGraduated = val;
-          this.render();
-        },
-      });
-      btn.appendChild(document.createTextNode(label));
-      btn.appendChild(this.el("small", { text: desc }));
-      gradRow.appendChild(btn);
+    // 卒業生（卒業生データのあるブランドのみ）
+    if (this.data.members.some((m) => m.status === "graduated")) {
+      const gradSection = this.el("section", {}, [
+        this.el("h2", { text: "卒業生も含める？" }),
+      ]);
+      const gradRow = this.el("div", { class: "choice-row" });
+      for (const [val, label, desc] of [
+        [false, "現役のみ", "いま活動中のメンバー"],
+        [true, "卒業生も含める", "伝説にも会いたい"],
+      ]) {
+        const btn = this.el("button", {
+          type: "button",
+          class: "choice" + (s.includeGraduated === val ? " selected" : ""),
+          onclick: () => {
+            s.includeGraduated = val;
+            this.render();
+          },
+        });
+        btn.appendChild(document.createTextNode(label));
+        btn.appendChild(this.el("small", { text: desc }));
+        gradRow.appendChild(btn);
+      }
+      gradSection.appendChild(gradRow);
+      card.appendChild(gradSection);
     }
-    gradSection.appendChild(gradRow);
-    card.appendChild(gradSection);
 
     // 性別フィルタ（男女両方いるブランドのみ表示）
     if (this.hasGenderFilter()) {
@@ -558,28 +574,35 @@ const App = {
       card.appendChild(genderSection);
     }
 
-    // 診断モード
-    const modeSection = this.el("section", {}, [
-      this.el("h2", { text: "診断モード" }),
-    ]);
-    const modeRow = this.el("div", { class: "choice-row" });
-    for (const mode of this.data.modes) {
-      const btn = this.el("button", {
-        type: "button",
-        class: "choice" + (s.mode === mode.id ? " selected" : ""),
-        onclick: () => {
-          s.mode = mode.id;
-          this.render();
-        },
-      });
-      btn.appendChild(document.createTextNode(mode.label));
-      btn.appendChild(this.el("small", { text: mode.desc }));
-      modeRow.appendChild(btn);
+    // 診断モード（複数モードのあるブランドのみ）
+    if (this.data.modes.length > 1) {
+      const modeSection = this.el("section", {}, [
+        this.el("h2", { text: "診断モード" }),
+      ]);
+      const modeRow = this.el("div", { class: "choice-row" });
+      for (const mode of this.data.modes) {
+        const btn = this.el("button", {
+          type: "button",
+          class: "choice" + (s.mode === mode.id ? " selected" : ""),
+          onclick: () => {
+            s.mode = mode.id;
+            this.render();
+          },
+        });
+        btn.appendChild(document.createTextNode(mode.label));
+        btn.appendChild(this.el("small", { text: mode.desc }));
+        modeRow.appendChild(btn);
+      }
+      modeSection.appendChild(modeRow);
+      card.appendChild(modeSection);
     }
-    modeSection.appendChild(modeRow);
-    card.appendChild(modeSection);
 
-    wrap.appendChild(card);
+    if (this.data.brand.resultNote) {
+      wrap.appendChild(
+        this.el("p", { class: "brand-note", text: this.data.brand.resultNote })
+      );
+    }
+    if (card.children.length > 0) wrap.appendChild(card);
 
     const startBtn = this.el("button", {
       type: "button",
@@ -601,13 +624,14 @@ const App = {
         (s.includeGraduated || m.status === "active") &&
         this.matchesGender(m)
     ).length;
+    const unit = this.data.brand.unit || "人";
     wrap.appendChild(
       this.el("p", {
         class: "hint",
         text:
           s.branches.length === 0
             ? "ブランチを1つ以上選んでね"
-            : `対象メンバー: ${count}人`,
+            : `対象${unit === "人" ? "メンバー" : unit}: ${count}${unit}`,
       })
     );
 
@@ -684,6 +708,37 @@ const App = {
     return wrap;
   },
 
+  /** アプリ内検索タグの案内ブロック（searchTags を持つメンバー=タイプのみ） */
+  searchTagsBlock(m) {
+    if (!m.searchTags || m.searchTags.length === 0) return null;
+    const st = this.el("div", { class: "search-tags" }, [
+      this.el("h3", { text: `🔎 ${this.data.brand.label}アプリでの探し方` }),
+    ]);
+    const chips = this.el("div", { class: "tag-list" });
+    for (const t of m.searchTags) {
+      chips.appendChild(this.el("span", { class: "tag hit", text: t }));
+    }
+    st.appendChild(chips);
+    st.appendChild(
+      this.el("p", {
+        class: "hint-small",
+        text: "アプリの検索やタグでこのキーワードを探すと、このタイプのライバーに出会いやすいよ。",
+      })
+    );
+    if (this.data.brand.appUrl) {
+      st.appendChild(
+        this.el("a", {
+          class: "yt-link",
+          href: this.data.brand.appUrl,
+          target: "_blank",
+          rel: "noopener",
+          text: `▶ ${this.data.brand.label}を開く`,
+        })
+      );
+    }
+    return st;
+  },
+
   /** 結果カード（トップ3・4位以下の展開詳細で共用） */
   buildResultCard(r, rank, profile, isFirst) {
     const m = r.member;
@@ -707,7 +762,9 @@ const App = {
       this.el("p", {
         class: "result-meta",
         text:
-          `${this.data.brand.label} ${m.branch} / ${m.group}` +
+          (this.data.brand.branches.length > 1
+            ? `${this.data.brand.label} ${m.branch} / ${m.group}`
+            : `${this.data.brand.label} / ${m.group}`) +
           (m.status === "graduated" ? "（卒業生）" : ""),
       })
     );
@@ -727,7 +784,10 @@ const App = {
     }
     card.appendChild(tags);
     card.appendChild(this.radarChart(m, profile));
-    card.appendChild(this.linkRow(m));
+    const st = this.searchTagsBlock(m);
+    if (st) card.appendChild(st);
+    const links = this.linkRow(m);
+    if (links) card.appendChild(links);
     const embed = this.embedToggle(m);
     if (embed) card.appendChild(embed);
     return card;
@@ -744,7 +804,10 @@ const App = {
     const profile = Matcher.buildProfile(s.answers);
     const wrap = this.el("div");
     wrap.appendChild(
-      this.el("h1", { class: "result-title", text: "あなたの推し候補はこちら！" })
+      this.el("h1", {
+        class: "result-title",
+        text: this.data.brand.resultTitle || "あなたの推し候補はこちら！",
+      })
     );
 
     const top3 = ranked.slice(0, 3);
@@ -796,6 +859,32 @@ const App = {
       wrap.appendChild(list);
     }
 
+    // 事務所紹介（brand.agencies があるブランドのみ）
+    if (this.data.brand.agencies && this.data.brand.agencies.length > 0) {
+      const ag = this.el("div", { class: "agency-card" }, [
+        this.el("h3", { text: "🏢 事務所から探すのもおすすめ" }),
+        this.el("p", {
+          class: "hint-small",
+          text: "IRIAMには多数のライバー事務所があり、事務所の所属一覧から探すのも近道。代表的な大手はこちら（タイプ別の得意分野までは紐付けていないので、あくまで入口として）。",
+        }),
+      ]);
+      for (const a of this.data.brand.agencies) {
+        const row = this.el("div", { class: "agency-row" });
+        row.appendChild(
+          this.el("a", {
+            class: "yt-link",
+            href: a.url,
+            target: "_blank",
+            rel: "noopener",
+            text: a.name,
+          })
+        );
+        row.appendChild(this.el("span", { class: "agency-note", text: a.note }));
+        ag.appendChild(row);
+      }
+      wrap.appendChild(ag);
+    }
+
     const actions = this.el("div", { class: "result-actions" });
     actions.appendChild(
       this.el("button", {
@@ -830,24 +919,32 @@ const App = {
     const wrap = this.el("div");
 
     const header = this.el("div", { class: "members-header" }, [
-      this.el("h1", { text: "メンバー一覧" }),
+      this.el("h1", { text: this.data.brand.membersLabel || "メンバー一覧" }),
     ]);
-    const filters = this.el("div", { class: "filter-row" });
-    const filterKeys = ["ALL", ...this.data.brand.branches.map((b) => b.key), "卒業生"];
-    for (const f of filterKeys) {
-      filters.appendChild(
-        this.el("button", {
-          type: "button",
-          class: "filter-btn" + (s.memberFilter === f ? " active" : ""),
-          text: f === "ALL" ? "すべて" : f,
-          onclick: () => {
-            s.memberFilter = f;
-            this.render();
-          },
-        })
-      );
+    const filterKeys = ["ALL"];
+    if (this.data.brand.branches.length > 1) {
+      filterKeys.push(...this.data.brand.branches.map((b) => b.key));
     }
-    header.appendChild(filters);
+    if (this.data.members.some((m) => m.status === "graduated")) {
+      filterKeys.push("卒業生");
+    }
+    if (filterKeys.length > 1) {
+      const filters = this.el("div", { class: "filter-row" });
+      for (const f of filterKeys) {
+        filters.appendChild(
+          this.el("button", {
+            type: "button",
+            class: "filter-btn" + (s.memberFilter === f ? " active" : ""),
+            text: f === "ALL" ? "すべて" : f,
+            onclick: () => {
+              s.memberFilter = f;
+              this.render();
+            },
+          })
+        );
+      }
+      header.appendChild(filters);
+    }
     wrap.appendChild(header);
 
     let members = this.data.members;
@@ -858,10 +955,11 @@ const App = {
     }
 
     // グループ単位で表示（データの登場順を維持）
+    const multiBranch = this.data.brand.branches.length > 1;
     const groups = [];
     const groupMap = new Map();
     for (const m of members) {
-      const key = `${m.branch} ${m.group}`;
+      const key = multiBranch ? `${m.branch} ${m.group}` : m.group;
       if (!groupMap.has(key)) {
         groupMap.set(key, []);
         groups.push(key);
@@ -887,7 +985,12 @@ const App = {
         }
         card.appendChild(h);
         card.appendChild(
-          this.el("div", { class: "meta", text: `${this.data.brand.label} ${m.branch}` })
+          this.el("div", {
+            class: "meta",
+            text: multiBranch
+              ? `${this.data.brand.label} ${m.branch}`
+              : this.data.brand.label,
+          })
         );
         const tags = this.el("div", { class: "tag-list" });
         for (const t of m.tags) {

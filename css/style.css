@@ -522,6 +522,45 @@ main {
   padding-bottom: 6px;
 }
 
+.brand-note {
+  max-width: 560px;
+  margin: 0 auto 20px;
+  background: #eef3fa;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.search-tags {
+  background: #f4f9ff;
+  border: 1px dashed var(--primary);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 14px;
+}
+.search-tags h3 { margin: 0 0 10px; font-size: 0.95rem; }
+.hint-small { font-size: 0.8rem; color: var(--muted); margin: 8px 0; line-height: 1.6; }
+
+.agency-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin-top: 24px;
+}
+.agency-card h3 { margin: 0 0 6px; font-size: 1rem; }
+.agency-row {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+}
+.agency-note { color: var(--muted); font-size: 0.85rem; }
+
 .site-footer {
   text-align: center;
   font-size: 0.75rem;
