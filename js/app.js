@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "9";
+const APP_VERSION = "10";
 
 const DataSource = {
   async loadBrands() {
@@ -236,7 +236,11 @@ const App = {
         onclick: () => this.selectBrand(b.id),
       });
       btn.appendChild(this.el("span", { class: "brand-emoji", text: b.emoji }));
-      btn.appendChild(this.el("span", { class: "brand-name", text: b.name }));
+      const nameEl = this.el("span", { class: "brand-name", text: b.name });
+      if (b.badge) {
+        nameEl.appendChild(this.el("span", { class: "alpha-badge", text: b.badge }));
+      }
+      btn.appendChild(nameEl);
       btn.appendChild(
         this.el("small", { text: `${b.tagline} / ${b.countLabel}` })
       );
@@ -482,9 +486,17 @@ const App = {
     const s = this.state;
     const wrap = this.el("div");
 
+    const heroTitle = this.el("h1", {
+      text: `${this.data.brand.name}推し探しチャート`,
+    });
+    if (this.data.brand.badge) {
+      heroTitle.appendChild(
+        this.el("span", { class: "alpha-badge", text: this.data.brand.badge })
+      );
+    }
     wrap.appendChild(
       this.el("div", { class: "hero" }, [
-        this.el("h1", { text: `${this.data.brand.name}推し探しチャート` }),
+        heroTitle,
         this.el("p", {
           text: "質問に答えて、あなたにぴったりの推しを見つけよう！",
         }),

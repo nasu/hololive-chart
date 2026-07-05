@@ -23,7 +23,8 @@
       "tagline": "Vライブ配信アプリ",
       "color": "#8B5CF6",
       "emoji": "💜",
-      "countLabel": "タイプ診断"
+      "countLabel": "タイプ診断",
+      "badge": "α版"
     }
   ]
 }
