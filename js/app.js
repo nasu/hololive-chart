@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "10";
+const APP_VERSION = "11";
 
 const DataSource = {
   async loadBrands() {
