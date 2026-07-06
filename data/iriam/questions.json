@@ -5,7 +5,38 @@
       "id": "quick",
       "label": "タイプ診断",
       "desc": "10問・約2分",
-      "questionIds": ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"]
+      "questionIds": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7",
+        "q8",
+        "q9",
+        "q10"
+      ]
+    },
+    {
+      "id": "streamer",
+      "label": "ライバー適性診断",
+      "desc": "配信する側になりたい人向け・10問",
+      "questionIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "resultTitle": "あなたに合う配信スタイルはこちら！",
+      "resultNote": "無理なく続けられるスタイルがいちばん強い。イベントを走るのも休むのも自分のペースでOK。事務所に入るとサポートが受けられるので、下の事務所リストも参考にしてみて。",
+      "shareText": "私に合う配信スタイルは「{name}」でした！ #推しあわせ"
     }
   ],
   "questions": [
@@ -13,100 +44,953 @@
       "id": "q1",
       "text": "まずは直感で。惹かれる配信の雰囲気は？",
       "options": [
-        { "label": "キラキラしたアイドル空間", "params": { "music": 1, "cute": 1, "energy": 1 }, "tags": ["アイドル", "正統派"] },
-        { "label": "ゆるふわ癒しの空間", "params": { "healing": 2 }, "tags": ["癒し", "まったり"] },
-        { "label": "クールでおしゃれな空間", "params": { "cool": 2 }, "tags": ["クール", "イケボ"] },
-        { "label": "何でもありの賑やか空間", "params": { "comedy": 1, "chaos": 1, "energy": 1 }, "tags": ["カオス", "大喜利"] }
+        {
+          "label": "キラキラしたアイドル空間",
+          "params": {
+            "music": 1,
+            "cute": 1,
+            "energy": 1
+          },
+          "tags": [
+            "アイドル",
+            "正統派"
+          ]
+        },
+        {
+          "label": "ゆるふわ癒しの空間",
+          "params": {
+            "healing": 2
+          },
+          "tags": [
+            "癒し",
+            "まったり"
+          ]
+        },
+        {
+          "label": "クールでおしゃれな空間",
+          "params": {
+            "cool": 2
+          },
+          "tags": [
+            "クール",
+            "イケボ"
+          ]
+        },
+        {
+          "label": "何でもありの賑やか空間",
+          "params": {
+            "comedy": 1,
+            "chaos": 1,
+            "energy": 1
+          },
+          "tags": [
+            "カオス",
+            "大喜利"
+          ]
+        }
       ]
     },
     {
       "id": "q2",
       "text": "IRIAMを開くのはどんなとき？",
       "options": [
-        { "label": "寝る前、癒されたいとき", "params": { "healing": 3 }, "tags": ["寝落ち", "ASMR"] },
-        { "label": "疲れた日、笑いたいとき", "params": { "comedy": 2, "talk": 1 }, "tags": ["笑い"] },
-        { "label": "休日、がっつり推し活したいとき", "params": { "energy": 2, "music": 1 }, "tags": ["イベント", "全力"] },
-        { "label": "すきま時間にゆるく", "params": { "talk": 2, "healing": 1 }, "tags": ["雑談", "ラジオ"] }
+        {
+          "label": "寝る前、癒されたいとき",
+          "params": {
+            "healing": 3
+          },
+          "tags": [
+            "寝落ち",
+            "ASMR"
+          ]
+        },
+        {
+          "label": "疲れた日、笑いたいとき",
+          "params": {
+            "comedy": 2,
+            "talk": 1
+          },
+          "tags": [
+            "笑い"
+          ]
+        },
+        {
+          "label": "休日、がっつり推し活したいとき",
+          "params": {
+            "energy": 2,
+            "music": 1
+          },
+          "tags": [
+            "イベント",
+            "全力"
+          ]
+        },
+        {
+          "label": "すきま時間にゆるく",
+          "params": {
+            "talk": 2,
+            "healing": 1
+          },
+          "tags": [
+            "雑談",
+            "ラジオ"
+          ]
+        }
       ]
     },
     {
       "id": "q3",
       "text": "推しとの理想の距離感は？",
       "options": [
-        { "label": "毎日「おかえり」を言い合いたい", "params": { "healing": 2, "talk": 1 }, "tags": ["癒し", "雑談"] },
-        { "label": "みんなでわいわい盛り上がりたい", "params": { "energy": 2, "comedy": 1 }, "tags": ["元気", "コラボ"] },
-        { "label": "静かに見守って支えたい", "params": { "cool": 2, "music": 1 }, "tags": ["クール", "ミステリアス"] },
-        { "label": "ツッコミ入れながら絡みたい", "params": { "comedy": 2, "chaos": 1 }, "tags": ["大喜利", "芸人"] }
+        {
+          "label": "毎日「おかえり」を言い合いたい",
+          "params": {
+            "healing": 2,
+            "talk": 1
+          },
+          "tags": [
+            "癒し",
+            "雑談"
+          ]
+        },
+        {
+          "label": "みんなでわいわい盛り上がりたい",
+          "params": {
+            "energy": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "元気",
+            "コラボ"
+          ]
+        },
+        {
+          "label": "静かに見守って支えたい",
+          "params": {
+            "cool": 2,
+            "music": 1
+          },
+          "tags": [
+            "クール",
+            "ミステリアス"
+          ]
+        },
+        {
+          "label": "ツッコミ入れながら絡みたい",
+          "params": {
+            "comedy": 2,
+            "chaos": 1
+          },
+          "tags": [
+            "大喜利",
+            "芸人"
+          ]
+        }
       ]
     },
     {
       "id": "q4",
       "text": "好きな声のタイプは？",
       "options": [
-        { "label": "かわいい系ボイス", "params": { "cute": 3 }, "tags": ["かわいい"] },
-        { "label": "イケボ・低音ボイス", "params": { "cool": 3 }, "tags": ["イケボ", "低音ボイス"] },
-        { "label": "落ち着いた大人の声", "params": { "healing": 2, "cool": 1 }, "tags": ["お姉さん", "お兄さん"] },
-        { "label": "元気ハツラツな声", "params": { "energy": 2, "comedy": 1 }, "tags": ["元気"] }
+        {
+          "label": "かわいい系ボイス",
+          "params": {
+            "cute": 3
+          },
+          "tags": [
+            "かわいい"
+          ]
+        },
+        {
+          "label": "イケボ・低音ボイス",
+          "params": {
+            "cool": 3
+          },
+          "tags": [
+            "イケボ",
+            "低音ボイス"
+          ]
+        },
+        {
+          "label": "落ち着いた大人の声",
+          "params": {
+            "healing": 2,
+            "cool": 1
+          },
+          "tags": [
+            "お姉さん",
+            "お兄さん"
+          ]
+        },
+        {
+          "label": "元気ハツラツな声",
+          "params": {
+            "energy": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "元気"
+          ]
+        }
       ]
     },
     {
       "id": "q5",
       "text": "配信でのあなたのスタイルは？",
       "options": [
-        { "label": "コメントでどんどん話したい", "params": { "talk": 2, "energy": 1 }, "tags": ["雑談", "聞き上手"] },
-        { "label": "名前を覚えてもらえたら嬉しい", "params": { "healing": 2, "cute": 1 }, "tags": ["癒し"] },
-        { "label": "基本は聴き専・見守り派", "params": { "cool": 1, "music": 1, "healing": 1 }, "tags": ["ラジオ", "作業用"] },
-        { "label": "ボケたい・大喜利したい", "params": { "comedy": 2, "chaos": 1 }, "tags": ["大喜利"] }
+        {
+          "label": "コメントでどんどん話したい",
+          "params": {
+            "talk": 2,
+            "energy": 1
+          },
+          "tags": [
+            "雑談",
+            "聞き上手"
+          ]
+        },
+        {
+          "label": "名前を覚えてもらえたら嬉しい",
+          "params": {
+            "healing": 2,
+            "cute": 1
+          },
+          "tags": [
+            "癒し"
+          ]
+        },
+        {
+          "label": "基本は聴き専・見守り派",
+          "params": {
+            "cool": 1,
+            "music": 1,
+            "healing": 1
+          },
+          "tags": [
+            "ラジオ",
+            "作業用"
+          ]
+        },
+        {
+          "label": "ボケたい・大喜利したい",
+          "params": {
+            "comedy": 2,
+            "chaos": 1
+          },
+          "tags": [
+            "大喜利"
+          ]
+        }
       ]
     },
     {
       "id": "q6",
       "text": "一番聴きたい配信内容は？",
       "options": [
-        { "label": "まったり雑談", "params": { "talk": 2, "healing": 1 }, "tags": ["雑談", "まったり"] },
-        { "label": "歌枠", "params": { "music": 3 }, "tags": ["歌", "歌枠"] },
-        { "label": "ゲーム配信", "params": { "game": 3 }, "tags": ["ゲーム", "実況"] },
-        { "label": "企画・イベント配信", "params": { "comedy": 2, "energy": 1 }, "tags": ["企画", "イベント"] }
+        {
+          "label": "まったり雑談",
+          "params": {
+            "talk": 2,
+            "healing": 1
+          },
+          "tags": [
+            "雑談",
+            "まったり"
+          ]
+        },
+        {
+          "label": "歌枠",
+          "params": {
+            "music": 3
+          },
+          "tags": [
+            "歌",
+            "歌枠"
+          ]
+        },
+        {
+          "label": "参加型企画・一緒に遊べる配信",
+          "params": {
+            "game": 3
+          },
+          "tags": [
+            "参加型",
+            "企画",
+            "あそび"
+          ]
+        },
+        {
+          "label": "企画・イベント配信",
+          "params": {
+            "comedy": 2,
+            "energy": 1
+          },
+          "tags": [
+            "企画",
+            "イベント"
+          ]
+        }
       ]
     },
     {
       "id": "q7",
       "text": "好きな性格のタイプは？",
       "options": [
-        { "label": "ぽんこつ・天然", "params": { "cute": 2, "comedy": 1 }, "tags": ["あざとい", "かわいい"] },
-        { "label": "しっかり者・頼れる", "params": { "cool": 2, "talk": 1 }, "tags": ["お姉さん", "お兄さん"] },
-        { "label": "自由奔放・予測不能", "params": { "chaos": 2, "energy": 1 }, "tags": ["カオス"] },
-        { "label": "ミステリアス", "params": { "cool": 2, "music": 1 }, "tags": ["ミステリアス", "クール"] }
+        {
+          "label": "ぽんこつ・天然",
+          "params": {
+            "cute": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "あざとい",
+            "かわいい"
+          ]
+        },
+        {
+          "label": "しっかり者・頼れる",
+          "params": {
+            "cool": 2,
+            "talk": 1
+          },
+          "tags": [
+            "お姉さん",
+            "お兄さん"
+          ]
+        },
+        {
+          "label": "自由奔放・予測不能",
+          "params": {
+            "chaos": 2,
+            "energy": 1
+          },
+          "tags": [
+            "カオス"
+          ]
+        },
+        {
+          "label": "ミステリアス",
+          "params": {
+            "cool": 2,
+            "music": 1
+          },
+          "tags": [
+            "ミステリアス",
+            "クール"
+          ]
+        }
       ]
     },
     {
       "id": "q8",
       "text": "歌はどのくらい重視する？",
       "options": [
-        { "label": "歌が上手いのは絶対条件", "params": { "music": 3 }, "tags": ["歌うま", "歌枠"] },
-        { "label": "たまの歌枠が楽しみなくらい", "params": { "music": 1, "talk": 1 }, "tags": ["歌"] },
-        { "label": "歌よりトーク", "params": { "talk": 2 }, "tags": ["雑談", "トーク"] },
-        { "label": "歌より一緒に遊べる企画", "params": { "game": 1, "comedy": 1 }, "tags": ["参加型", "ゲーム"] }
+        {
+          "label": "歌が上手いのは絶対条件",
+          "params": {
+            "music": 3
+          },
+          "tags": [
+            "歌うま",
+            "歌枠"
+          ]
+        },
+        {
+          "label": "たまの歌枠が楽しみなくらい",
+          "params": {
+            "music": 1,
+            "talk": 1
+          },
+          "tags": [
+            "歌"
+          ]
+        },
+        {
+          "label": "歌よりトーク",
+          "params": {
+            "talk": 2
+          },
+          "tags": [
+            "雑談",
+            "トーク"
+          ]
+        },
+        {
+          "label": "歌より一緒に遊べる企画",
+          "params": {
+            "game": 1,
+            "comedy": 1
+          },
+          "tags": [
+            "参加型",
+            "企画"
+          ]
+        }
       ]
     },
     {
       "id": "q9",
       "text": "ASMR・寝落ち配信は？",
       "options": [
-        { "label": "毎晩でも聴きたい", "params": { "healing": 3 }, "tags": ["ASMR", "寝落ち", "囁き"] },
-        { "label": "たまに癒されたい", "params": { "healing": 1, "cute": 1 }, "tags": ["癒し"] },
-        { "label": "それより賑やかな配信", "params": { "energy": 2 }, "tags": ["元気"] },
-        { "label": "落ち着いた声なら何でも", "params": { "cool": 1, "healing": 1 }, "tags": ["低音ボイス", "イケボ"] }
+        {
+          "label": "毎晩でも聴きたい",
+          "params": {
+            "healing": 3
+          },
+          "tags": [
+            "ASMR",
+            "寝落ち",
+            "囁き"
+          ]
+        },
+        {
+          "label": "たまに癒されたい",
+          "params": {
+            "healing": 1,
+            "cute": 1
+          },
+          "tags": [
+            "癒し"
+          ]
+        },
+        {
+          "label": "それより賑やかな配信",
+          "params": {
+            "energy": 2
+          },
+          "tags": [
+            "元気"
+          ]
+        },
+        {
+          "label": "落ち着いた声なら何でも",
+          "params": {
+            "cool": 1,
+            "healing": 1
+          },
+          "tags": [
+            "低音ボイス",
+            "イケボ"
+          ]
+        }
       ]
     },
     {
       "id": "q10",
       "text": "最後に。あなたの推し活スタイルは？",
       "options": [
-        { "label": "デビューしたてから育てたい", "params": { "cute": 1, "energy": 1 }, "tags": ["新人Vライバー", "ルーキー応援"] },
-        { "label": "イベントを一緒に走り切りたい", "params": { "energy": 2, "music": 1 }, "tags": ["イベント", "全力"] },
-        { "label": "毎日のルーティンとして通いたい", "params": { "healing": 2, "talk": 1 }, "tags": ["雑談", "まったり"] },
-        { "label": "気ままに色んな枠を旅したい", "params": { "comedy": 1, "chaos": 1, "talk": 1 }, "tags": ["初見さん歓迎"] }
+        {
+          "label": "デビューしたてから育てたい",
+          "params": {
+            "cute": 1,
+            "energy": 1
+          },
+          "tags": [
+            "新人Vライバー",
+            "ルーキー応援"
+          ]
+        },
+        {
+          "label": "イベントを一緒に走り切りたい",
+          "params": {
+            "energy": 2,
+            "music": 1
+          },
+          "tags": [
+            "イベント",
+            "全力"
+          ]
+        },
+        {
+          "label": "毎日のルーティンとして通いたい",
+          "params": {
+            "healing": 2,
+            "talk": 1
+          },
+          "tags": [
+            "雑談",
+            "まったり"
+          ]
+        },
+        {
+          "label": "気ままに色んな枠を旅したい",
+          "params": {
+            "comedy": 1,
+            "chaos": 1,
+            "talk": 1
+          },
+          "tags": [
+            "初見さん歓迎"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s1",
+      "text": "あなたが配信するなら、どんな枠にしたい？",
+      "options": [
+        {
+          "label": "みんながほっとできる癒し空間",
+          "params": {
+            "healing": 3
+          },
+          "tags": [
+            "癒し",
+            "まったり"
+          ]
+        },
+        {
+          "label": "笑いが絶えない賑やか空間",
+          "params": {
+            "comedy": 2,
+            "energy": 1
+          },
+          "tags": [
+            "笑い",
+            "大喜利"
+          ]
+        },
+        {
+          "label": "世界観のあるかっこいい空間",
+          "params": {
+            "cool": 3
+          },
+          "tags": [
+            "クール",
+            "ミステリアス"
+          ]
+        },
+        {
+          "label": "キラキラのアイドルステージ",
+          "params": {
+            "music": 1,
+            "cute": 1,
+            "energy": 1
+          },
+          "tags": [
+            "アイドル"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "text": "しゃべることについて、自分に近いのは？",
+      "options": [
+        {
+          "label": "聞き役が得意。相槌に自信あり",
+          "params": {
+            "healing": 2,
+            "talk": 1
+          },
+          "tags": [
+            "聞き上手"
+          ]
+        },
+        {
+          "label": "話し出すと止まらないタイプ",
+          "params": {
+            "talk": 3
+          },
+          "tags": [
+            "雑談",
+            "トーク"
+          ]
+        },
+        {
+          "label": "話すより歌で表現したい",
+          "params": {
+            "music": 3
+          },
+          "tags": [
+            "歌",
+            "歌枠"
+          ]
+        },
+        {
+          "label": "何かで遊びながらなら自然に話せる",
+          "params": {
+            "game": 2,
+            "talk": 1
+          },
+          "tags": [
+            "参加型",
+            "あそび"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "text": "コメントへの反応、理想のスタイルは？",
+      "options": [
+        {
+          "label": "全部拾って全力で返したい",
+          "params": {
+            "energy": 2,
+            "talk": 1
+          },
+          "tags": [
+            "元気"
+          ]
+        },
+        {
+          "label": "ひとつずつゆっくり丁寧に",
+          "params": {
+            "healing": 2,
+            "talk": 1
+          },
+          "tags": [
+            "まったり"
+          ]
+        },
+        {
+          "label": "ボケにはツッコミで返す",
+          "params": {
+            "comedy": 2,
+            "chaos": 1
+          },
+          "tags": [
+            "大喜利",
+            "笑い"
+          ]
+        },
+        {
+          "label": "マイペースに気ままに",
+          "params": {
+            "cool": 1,
+            "chaos": 1,
+            "healing": 1
+          },
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "text": "続けやすそうな活動ペースは？",
+      "options": [
+        {
+          "label": "毎日短時間コツコツ",
+          "params": {
+            "talk": 1,
+            "healing": 1
+          },
+          "tags": [
+            "雑談"
+          ]
+        },
+        {
+          "label": "週数回、1回をじっくり",
+          "params": {
+            "healing": 1,
+            "game": 1
+          },
+          "tags": [
+            "まったり"
+          ]
+        },
+        {
+          "label": "イベント時に全力を出す集中型",
+          "params": {
+            "energy": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "イベント",
+            "全力"
+          ]
+        },
+        {
+          "label": "気分が乗ったときに気まぐれで",
+          "params": {
+            "chaos": 1,
+            "cool": 1
+          },
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "text": "いちばん自信がある・伸ばしたいのは？",
+      "options": [
+        {
+          "label": "歌",
+          "params": {
+            "music": 3
+          },
+          "tags": [
+            "歌",
+            "歌うま"
+          ]
+        },
+        {
+          "label": "トーク・雑談力",
+          "params": {
+            "talk": 3
+          },
+          "tags": [
+            "トーク",
+            "雑談"
+          ]
+        },
+        {
+          "label": "遊び・企画を回すアイデア力",
+          "params": {
+            "game": 3
+          },
+          "tags": [
+            "参加型",
+            "企画",
+            "クイズ"
+          ]
+        },
+        {
+          "label": "企画・アイデア力",
+          "params": {
+            "comedy": 2,
+            "energy": 1
+          },
+          "tags": [
+            "企画"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "text": "まわりから言われる自分の性格は？",
+      "options": [
+        {
+          "label": "天然・マイペース",
+          "params": {
+            "cute": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "あざとい"
+          ]
+        },
+        {
+          "label": "しっかり者・面倒見がいい",
+          "params": {
+            "healing": 1,
+            "cool": 1,
+            "talk": 1
+          },
+          "tags": [
+            "お姉さん",
+            "お兄さん"
+          ]
+        },
+        {
+          "label": "ノリが良くて自由",
+          "params": {
+            "energy": 1,
+            "chaos": 2
+          },
+          "tags": [
+            "カオス"
+          ]
+        },
+        {
+          "label": "物静か・クール",
+          "params": {
+            "cool": 3
+          },
+          "tags": [
+            "クール",
+            "ミステリアス"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "text": "配信するならどの時間帯が現実的？",
+      "options": [
+        {
+          "label": "朝〜昼。朝活枠を育てたい",
+          "params": {
+            "energy": 2,
+            "healing": 1
+          },
+          "tags": [
+            "朝活",
+            "元気"
+          ]
+        },
+        {
+          "label": "夕方〜夜のゴールデンタイム",
+          "params": {
+            "energy": 1,
+            "talk": 1,
+            "comedy": 1
+          },
+          "tags": []
+        },
+        {
+          "label": "夜遅め。落ち着いた枠にしたい",
+          "params": {
+            "healing": 2,
+            "cool": 1
+          },
+          "tags": [
+            "深夜"
+          ]
+        },
+        {
+          "label": "深夜。ASMRや寝落ち枠も興味あり",
+          "params": {
+            "healing": 3
+          },
+          "tags": [
+            "ASMR",
+            "寝落ち",
+            "深夜"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "text": "ライバーとしての目標に近いのは？",
+      "options": [
+        {
+          "label": "たくさんの人に見つけてもらいたい",
+          "params": {
+            "energy": 2,
+            "music": 1
+          },
+          "tags": [
+            "イベント",
+            "全力"
+          ]
+        },
+        {
+          "label": "常連さんと深くつながる枠にしたい",
+          "params": {
+            "healing": 2,
+            "talk": 1
+          },
+          "tags": [
+            "雑談",
+            "まったり"
+          ]
+        },
+        {
+          "label": "イベントで上位を取ってみたい",
+          "params": {
+            "energy": 1,
+            "comedy": 1,
+            "game": 1
+          },
+          "tags": [
+            "イベント",
+            "企画"
+          ]
+        },
+        {
+          "label": "歌や作品を残していきたい",
+          "params": {
+            "music": 2,
+            "cool": 1
+          },
+          "tags": [
+            "歌",
+            "歌枠"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "text": "自分の声、どう活かしたい？",
+      "options": [
+        {
+          "label": "かわいさで癒したい",
+          "params": {
+            "cute": 3
+          },
+          "tags": [
+            "かわいい"
+          ]
+        },
+        {
+          "label": "低めの声を武器にしたい",
+          "params": {
+            "cool": 3
+          },
+          "tags": [
+            "イケボ",
+            "低音ボイス"
+          ]
+        },
+        {
+          "label": "落ち着いたトーンで安心感を",
+          "params": {
+            "healing": 2,
+            "cool": 1
+          },
+          "tags": [
+            "お姉さん",
+            "お兄さん"
+          ]
+        },
+        {
+          "label": "元気な声で場を明るく",
+          "params": {
+            "energy": 2,
+            "comedy": 1
+          },
+          "tags": [
+            "元気"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "最後に。疲れたときのあなたは？",
+      "options": [
+        {
+          "label": "ちゃんと休んで立て直す派",
+          "params": {
+            "healing": 2,
+            "cool": 1
+          },
+          "tags": []
+        },
+        {
+          "label": "誰かと話すと元気になる派",
+          "params": {
+            "talk": 2,
+            "energy": 1
+          },
+          "tags": [
+            "雑談"
+          ]
+        },
+        {
+          "label": "好きなことに没頭して忘れる派",
+          "params": {
+            "game": 1,
+            "music": 1,
+            "chaos": 1
+          },
+          "tags": []
+        },
+        {
+          "label": "笑い飛ばしてなんとかする派",
+          "params": {
+            "comedy": 2,
+            "energy": 1
+          },
+          "tags": [
+            "笑い"
+          ]
+        }
       ]
     }
   ]

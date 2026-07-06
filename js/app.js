@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "11";
+const APP_VERSION = "14";
 
 const DataSource = {
   async loadBrands() {
@@ -32,6 +32,7 @@ const DataSource = {
     return {
       brand: membersData.brand,
       paramLabels: membersData.paramLabels,
+      paramShortLabels: membersData.paramShortLabels,
       paramScale: membersData.paramScale || 10,
       members: membersData.members,
       questions: questionsData.questions,
@@ -134,6 +135,7 @@ const App = {
     mode: "quick", // quick | deep
     currentQuestion: 0,
     answers: [], // 選択した option
+    answerIdx: [], // 選択した選択肢のインデックス（結果URL共有用）
     memberFilter: "ALL",
   },
 
@@ -163,19 +165,26 @@ const App = {
     s.branches = this.data.brand.branches.map((b) => b.key);
     s.gender = "all";
     s.includeGraduated = false;
-    s.mode = "quick";
+    s.mode = this.data.modes[0].id;
     s.currentQuestion = 0;
     s.answers = [];
+    s.answerIdx = [];
     s.memberFilter = "ALL";
     s.view = "home";
     this.render();
   },
 
+  /** 選択中のモード定義 */
+  activeMode() {
+    return (
+      this.data.modes.find((m) => m.id === this.state.mode) || this.data.modes[0]
+    );
+  },
+
   /** 選択中モードの質問リスト */
   activeQuestions() {
-    const mode = this.data.modes.find((m) => m.id === this.state.mode);
     const byId = new Map(this.data.questions.map((q) => [q.id, q]));
-    return mode.questionIds.map((id) => byId.get(id));
+    return this.activeMode().questionIds.map((id) => byId.get(id));
   },
 
   async init() {
@@ -194,7 +203,172 @@ const App = {
       this.root.innerHTML = `<div class="loading">読み込みエラー: ${e.message}<br>ローカルで開く場合は簡易サーバー（例: npx serve）経由でアクセスしてください。</div>`;
       return;
     }
+    // 共有URLからの結果復元
+    const restored = await this.restoreFromUrl();
+    if (!restored) this.render();
+  },
+
+  /** 結果を再現できる共有URLを作る */
+  buildShareUrl() {
+    const s = this.state;
+    const p = new URLSearchParams();
+    p.set("b", s.brand);
+    p.set("m", s.mode);
+    p.set("a", s.answerIdx.join(""));
+    p.set("br", s.branches.join("."));
+    if (s.gender !== "all") p.set("g", s.gender);
+    if (s.includeGraduated) p.set("gr", "1");
+    return `${location.origin}${location.pathname}?${p.toString()}`;
+  },
+
+  /** 共有URLのクエリから結果画面を復元。復元したら true */
+  async restoreFromUrl() {
+    const p = new URLSearchParams(location.search);
+    const brandId = p.get("b");
+    const ans = p.get("a");
+    if (!brandId || !ans) return false;
+    if (!this.brands.some((b) => b.id === brandId)) return false;
+    try {
+      this.data = await DataSource.load(brandId);
+    } catch {
+      return false;
+    }
+    const s = this.state;
+    s.brand = brandId;
+    const modeId = p.get("m");
+    s.mode = this.data.modes.some((m) => m.id === modeId)
+      ? modeId
+      : this.data.modes[0].id;
+    const validBranches = this.data.brand.branches.map((b) => b.key);
+    const br = (p.get("br") || "").split(".").filter((x) => validBranches.includes(x));
+    s.branches = br.length > 0 ? br : validBranches;
+    s.gender = ["f", "m"].includes(p.get("g")) ? p.get("g") : "all";
+    s.includeGraduated = p.get("gr") === "1";
+
+    const questions = this.activeQuestions();
+    if (ans.length !== questions.length) return false;
+    s.answers = [];
+    s.answerIdx = [];
+    for (let i = 0; i < questions.length; i++) {
+      const idx = parseInt(ans[i], 10);
+      const opt = questions[i].options[idx];
+      if (!opt) return false;
+      s.answers.push(opt);
+      s.answerIdx.push(idx);
+    }
+    s.view = "result";
     this.render();
+    return true;
+  },
+
+  /** 結果カード画像（Canvas生成・自作デザインのみで権利セーフ） */
+  downloadResultCard(top3) {
+    const brand = this.data.brand;
+    const m = top3[0].member;
+    const W = 1200, H = 630;
+    const cv = document.createElement("canvas");
+    cv.width = W;
+    cv.height = H;
+    const ctx = cv.getContext("2d");
+    const FONT = '"Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif';
+
+    // 背景
+    const bg = ctx.createLinearGradient(0, 0, W, H);
+    bg.addColorStop(0, "#f4f7fb");
+    bg.addColorStop(1, "#ffffff");
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+    // 推し色の帯
+    ctx.fillStyle = m.color;
+    ctx.fillRect(0, 0, W, 14);
+    ctx.fillRect(0, H - 14, W, 14);
+
+    ctx.fillStyle = "#6b7a90";
+    ctx.font = `28px ${FONT}`;
+    ctx.textAlign = "center";
+    ctx.fillText(`🧭 推しあわせ - ${brand.name}推し探し診断`, W / 2, 70);
+
+    ctx.font = `100px ${FONT}`;
+    ctx.fillText(m.emoji, W / 2, 210);
+
+    ctx.fillStyle = "#1f2a3d";
+    ctx.font = `bold 64px ${FONT}`;
+    ctx.fillText(m.name, W / 2, 310);
+
+    ctx.fillStyle = m.color;
+    ctx.font = `bold 40px ${FONT}`;
+    ctx.fillText(`マッチ度 ${top3[0].percent}%`, W / 2, 375);
+
+    ctx.fillStyle = "#6b7a90";
+    ctx.font = `30px ${FONT}`;
+    ctx.fillText(m.tags.map((t) => `#${t}`).join("  "), W / 2, 440);
+
+    if (top3.length > 2) {
+      ctx.font = `28px ${FONT}`;
+      ctx.fillText(
+        `2位 ${top3[1].member.emoji}${top3[1].member.name}   3位 ${top3[2].member.emoji}${top3[2].member.name}`,
+        W / 2,
+        505
+      );
+    }
+
+    ctx.fillStyle = "#9aa7b8";
+    ctx.font = `24px ${FONT}`;
+    ctx.fillText(location.origin + location.pathname, W / 2, 580);
+
+    cv.toBlob((blob) => {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `oshiawase_${this.state.brand}_result.png`;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+  },
+
+  /** シェアボタン行 */
+  shareRow(top3) {
+    const url = this.buildShareUrl();
+    const m = top3[0].member;
+    const template =
+      this.activeMode().shareText ||
+      (m.searchTags
+        ? "私に合うライバータイプは「{name}」でした！ #推しあわせ"
+        : "私の推し候補1位は「{name}」でした！ #推しあわせ");
+    const text = template.replace("{name}", m.name);
+    const row = this.el("div", { class: "share-row" });
+    row.appendChild(
+      this.el("a", {
+        class: "share-btn",
+        href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`,
+        target: "_blank",
+        rel: "noopener",
+        text: "𝕏 結果をシェア",
+      })
+    );
+    const copyBtn = this.el("button", {
+      type: "button",
+      class: "share-btn",
+      text: "🔗 リンクをコピー",
+      onclick: async () => {
+        try {
+          await navigator.clipboard.writeText(url);
+          copyBtn.textContent = "✅ コピーしました";
+          setTimeout(() => (copyBtn.textContent = "🔗 リンクをコピー"), 1800);
+        } catch {
+          prompt("このURLをコピーしてね", url);
+        }
+      },
+    });
+    row.appendChild(copyBtn);
+    row.appendChild(
+      this.el("button", {
+        type: "button",
+        class: "share-btn",
+        text: "🖼 結果カードを保存",
+        onclick: () => this.downloadResultCard(top3),
+      })
+    );
+    return row;
   },
 
   render() {
@@ -311,7 +485,7 @@ const App = {
    */
   radarChart(member, profile) {
     const keys = Object.keys(this.data.paramLabels);
-    const SHORT = {
+    const DEFAULT_SHORT = {
       energy: "元気",
       healing: "癒し",
       talk: "トーク",
@@ -322,6 +496,7 @@ const App = {
       cute: "かわいい",
       cool: "クール",
     };
+    const SHORT = { ...DEFAULT_SHORT, ...(this.data.paramShortLabels || {}) };
     const scale = this.data.paramScale;
     const cx = 160,
       cy = 145,
@@ -472,6 +647,8 @@ const App = {
     panel.appendChild(tags);
     const stBlock = this.searchTagsBlock(member);
     if (stBlock) panel.appendChild(stBlock);
+    const rkBlock = this.rankBlock(member, "both");
+    if (rkBlock) panel.appendChild(rkBlock);
     const links = this.linkRow(member);
     if (links) panel.appendChild(links);
     const embed = this.embedToggle(member);
@@ -677,7 +854,7 @@ const App = {
       this.el("h2", { text: q.text }),
     ]);
     const list = this.el("div", { class: "option-list" });
-    for (const opt of q.options) {
+    q.options.forEach((opt, optIndex) => {
       list.appendChild(
         this.el("button", {
           type: "button",
@@ -685,6 +862,7 @@ const App = {
           text: opt.label,
           onclick: () => {
             s.answers[s.currentQuestion] = opt;
+            s.answerIdx[s.currentQuestion] = optIndex;
             if (s.currentQuestion + 1 >= total) {
               s.view = "result";
             } else {
@@ -694,7 +872,7 @@ const App = {
           },
         })
       );
-    }
+    });
     card.appendChild(list);
     wrap.appendChild(card);
 
@@ -710,6 +888,7 @@ const App = {
           } else {
             s.currentQuestion -= 1;
             s.answers.length = s.currentQuestion;
+            s.answerIdx.length = s.currentQuestion;
           }
           this.render();
         },
@@ -734,7 +913,9 @@ const App = {
     st.appendChild(
       this.el("p", {
         class: "hint-small",
-        text: "アプリの検索やタグでこのキーワードを探すと、このタイプのライバーに出会いやすいよ。",
+        text:
+          m.searchHint ||
+          "アプリの検索やタグでこのキーワードを探すと、このタイプのライバーに出会いやすいよ。",
       })
     );
     if (this.data.brand.appUrl) {
@@ -749,6 +930,32 @@ const App = {
       );
     }
     return st;
+  },
+
+  /**
+   * ランク帯のおすすめブロック（rank を持つメンバー=タイプのみ）。
+   * mode: "watch"=見るのにおすすめの帯 / "aim"=目指しやすい帯 / "both"=両方（一覧モーダル用）
+   */
+  rankBlock(m, which) {
+    if (!m.rank) return null;
+    const rows = [];
+    if (which === "watch" || which === "both") {
+      rows.push(["👀 見に行くなら", m.rank.watch, m.rank.watchWhy]);
+    }
+    if (which === "aim" || which === "both") {
+      rows.push(["🎯 目指しやすい帯", m.rank.aim, m.rank.aimWhy]);
+    }
+    const block = this.el("div", { class: "rank-block" });
+    for (const [label, band, why] of rows) {
+      block.appendChild(
+        this.el("div", { class: "rank-row" }, [
+          this.el("span", { class: "rank-label", text: label }),
+          this.el("span", { class: "rank-band", text: band }),
+        ])
+      );
+      block.appendChild(this.el("p", { class: "hint-small", text: why }));
+    }
+    return block;
   },
 
   /** 結果カード（トップ3・4位以下の展開詳細で共用） */
@@ -798,6 +1005,11 @@ const App = {
     card.appendChild(this.radarChart(m, profile));
     const st = this.searchTagsBlock(m);
     if (st) card.appendChild(st);
+    const rk = this.rankBlock(
+      m,
+      this.activeMode().id === "streamer" ? "aim" : "watch"
+    );
+    if (rk) card.appendChild(rk);
     const links = this.linkRow(m);
     if (links) card.appendChild(links);
     const embed = this.embedToggle(m);
@@ -814,18 +1026,26 @@ const App = {
       gender: s.gender,
     });
     const profile = Matcher.buildProfile(s.answers);
+    const mode = this.activeMode();
     const wrap = this.el("div");
     wrap.appendChild(
       this.el("h1", {
         class: "result-title",
-        text: this.data.brand.resultTitle || "あなたの推し候補はこちら！",
+        text:
+          mode.resultTitle ||
+          this.data.brand.resultTitle ||
+          "あなたの推し候補はこちら！",
       })
     );
+    if (mode.resultNote) {
+      wrap.appendChild(this.el("p", { class: "brand-note", text: mode.resultNote }));
+    }
 
     const top3 = ranked.slice(0, 3);
     top3.forEach((r, i) => {
       wrap.appendChild(this.buildResultCard(r, i + 1, profile, i === 0));
     });
+    if (top3.length > 0) wrap.appendChild(this.shareRow(top3));
 
     // 4位以下: トグルで詳細（レーダー含む）を開ける
     const rest = ranked.slice(3, 10);
@@ -869,6 +1089,39 @@ const App = {
         list.appendChild(item);
       });
       wrap.appendChild(list);
+    }
+
+    // ランク帯ガイド（rankGuide のあるブランドのみ）
+    if (this.data.brand.rankGuide && this.data.brand.rankGuide.length > 0) {
+      const rg = this.el("div", { class: "rank-guide-card" }, [
+        this.el("h3", { text: "📊 IRIAMのランク帯ざっくりガイド" }),
+      ]);
+      for (const g of this.data.brand.rankGuide) {
+        rg.appendChild(
+          this.el("div", { class: "rank-guide-row" }, [
+            this.el("span", { class: "rank-band", text: g.band }),
+            this.el("span", { class: "rank-guide-desc", text: g.desc }),
+          ])
+        );
+      }
+      if (this.data.brand.rankNote) {
+        rg.appendChild(
+          this.el("p", { class: "hint-small", text: this.data.brand.rankNote })
+        );
+      }
+      wrap.appendChild(rg);
+    }
+
+    // 健全な推し活ヒント（oshiTips のあるブランドのみ）
+    const tips = mode.oshiTips || this.data.brand.oshiTips;
+    if (tips && tips.length > 0) {
+      const tipCard = this.el("div", { class: "tips-card" }, [
+        this.el("h3", { text: "🌱 たのしい推し活のために" }),
+      ]);
+      for (const t of tips) {
+        tipCard.appendChild(this.el("p", { class: "tip-line", text: t }));
+      }
+      wrap.appendChild(tipCard);
     }
 
     // 事務所紹介（brand.agencies があるブランドのみ・毎回ランダムに4社）
