@@ -10,7 +10,7 @@
 
 // デプロイ毎にバージョンを上げてキャッシュの不整合を防ぐ
 // (index.html の ?v= と合わせること)
-const APP_VERSION = "14";
+const APP_VERSION = "15";
 
 const DataSource = {
   async loadBrands() {
@@ -137,6 +137,7 @@ const App = {
     answers: [], // 選択した option
     answerIdx: [], // 選択した選択肢のインデックス（結果URL共有用）
     memberFilter: "ALL",
+    returnTo: null, // 一覧へ寄り道した時の復帰先（quiz | result）
   },
 
   /** 性別データを持つブランドかどうか（性別フィルタの表示判定） */
@@ -170,6 +171,7 @@ const App = {
     s.answers = [];
     s.answerIdx = [];
     s.memberFilter = "ALL";
+    s.returnTo = null;
     s.view = "home";
     this.render();
   },
@@ -194,6 +196,10 @@ const App = {
       this.render();
     });
     document.getElementById("navMembersBtn").addEventListener("click", () => {
+      // 診断途中・結果表示中から一覧へ行ったら、戻れるように記憶する
+      if (this.state.view === "quiz" || this.state.view === "result") {
+        this.state.returnTo = this.state.view;
+      }
       this.state.view = this.data ? "members" : "landing";
       this.render();
     });
@@ -800,6 +806,8 @@ const App = {
       onclick: () => {
         s.currentQuestion = 0;
         s.answers = [];
+        s.answerIdx = [];
+        s.returnTo = null;
         s.view = "quiz";
         this.render();
       },
@@ -1047,6 +1055,21 @@ const App = {
     });
     if (top3.length > 0) wrap.appendChild(this.shareRow(top3));
 
+    // 推し始め時期のおすすめ（stages を持つブランド + 時期の回答があるときのみ）
+    const stageKey = s.answers.find((a) => a && a.stage)?.stage;
+    const stage = this.data.brand.stages && this.data.brand.stages[stageKey];
+    if (stage) {
+      wrap.appendChild(
+        this.el("div", { class: "stage-card" }, [
+          this.el("h3", { text: "⏰ 推し始めるならこの時期" }),
+          this.el("div", { class: "rank-row" }, [
+            this.el("span", { class: "rank-band", text: stage.label }),
+          ]),
+          this.el("p", { class: "hint-small", text: stage.desc }),
+        ])
+      );
+    }
+
     // 4位以下: トグルで詳細（レーダー含む）を開ける
     const rest = ranked.slice(3, 10);
     if (rest.length > 0) {
@@ -1189,6 +1212,25 @@ const App = {
     const header = this.el("div", { class: "members-header" }, [
       this.el("h1", { text: this.data.brand.membersLabel || "メンバー一覧" }),
     ]);
+    if (s.returnTo === "quiz" || s.returnTo === "result") {
+      const total = this.activeQuestions().length;
+      const label =
+        s.returnTo === "quiz"
+          ? `◀ 診断に戻る（Q${Math.min(s.currentQuestion + 1, total)}から再開）`
+          : "◀ 診断結果に戻る";
+      header.appendChild(
+        this.el("button", {
+          type: "button",
+          class: "resume-btn",
+          text: label,
+          onclick: () => {
+            s.view = s.returnTo;
+            s.returnTo = null;
+            this.render();
+          },
+        })
+      );
+    }
     const filterKeys = ["ALL"];
     if (this.data.brand.branches.length > 1) {
       filterKeys.push(...this.data.brand.branches.map((b) => b.key));

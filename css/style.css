@@ -605,6 +605,30 @@ main {
   font-weight: 700;
 }
 
+.resume-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid var(--primary);
+  background: var(--surface);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.resume-btn:hover { background: #eaf6fd; }
+
+.stage-card {
+  background: #fff8ef;
+  border: 1px solid #f3d9ac;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-top: 24px;
+}
+.stage-card h3 { margin: 0 0 8px; font-size: 0.95rem; color: #92600c; }
+.stage-card .rank-band { background: #fdeccc; color: #92600c; }
+
 .rank-guide-card {
   background: var(--surface);
   border-radius: var(--radius);
